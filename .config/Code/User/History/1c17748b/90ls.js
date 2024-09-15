@@ -1,0 +1,30 @@
+import { useEffect, useState } from "react";
+import BlogList from "./BlogList";
+
+const Home = () => {
+    const [blogs, setBlogs] = useState([
+        { title: 'My new website', body: 'lorem ipsum...', author: 'mario', id: 1 },
+        { title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
+        { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
+      ]);
+
+// temporary state
+const [state, ]
+
+const handleDelete = (id) => {
+  const newBlogs = blogs.filter((blog) => blog.id !== id);
+  setBlogs(newBlogs);
+} 
+
+useEffect(() => {console.log("useEffect triggered")}, [])
+
+return ( 
+    <div className="home">
+      <BlogList blogs={blogs} title="All blogs" handleDelete={handleDelete}/>
+      <BlogList blogs={blogs.filter((blog) => blog.author ==='mario')} title="Mario's Blogs" />
+      <button onclick={() => {}}>hola</button>
+    </div>
+);
+}
+ 
+export default Home;

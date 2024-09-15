@@ -1,0 +1,15 @@
+Style player name display and fix player values
+
+
+was using #player-one-value for both the player's name 
+selection, which meant that when when name was given, both
+of player's name was player1's name input. Which, of course
+is not good.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch working-state
+# Changes to be committed:
+#	modified:   script.js
+#	modified:   style.css
+#

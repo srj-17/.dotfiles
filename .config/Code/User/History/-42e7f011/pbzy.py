@@ -1,0 +1,1 @@
+# program to remove a given word from a list

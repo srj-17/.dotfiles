@@ -1,0 +1,16 @@
+.room {
+    border: 1px solid;
+    font-size: 50%;
+    border-color: white;
+}
+
+.container {
+    background-color: lightblue;
+    display: inline-grid;
+    grid-template: repeat(5, 40px) / repeat(5, 40px)
+}
+
+#living-room {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}

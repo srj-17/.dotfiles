@@ -1,0 +1,14 @@
+Remove irrelevant code for range
+
+No need to check for range values for range input
+because it already has min and max. So remove check
+from anonymous function for 'click' event of 
+askButton
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch rangeinput
+# Changes to be committed:
+#	modified:   script.js
+#	modified:   style.css
+#

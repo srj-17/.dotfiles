@@ -1,0 +1,12 @@
+Add playagain and endgame buttons to the page
+
+so that players can play again or end the game when
+the game ends
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch interactive-board
+# Changes to be committed:
+#	modified:   index.html
+#	modified:   script.js
+#

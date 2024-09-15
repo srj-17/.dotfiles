@@ -1,0 +1,15 @@
+Change the backspace to display 0 after operation
+
+It only displayed 0 after = operation earlier.
+This produces unexpected problems. (like when you
+do 3 + 3 + and you get 5)
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 40 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   script.js
+#

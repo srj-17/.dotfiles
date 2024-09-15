@@ -1,0 +1,10 @@
+Add draw case 
+
+For the cases when players don't win.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch interactive-board
+# Changes to be committed:
+#	modified:   script.js
+#

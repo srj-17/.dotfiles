@@ -1,0 +1,4 @@
+# fuzzy find in your projects using tmux-sessionizer when you press ^f
+# \n means enter
+"\C-f": "tmux-sessionizer\n"
+set colored-stats on

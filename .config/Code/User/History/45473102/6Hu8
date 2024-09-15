@@ -1,0 +1,14 @@
+Use fixed positioning for sidebar
+
+All the utilities and navigation links are available
+to the user no matter how far he scrolls
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is based on 'origin/main', but the upstream is gone.
+#   (use "git branch --unset-upstream" to fixup)
+#
+# Changes to be committed:
+#	modified:   style.css
+#

@@ -1,0 +1,13 @@
+* {
+    display: block;
+}
+
+.box1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;   
+}
+
+.box2 {
+    background-color: yellow;
+}

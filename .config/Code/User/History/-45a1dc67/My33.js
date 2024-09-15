@@ -1,0 +1,157 @@
+const myLibrary = [];
+const container = document.querySelector('.container');
+// container and deleteButtons changes later
+const booksDashboard = document.querySelector('.books-dashboard');
+const formDialog = document.querySelector('.form-dialog');
+const newBookButton = document.querySelector('.new-book'); 
+const cancelDialogButton = formDialog.querySelector('.cancel'); 
+const addBookDialogButton = formDialog.querySelector('.add');
+const title = formDialog.querySelector('#title');
+const author = formDialog.querySelector('#author');
+const pages = formDialog.querySelector('#pages');
+const form = formDialog.querySelector('form');
+const booksRead = document.querySelector('.books-read');
+const booksUnRead = document.querySelector('.books-unread');
+
+function Book(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.info = function() {
+        return {
+            title: this.title,
+            author: this.author,
+            pages: this.pages,
+            read: this.read,
+        };
+    }
+};
+
+// add book
+function addBook(title, author, pages, read) {
+    let newBook = new Book(title, author, pages, read);
+    myLibrary.push(newBook);
+};
+
+// delete book
+function deleteBook(index) {
+    if (+ index > -1) {
+        // remove the book from the library array
+        myLibrary.splice(index, 1); 
+        // container.removeChild(booksDashboard);
+
+        // display the remaining elements in the array to the booksDashboard
+        displayBooks()
+    }
+}
+
+// mark the book as read
+function readBook(index) {
+    if (+ index > -1) {
+        let book = myLibrary.at(index);
+        book.read = true;
+
+        displayBooks();
+    }
+}
+
+// update books read (each time the displayBooks() is triggered)
+function updateBooksRead() {
+    console.log('hola')
+    let alreadyRead = myLibrary.filter((book) => book.read);
+    alreadyRead = alreadyRead.map((book) => book.title);
+    booksRead.textContent = alreadyRead.join(', ');
+}
+
+// update books read (each time the displayBooks() is triggered)
+function updateBooksUnRead() {
+    console.log('hola')
+    let alreadyRead = myLibrary.filter((book) => book.read);
+    alreadyRead = alreadyRead.map((book) => book.title);
+    booksRead.textContent = alreadyRead.join(', ');
+} 
+
+// clear the dashboard
+function clearBookDashboard() {
+    let bookCards = Array.from(document.querySelectorAll('.book'));
+    bookCards.forEach(book => {
+        booksDashboard.removeChild(book);
+    });
+}
+
+function displayBooks() {
+    // clear the screen first, because previous books are also displaying and this function
+    // replace the book dashboard with an empty dashboard
+    clearBookDashboard();
+
+    myLibrary.forEach((book) => {
+        // rn adds on top of those books (redundancy) 
+        let bookCard = document.createElement('div');
+        bookCard.classList.toggle('book');
+        
+        bookInfo = book.info(); 
+        bookCard.innerHTML = `<div class="title">Title: ${book.title}</div>
+                            <div class="author">Author: ${book.author}</div>
+                            <div class="pages">Pages: ${book.title}</div>
+                            <div class="read">Read: ${book.read ? 'read' : 'not read'} </div>`;
+        
+        booksDashboard.appendChild(bookCard);
+
+        // button container for add and delete
+        buttonContainer = document.createElement('div');
+        buttonContainer.classList.toggle('delete');
+        buttonContainer.setAttribute('id', `${myLibrary.indexOf(book)}`);
+        
+        // add a delete button to each book whose id = the index of book
+        let deleteButton = document.createElement('button');
+        deleteButton.classList.toggle('deleteButton');
+        deleteButton.textContent = 'Delete Book';
+        buttonContainer.appendChild(deleteButton);
+        bookCard.appendChild(buttonContainer);
+
+        // add a read button to each book whose id = the index of book
+        let readButton = document.createElement('button');
+        readButton.setAttribute('id', `${myLibrary.indexOf(book)}`);
+        readButton.textContent = 'Mark Read';
+        buttonContainer.appendChild(readButton);
+        
+        bookCard.appendChild(buttonContainer);
+        updateBooksRead();
+    });
+};
+
+// delete book button handler
+booksDashboard.addEventListener('click', (e) => {
+    parent = e.target.parentElement;
+    if (e.target.getAttribute('class') === 'deleteButton') {
+        deleteBook(parent.getAttribute('id'));
+    } else {
+        readBook(parent.getAttribute('id'));
+    }
+});
+
+// dialog
+newBookButton.addEventListener('click', () => {
+    formDialog.showModal();
+});
+
+cancelDialogButton.addEventListener('click', () => {
+    formDialog.close()
+});
+
+addBookDialogButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    // readStatus couldn't be checked at the top because by default, not-read is checked
+    // and since its set to const, readStatus would be checked every time by default
+    // we want to see the value of checked when button is clicked
+    let readStatus = formDialog.querySelector('.read-status :checked');
+    let read = (readStatus.value === 'read') ? true : false;
+    addBook(title.value, author.value, pages.value, read);
+    
+    // dispatchEvent() doesn't work because it only triggers the user defined event listeners
+    // and not the default ones [security concerns]
+    form.reset();
+    formDialog.close();
+    displayBooks();
+})

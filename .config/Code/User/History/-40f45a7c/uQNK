@@ -1,0 +1,17 @@
+Create the basic structure of the project
+
+The game will be played in the console, so provide directions
+to go to the console. 
+Not much else to do in the index.html file. This project is 
+mainly for practi
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   README.md
+#	new file:   index.html
+#	new file:   script.js
+#

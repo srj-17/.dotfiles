@@ -1,0 +1,16 @@
+Do basic card-styling, true->read for book read
+
+Had to add so much to the card content because 
+the title had to be seperately styled to bold, so 
+some functional issues *might* arise later because
+of adding wrappers around the each info in the book
+card.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch form-custo
+# Changes to be committed:
+#	modified:   index.html
+#	modified:   script.js
+#	modified:   style.css
+#

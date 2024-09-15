@@ -1,0 +1,6 @@
+.one {
+    padding: 10px;
+    margin: auto;
+    width: min(150px, 100vw);
+    background-color: black;
+}

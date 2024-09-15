@@ -1,0 +1,6 @@
+{
+    "window.titleBarStyle": "custom",
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": ""
+}

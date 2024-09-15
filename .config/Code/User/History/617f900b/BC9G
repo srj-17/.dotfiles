@@ -1,0 +1,14 @@
+Complete initial html & css structure of project 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 2 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	new file:   README.md
+#	new file:   src/restro-pic.jpg
+#	modified:   src/style.css
+#	modified:   src/template.html
+#

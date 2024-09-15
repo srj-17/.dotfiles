@@ -1,0 +1,21 @@
+class Todo {
+    constructor(title, description, duedate, priority, notes, checklist) {
+        if (!title) {
+            console.log("no title");
+        }
+        this.title = title;
+        this.description = description;
+        // have to check if valid duedate
+        this.duedate = new Date(duedate);
+        this.priority = priority;
+        this.notes = notes;
+        this.checklist = checklist;
+        this.status = false;
+    }
+    
+    toggleStatus() {
+       this.status = this.status ? false : true; 
+    }   
+}
+
+export default Todo;

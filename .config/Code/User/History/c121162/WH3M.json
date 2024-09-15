@@ -1,0 +1,5 @@
+{
+    "window.titleBarStyle": "custom",
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true
+}

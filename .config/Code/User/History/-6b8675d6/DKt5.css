@@ -1,0 +1,15 @@
+.box1
+{
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+}
+
+.box2 {
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    border: 20px solid red;
+}

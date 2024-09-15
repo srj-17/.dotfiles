@@ -1,0 +1,5 @@
+alias neofetch="neofetch --source ~/.config/neofetch/ascii/luffy.txt"
+alias nv="nvim"
+alias n="nvim ."
+alias py="python3"
+alias mu="mupdf"

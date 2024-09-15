@@ -1,0 +1,6 @@
+[user]
+	name = ranhoodlum
+	email = ranhoodlum17@gmail.com
+
+[core]
+	sshCommand = ssh -i ~/.ssh/ranhoodlum

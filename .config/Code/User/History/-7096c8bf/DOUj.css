@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    resize: 2;
+    width: 1000px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: repeat(2, 200px);
+  }
+
+.item {
+    background-color: lightblue;
+    border: 2px solid grey;
+}

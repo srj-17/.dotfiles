@@ -1,0 +1,17 @@
+.container {
+    background-color: lightblue;
+    display: flex;
+}
+
+.container div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    width: 250px;
+    flex: 1 1 auto ;
+    
+}
+
+.container .two {
+    flex-shrink: 0;
+}

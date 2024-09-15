@@ -1,0 +1,13 @@
+Make display after adding books work as expected
+
+Achieved by clearing the books-dashboard (clear by
+creating a new element and replacing the old one with
+it) and then displaying books in the myLibrary.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch deleteButton
+# Changes to be committed:
+#	modified:   index.html
+#	modified:   script.js
+#

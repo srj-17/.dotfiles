@@ -1,0 +1,18 @@
+.container {
+    background-color: lightblue;
+    display: flex;
+}
+
+.container div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    width: 250px;
+    flex: 1 1 auto ;
+    /* flex property makes items responsive (grow and shrink) with respect
+        to their containers */
+}
+
+.container .two {
+    flex-shrink: 0;
+}

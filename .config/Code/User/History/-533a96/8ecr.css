@@ -1,0 +1,16 @@
+* {
+}
+
+.box1 {
+    display: block;
+    background-color: red;
+    width: 100px;
+    height: 100px;   
+    padding: 10px;
+}
+
+.box2 {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}

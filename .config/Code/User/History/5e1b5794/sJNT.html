@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- defer tells browser to continue downloading HTML element once the script element has been reached
+        this method only works for external js. for internal, we have to use the below DOMContentLoaded 
+        event listner -->
+    
+        <script src="js.js" defer></script> 
+    
+    <!-- what the heck, just adding defer made it work * because the script loaded before actual HTML
+                                             or use the DOMContentLoaded event in script -->
+</head>
+<body>
+    <button type="button">Clickme</button>
+    <button type="button">Clickmeagain</button>
+    <button type="button">ClickMeAgainAndAgain</button>
+</body>
+</html>

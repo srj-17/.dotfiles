@@ -1,0 +1,20 @@
+First commit for template of webpack
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   .gitignore
+#	new file:   README.md
+#	new file:   package-lock.json
+#	new file:   package.json
+#	new file:   src/index.js
+#	new file:   src/styles.css
+#	new file:   src/template.html
+#	new file:   webpack.common.js
+#	new file:   webpack.dev.js
+#	new file:   webpack.prod.js
+#

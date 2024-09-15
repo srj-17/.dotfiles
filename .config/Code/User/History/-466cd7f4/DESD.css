@@ -1,0 +1,12 @@
+/* This rule will only select the divs with the class child */
+main > div {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 5px;
+}
+  
+  /* This rule will only select the divs with the class grand-child */
+main > div > div {
+    background-color: white;
+}

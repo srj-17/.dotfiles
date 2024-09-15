@@ -1,0 +1,56 @@
+.container {
+    display: grid;
+    resize: both;
+    overflow: auto;
+    width: 500px;
+    height: 200px;
+    gap: 5px;
+    padding: 5px;
+    grid-template: repeat(2, <div class="grid-container">
+    <div class="grid-item">
+      <p>Odin 1</p>
+      <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+    </div>
+    <div class="grid-item">
+      <p>Odin 2</p>
+      <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+    </div>
+    <div class="grid-item">
+      <p>Odin 3</p>
+      <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+    </div>
+    <div class="grid-item">
+      <p>Odin 4</p>
+      <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+    </div>
+    <div class="grid-item">
+      <p>Odin 5</p>
+      <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+    </div>
+    <div class="grid-item">
+      <p>Odin 6</p>
+      <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+    </div>
+    <div class="grid-item">
+      <p>Odin 7</p>
+      <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+    </div>
+    <div class="grid-item">
+      <p>Odin 8</p>
+      <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+    </div>
+    <div class="grid-item">
+      <p>Odin 9</p>
+      <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+    </div>
+    <div class="grid-item">
+      <p>Odin 10</p>
+      <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+    </div>
+  </div>) / repeat(5, 1fr);
+}
+
+.item {
+    background-color: lightblue;
+    border: 2px solid grey;
+}

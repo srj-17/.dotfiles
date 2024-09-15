@@ -1,0 +1,10 @@
+Limit the number of entered numbers to 9
+
+Results are shown in scientific 'e' notation 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch displaysize
+# Changes to be committed:
+#	modified:   script.js
+#

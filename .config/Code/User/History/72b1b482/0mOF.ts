@@ -1,0 +1,2 @@
+type bool = true | false;
+

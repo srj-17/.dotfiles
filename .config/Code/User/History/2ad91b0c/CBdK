@@ -1,0 +1,17 @@
+Solve '.' press problem after memory operation
+
+When operation was done and . was pressed, it was
+stuck there until the next operation and in next number
+press, it showed the number only.
+eg: 8 + 3 = (shows 11) --> 11 in memory.accumulator
+Now, if you pressed '.' before, it showed 11. and again
+if you pressed 3, it showed only 3.
+i.e. 11 . --> 11. 3 --> 3 
+This happens because operation pachi displayBuffer
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch point
+# Changes to be committed:
+#	modified:   script.js
+#

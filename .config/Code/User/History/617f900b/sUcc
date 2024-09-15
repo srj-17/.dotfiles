@@ -1,0 +1,18 @@
+Remove dist from .gitignore
+
+For pushing the dist to github, in order to host it
+using github pages
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   .gitignore
+#	new file:   dist/19864795767cb9b9f1af.jpg
+#	new file:   dist/4f41bf40104d00d43d2e.jpg
+#	new file:   dist/527e75034e77ca8e597c.jpg
+#	new file:   dist/index.html
+#	new file:   dist/main.js
+#

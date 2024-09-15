@@ -1,0 +1,19 @@
+Fix Announcements, apply same styles to trending
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is based on 'origin/main', but the upstream is gone.
+#   (use "git branch --unset-upstream" to fixup)
+#
+# Changes to be committed:
+#	new file:   assets/itadori.png
+#	deleted:    assets/lego-logo.png
+#	new file:   assets/luffy.png
+#	new file:   assets/spidy.png
+#	new file:   assets/urahara.jpg
+#	modified:   index.html
+#	modified:   style.css
+#

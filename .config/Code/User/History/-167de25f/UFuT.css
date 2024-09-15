@@ -1,0 +1,19 @@
+.container {
+    background-color: aquamarine;
+    padding: 2px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* based on main axis */
+    align-items: center;    /* based on cross axis */
+}
+
+/* Remember: main axis for flex-direction: row  is row-direction (width wise) whereas for flex-direction:col
+ is height wise */
+
+/*  */
+
+.box {
+    background-color: azure;
+    margin: 2px;
+}

@@ -1,0 +1,11 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    box-shadow: 10px 10px 10px -10px black;
+}
+
+/* spread means how much the shadow spreads, means how far our box is from the ground
+or how close it is to the sun. 
+-ve value for it means the shadow is smaller (shrinked) 
+i.e. we go closer to the ground, or the shadow*/

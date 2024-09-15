@@ -1,0 +1,18 @@
+Add 2 different webpack configs 
+
+for deployment and production, and change the script
+in package.json to run them as needed,
+to run the webpack.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   dist/index.html
+#	modified:   dist/main.js
+#	modified:   package.json
+#	renamed:    webpack.config.js -> webpack.dev.js
+#	new file:   webpack.prod.js
+#

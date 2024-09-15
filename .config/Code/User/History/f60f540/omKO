@@ -1,0 +1,12 @@
+Incomplete commit: swapButtons() doesn't work yet
+
+It doesn't work as expected after a certain number
+of times.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch endgame
+# Changes to be committed:
+#	modified:   index.html
+#	modified:   script.js
+#

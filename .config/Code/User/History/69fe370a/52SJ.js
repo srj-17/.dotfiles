@@ -1,0 +1,2 @@
+p = document.querySelector("p");
+

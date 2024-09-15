@@ -1,0 +1,12 @@
+Add buttons for rock, paper and sissors
+
+Disable playGame function, will enable later. This is for simplicity.
+Also disable playAgain function. 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch rps-ui
+# Changes to be committed:
+#	modified:   index.html
+#	modified:   script.js
+#

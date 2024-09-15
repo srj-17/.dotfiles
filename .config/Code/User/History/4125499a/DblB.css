@@ -1,0 +1,17 @@
+.container {
+    background-color: lightblue;
+    display: flex;
+}
+
+.container div {
+    background-color: lightgoldenrodyellow;
+    color: #000;
+    flex: 1 1 auto;
+    margin: 4px;
+    padding: 2px;
+    text-align: center;
+}
+
+.container .two {
+    flex-shrink: 0;
+}

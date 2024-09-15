@@ -1,0 +1,14 @@
+Add functions for abstracting away click handlers
+
+Everything now is done by the gameController. Also, 
+many of the functions that were not used outside were
+exported by gameController module. I've reduced it to
+as minimum as possible. 
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch working-state
+# Changes to be committed:
+#	modified:   script.js
+#

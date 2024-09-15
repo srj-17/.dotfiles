@@ -1,0 +1,24 @@
+Improve 04.removeFromArray solution
+
+Apply pre-exisiting methods to solve the problem instead
+of what I did before. 
+Creating newArray and pushing the items not in the removal
+list solves the problem created by
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   removeFromArray.js
+#
+# Changes not staged for commit:
+#	modified:   ../01_helloWorld/helloWorld.js
+#	modified:   ../02_repeatString/repeatString.js
+#	modified:   ../02_repeatString/repeatString.spec.js
+#	modified:   ../03_reverseString/reverseString.js
+#	modified:   ../03_reverseString/reverseString.spec.js
+#

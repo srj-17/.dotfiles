@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    resize: both;
+    overflow: auto;
+    width: 500px;
+    height: 200px;
+    gap: 5px;
+    padding: 5px;
+    grid-template: repeat(2, min(100px, 200px, 300px, 400px, 500px)) / repeat(5, max(100px, 200px, 300px, 400px, 500px));
+}
+
+.item {
+    background-color: lightblue;
+    border: 2px solid grey;
+}

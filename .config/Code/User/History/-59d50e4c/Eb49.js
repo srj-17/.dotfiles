@@ -1,0 +1,1 @@
+const announcementText = <document className="querySelectorAll"></document>(".announcement-text");

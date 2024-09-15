@@ -1,0 +1,10 @@
+.room {
+    border: 1px solid;
+    font-size: 50%;
+    background-color: lightblue;
+}
+
+.container {
+    display: inline-grid;
+    grid-template: repeat(5, 40px) / repeat(5, 40px)
+}

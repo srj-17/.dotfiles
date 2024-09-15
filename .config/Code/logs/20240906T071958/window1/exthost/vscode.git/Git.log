@@ -1,0 +1,33 @@
+2024-09-06 07:20:03.685 [info] [main] Log level: Info
+2024-09-06 07:20:03.686 [info] [main] Validating found git in: "git"
+2024-09-06 07:20:03.760 [info] [main] Using git "2.34.1" from "git"
+2024-09-06 07:20:03.760 [info] [Model][doInitialScan] Initial repository scan started
+2024-09-06 07:20:03.792 [info] > git rev-parse --show-toplevel [18ms]
+2024-09-06 07:20:03.803 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2024-09-06 07:20:03.833 [info] [Model][openRepository] Opened repository: /home/srj/repos/srj-17/todo-list
+2024-09-06 07:20:03.868 [info] > git config --get commit.template [18ms]
+2024-09-06 07:20:03.899 [info] > git rev-parse --show-toplevel [34ms]
+2024-09-06 07:20:03.979 [info] > git rev-parse --show-toplevel [74ms]
+2024-09-06 07:20:03.979 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [92ms]
+2024-09-06 07:20:04.146 [info] > git rev-parse --show-toplevel [159ms]
+2024-09-06 07:20:04.148 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-09-06 07:20:04.355 [info] > git status -z -uall [49ms]
+2024-09-06 07:20:04.427 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [51ms]
+2024-09-06 07:20:04.439 [info] > git config --get commit.template [14ms]
+2024-09-06 07:20:04.441 [info] > git config --local branch.main.vscode-merge-base [8ms]
+2024-09-06 07:20:04.456 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [9ms]
+2024-09-06 07:20:04.507 [info] > git merge-base refs/heads/main refs/remotes/origin/main [40ms]
+2024-09-06 07:20:04.518 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [64ms]
+2024-09-06 07:20:04.523 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [6ms]
+2024-09-06 07:20:04.546 [info] > git status -z -uall [3ms]
+2024-09-06 07:20:04.557 [info] > git diff --name-status -z --diff-filter=ADMR 25d0f05ee1159487952447d9bf45f0255879bae0...refs/remotes/origin/main [25ms]
+2024-09-06 07:20:04.633 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [80ms]
+2024-09-06 07:20:04.671 [info] > git config --local branch.main.vscode-merge-base [33ms]
+2024-09-06 07:20:04.723 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [12ms]
+2024-09-06 07:20:04.747 [info] > git check-ignore -v -z --stdin [26ms]
+2024-09-06 07:20:05.215 [info] > git show --textconv :src/template.html [10ms]
+2024-09-06 07:20:05.220 [info] > git ls-files --stage -- /home/srj/repos/srj-17/todo-list/src/template.html [7ms]
+2024-09-06 07:20:05.234 [info] > git cat-file -s f4aa66806c0ed4d6303e4553d51b2a564047cb67 [3ms]
+2024-09-06 07:21:13.154 [info] > git show --textconv :src/template.html [11ms]
+2024-09-06 07:21:13.155 [info] > git ls-files --stage -- /home/srj/repos/srj-17/todo-list/src/template.html [4ms]
+2024-09-06 07:21:13.163 [info] > git cat-file -s f4aa66806c0ed4d6303e4553d51b2a564047cb67 [5ms]

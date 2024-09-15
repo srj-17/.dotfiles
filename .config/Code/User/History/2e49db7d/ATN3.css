@@ -1,0 +1,35 @@
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-aria: main1;
+}
+
+.item3 {
+    grid-aria: main2;
+}
+
+.item4 {
+    grid-aria: main3;
+}
+
+.item5 {
+    grid-aria: main4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, [column] 1fr);
+    background-color: rgba(0, 255, 255, 0.288);
+    gap: 14px;
+
+    grid-template-areas:
+        "header header"
+        "main1 main2"
+        "main3 main4"
+}
+
+.container div {
+    border: 5px solid black;
+}

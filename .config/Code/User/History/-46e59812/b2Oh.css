@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    padding: 3px;
+}
+
+.box {
+    margin: 2px;
+    height: 80px;
+    background-color: lightcoral;
+    flex: 1 1 auto;
+}
+
+/* flex-grow: 1 --> div will grow in same proportion as the window size */
+/* but flex column doesn't grow as we predict, because of various reasons, and we don't need to understand
+very much about it now, since we don't use it very often in real world, unless we're writing arabic or sth */

@@ -1,0 +1,2 @@
+- Mixins are templates for classes
+- Js class can only have 1 superclass, so 

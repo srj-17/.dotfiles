@@ -1,0 +1,9 @@
+.container {
+    background-color: lightblue;
+    display: flex;
+}
+
+.item {
+    background-color: lightgoldenrodyellow;
+    flex: 1;
+}

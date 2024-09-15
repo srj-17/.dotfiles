@@ -1,0 +1,17 @@
+Bring description adjacent to recipe image
+
+By updating css with inline-block after adding
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   index.html
+#	modified:   recipes/aalu_parautha.html
+#	modified:   recipes/fried_chicken.html
+#	modified:   recipes/momos.html
+#	modified:   style.css
+#

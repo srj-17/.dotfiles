@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    resize: both;
+    overflow: auto;
+    width: 500px;
+    height: 200px;
+    gap: 5px;
+    padding: 5px;
+    
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, minmax(150px, 200px));
+
+    /* grid-template-rows: repeat(2, min(200px, 50%));
+    grid-template-columns: repeat(5, max(120px, 15%)); */
+
+    /* grid-template: repeat(2, 1fr) / repeat(5, 1fr); */
+}
+
+.item {
+    background-color: lightblue;
+    border: 2px solid grey;
+}

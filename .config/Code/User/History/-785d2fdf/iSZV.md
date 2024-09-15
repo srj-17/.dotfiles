@@ -1,0 +1,1 @@
+Mixins are templates for classes

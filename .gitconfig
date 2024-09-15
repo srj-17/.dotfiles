@@ -1,0 +1,12 @@
+[user]
+	name = srj-17
+	email = saugatrijal17@gmail.com
+
+[core]
+	sshCommand = ssh -i ~/.ssh/id_ed25519
+
+[init]
+	defaultBranch = main
+
+[includeif "gitdir:~/repos/ranhoodlum/"]
+    path = .gitconfig-ranhoodlum

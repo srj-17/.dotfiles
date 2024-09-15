@@ -1,0 +1,10 @@
+.example {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+
+.item {
+    background-color: lightblue;
+    border: 2px solid grey;
+}

@@ -1,0 +1,15 @@
+{
+    "window.titleBarStyle": "custom",
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.colorTheme": "Tokyo Night",
+    "liveServer.settings.donotVerifyTags": true,
+    "workbench.startupEditor": "none",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}

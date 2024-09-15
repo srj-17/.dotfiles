@@ -1,0 +1,14 @@
+Add feature for drawing with opacity
+
+Each time a cursor moves over a pixel, opacity is increased.
+This adds realism to the drawing.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch opacity
+# Changes to be committed:
+#	modified:   script.js
+#
+# Changes not staged for commit:
+#	modified:   script.js
+#

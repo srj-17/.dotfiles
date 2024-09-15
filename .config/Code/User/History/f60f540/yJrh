@@ -1,0 +1,13 @@
+Fix the reset button bug on simultaneous plays
+
+Event listener was being attached on each playGame()
+that was causing the event listener to be fired as many
+times as it was attached. 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch endgame
+# Changes to be committed:
+#	modified:   index.html
+#	modified:   script.js
+#

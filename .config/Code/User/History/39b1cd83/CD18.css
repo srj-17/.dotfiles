@@ -1,0 +1,10 @@
+/* for consistent forms across widgets */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/*  */

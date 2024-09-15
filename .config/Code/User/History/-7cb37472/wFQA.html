@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pseudo Elements
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .emojify::before {
+          content: '😎 🥸 🤓';
+      }
+      
+        .emojify::after {
+          content: '🤓 🥸 😎';
+      }
+      </style>
+</head>
+<body>
+      
+      <body>
+        <div> Let's <span class="emojify">emojify</span>this span!</div>
+      </body>
+</body>
+</html>

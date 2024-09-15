@@ -1,0 +1,15 @@
+Seperate the form controls to different Lines
+
+By adding divs. Also, use a different font called
+Montserrat from google on the .right-info
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 3 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   index.html
+#	modified:   style.css
+#

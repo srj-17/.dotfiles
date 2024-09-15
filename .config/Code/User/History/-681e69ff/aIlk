@@ -1,0 +1,16 @@
+Remove comment from all html, css, js
+
+Not needed for 'range' input as we have min and max 
+and user can't go outside.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   index.html
+#	modified:   script.js
+#	modified:   style.css
+#

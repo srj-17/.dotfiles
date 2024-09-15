@@ -1,0 +1,13 @@
+Add implementation for showing winner in dialog
+
+Showing winner in an elevated window is better, since
+its more 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch interactive-board
+# Changes to be committed:
+#	modified:   index.html
+#	modified:   script.js
+#	modified:   style.css
+#

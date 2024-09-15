@@ -1,0 +1,16 @@
+.container {
+  resize: both;
+  overflow: auto;
+  display: grid;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid grey;
+  background-color: skyblue;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.item {
+    background-color: lightblue;
+    border: 2px solid grey;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="empty"/>
+  <property name="panels" type="empty">
+    <property name="panel-1" type="empty">
+      <property name="position" type="empty"/>
+      <property name="length" type="empty"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="empty"/>
+      <property name="background-style" type="empty"/>
+      <property name="background-alpha" type="empty"/>
+      <property name="enter-opacity" type="empty"/>
+      <property name="leave-opacity" type="empty"/>
+      <property name="plugin-ids" type="empty"/>
+      <property name="autohide-behavior" type="uint" value="2"/>
+    </property>
+    <property name="dark-mode" type="bool" value="false"/>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="empty"/>
+    <property name="plugin-2" type="empty"/>
+    <property name="plugin-3" type="empty">
+      <property name="items" type="array">
+        <value type="string" value="17177328981.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-4" type="empty">
+      <property name="items" type="array">
+        <value type="string" value="17177328982.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-5" type="empty">
+      <property name="items" type="array">
+        <value type="string" value="17177328983.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-6" type="empty">
+      <property name="show-handle" type="empty"/>
+      <property name="middle-click" type="empty"/>
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="show-tooltips" type="bool" value="true"/>
+    </property>
+    <property name="plugin-7" type="empty">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="empty"/>
+    </property>
+    <property name="plugin-8" type="empty">
+      <property name="names-visible" type="empty"/>
+      <property name="show-frame" type="empty"/>
+      <property name="known-items" type="array">
+        <value type="string" value="flameshot"/>
+        <value type="string" value="ViberPC"/>
+        <value type="string" value="qBittorrent"/>
+        <value type="string" value="blueman"/>
+      </property>
+    </property>
+    <property name="plugin-9" type="empty"/>
+    <property name="plugin-10" type="empty"/>
+    <property name="plugin-11" type="empty"/>
+    <property name="plugin-12" type="empty">
+      <property name="enable-keyboard-shortcuts" type="empty"/>
+      <property name="enable-mpris" type="empty"/>
+      <property name="mixer-command" type="empty"/>
+      <property name="show-notifications" type="empty"/>
+      <property name="mpris-players" type="string" value="chromium.instance1853;chromium.instance3130;chromium.instance5071;firefox.instance_1_104;firefox.instance_1_113;firefox.instance_1_119;firefox.instance_1_123;firefox.instance_1_129;firefox.instance_1_133;firefox.instance_1_140;firefox.instance_1_149;firefox.instance_1_158;firefox.instance_1_161;firefox.instance_1_196;firefox.instance_1_213;firefox.instance_1_252;firefox.instance_1_331;firefox.instance_1_435;firefox.instance_1_62;firefox.instance_1_63;firefox.instance_1_64;firefox.instance_1_65;firefox.instance_1_66;firefox.instance_1_67;firefox.instance_1_69;firefox.instance_1_71;firefox.instance_1_73;firefox.instance_1_76;firefox.instance_1_80;firefox.instance_1_81;firefox.instance_1_87;firefox.instance_1_88;firefox.instance_1_89;mps-youtube.instance32867"/>
+    </property>
+    <property name="plugin-13" type="empty">
+      <property name="digital-time-format" type="empty"/>
+      <property name="digital-layout" type="empty"/>
+      <property name="digital-date-font" type="empty"/>
+      <property name="digital-time-font" type="empty"/>
+    </property>
+    <property name="plugin-14" type="empty"/>
+  </property>
+</channel>

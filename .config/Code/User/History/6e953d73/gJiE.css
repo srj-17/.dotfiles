@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    resize: both;
+    overflow: auto;
+    grid-template: 150px 150px / 150px 150px 150px 150px 150px;
+}
+
+.item {
+    background-color: lightblue;
+    border: 2px solid grey;
+    gap: 5px;
+}

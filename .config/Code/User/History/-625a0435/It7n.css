@@ -1,0 +1,15 @@
+* {
+    padding: 0;   
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.header {
+    display: grid;
+    place-content: center;
+}

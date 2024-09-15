@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    padding: 3px;
+}
+
+.box {
+    background-color: lightcoral;
+    flex: auto;
+}

@@ -1,0 +1,11 @@
+// add the ((first to second) to third) to fourth ...
+
+const sumAll = function(min, max) {
+    let sum = 0;
+    while(min !== max) {
+        
+    }
+};
+
+// Do not edit below this line
+module.exports = sumAll;

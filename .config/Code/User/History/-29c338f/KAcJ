@@ -1,0 +1,21 @@
+Create todo class
+
+This class is used to store the propertes and methods
+of the todo object
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   .gitignore
+#	new file:   day.js
+#	new file:   dist/index.html
+#	new file:   dist/main.js
+#	new file:   dist/main.js.map
+#	modified:   src/index.js
+#	new file:   src/project.js
+#	modified:   src/template.html
+#	new file:   src/todo.js
+#

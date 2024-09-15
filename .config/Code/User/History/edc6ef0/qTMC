@@ -1,0 +1,15 @@
+Convert form action to get
+
+Would usually use "post" in most cases, but
+use get here so as to not create an error when 
+clicking submit => Create Account
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 2 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   index.html
+#

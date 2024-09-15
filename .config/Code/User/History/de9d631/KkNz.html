@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left-banner">
+        <img class="seaside-img" src="assets/seaside.jpg" alt="photo of seaside" width="100px" height="auto">
+        <div class="floating-title">
+            <img class="odin-logo" src="assets/odin-lined.png" alt="Logo of odin" width="100px" height="auto">
+            <div class="title-text">ODIN</div>
+        </div>
+        <div class="photo-credit">
+            Photo by <a href="https://unsplash.com/@shegiva?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Grigorii Shcheglov</a> on <a href="https://unsplash.com/photos/an-aerial-view-of-a-body-of-water-rnejLwmsW1c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </div>
+    </div>
+    <div class="right-info">
+        <div class="info top">
+            <p>
+                You know you need something like this in your life to realize your
+                deepest dreams. Sign up now to get started. 
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
+        </div>
+        <div class="form middle">
+            <p>Let's do this!</p>
+            <form action="/" method="post" class="signup-form" id="signup-form">
+                <div class="firstname">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="firstname" id="first-name" minlength="1" maxlength="20" required>
+                </div>
+                <div class="lastname">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="lastname" id="last-name" minlength="1" maxlength="20" required>
+                </div>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email">
+                <label for="ph-no">PHONE NUMBER</label>
+                <input type="tel" name="phoneNo" id="ph-no" required>
+                <label for="pass">PASSWORD</label>
+                <input type="password" name="password" id="pass" required minlength="8">
+                <label for="pass-confirm">PASSWORD</label>
+                <input type="password" name="password" id="pass-confirm" required minlength="8">
+                <!-- TODO: password validation using only html -- as read somepage before -->
+            </form>
+        </div>
+        <div class="bottom">
+            <button type="submit" form="signup-form">Create Account</button>
+            <p>
+                Already have an account? <a href="/login.html">Log in</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

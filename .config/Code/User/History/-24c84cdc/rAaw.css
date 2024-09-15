@@ -1,0 +1,27 @@
+div {
+    background-color: green;
+    margin: 2px;
+}
+
+/* default: block display */
+.box1, .extra1 {
+    width: 50%;
+    display: block;
+}
+
+.box2 {
+    display: inline;
+}
+
+.box3 {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 2cm;
+}
+
+.extra {
+    width: 45%;
+    display: inline-block;
+}
+
+.

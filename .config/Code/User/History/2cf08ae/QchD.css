@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --primary-bgcolor: #158583;
+    --header-color: #50742e;
+    --primary-text-color: #e2e8f0;
+    --pink: #f09a81;
+    --yellow: #e4b313;
+    --subtle-white: #e2e8f0;
+    --white: #ffffff;
+    --std-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.26);
+
+    --std-padding: 20px;
+}
+
+/* --- main container --- */
+.container {
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 4fr;
+    grid-template-areas: 
+        "sidebar-container header"
+        "sidebar-container main";
+}
+
+/* --- sidebar-container --- */
+.sidebar-container {
+    grid-area: sidebar-container;
+    background-color: var(--primary-bgcolor);
+}
+
+.sidebar {
+    padding: var(--std-padding);
+    font-size: 1rem;
+    display: grid;
+    gap: 50px;
+    
+    position: fixed;
+}
+
+.sidebar .brand {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.sidebar svg {
+    fill: var(--primary-text-color);
+}
+
+.logo svg {
+    width: 50px;
+    height: 50px;
+}
+
+.page-links svg,
+.utility-links svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--primary-text-color);
+}
+
+.page-links,
+.utility-links {
+    color: var(--primary-text-color);
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.sidebar ul {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.sidebar li {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: left;
+    align-items: center;
+    gap: .8rem;
+}
+
+    /* --- header --- */
+.header {
+    --gap-between: 20px;
+    padding: var(--std-padding) 40px var(--std-padding) 30px;
+
+    background-color: var(--header-color);
+    color: var(--primary-text-color);
+    position: relative;
+    /* box-shadow: 3px 0px 5px black; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "search-bar search-bar profile"
+        "greeting greeting actions";
+}
+
+        /* header has 2 elements, nested which need to be given appropriate number of rows or columns */
+.search-bar {
+    grid-area: search-bar;
+
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar button,
+.profile button {
+    display: grid;
+    align-items: center;
+    background-color: transparent;
+    border: 0px;
+}
+
+.search-bar input[type="search"] {
+    border-radius: 15px;
+    border: 0px;
+    width: 48vw;
+    height: 30px;
+    outline: none;
+    padding: 10px;
+}
+
+/* search-bar overflows for widths smaller than 945 px, so decreased its size as soon as it reaches that width */
+/* this could also be used by using another unit than "vw" for width of search bar */
+@media (max-width: 1210px) {
+    .search-bar input[type="search"] {
+        width: 25vw;
+    }
+}
+
+.profile {
+    grid-area: profile;
+    justify-self: end;
+    
+    display: grid;
+    grid-auto-flow: column; /* extra elements on grid are given as much width as their content */
+    grid-template-columns: 40px 60px;
+    align-items: center;
+    font-weight: bold;
+}
+
+            /* profile has further 2 elements which need to be nested because image is inline, and inline elements
+                don't sit on baseline in normal block-flow */
+.profile-pic img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.greeting {
+    display: grid; 
+    align-items: center;
+    gap: 15px;
+    grid-auto-flow: column;
+    grid-template-areas: 
+        "profile-pic greeting-text";
+}
+
+.greeting .profile-pic {
+    grid-area: profile-pic;
+    display: grid;
+    align-self: center;
+}
+
+.greeting-text {
+    display: grid;
+}
+
+.greeting .hi-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.greeting .user-handle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: grid;
+    /* can't find another way to stretch the width, always text defaults to min-content width */
+    width: 40vw; 
+}
+
+.greeting img {
+    width: 70px;
+    height: 70px;
+}
+
+.actions {
+    grid-area: actions;
+    align-self: center;
+    justify-self: end;
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.actions button {
+    border: 0;
+    border-radius: 20px;
+    background-color: var(--primary-bgcolor);
+    padding: 5px 0px;
+    width: 90px;
+    color: var(--primary-text-color);
+    font-weight: bold;
+}
+
+/* --- main --- */
+.main {
+    grid-area: main;
+    background-color: var(--subtle-white);
+    padding: 30px var(--std-padding) 50px 20px;
+    box-shadow: inset 0 10px 10px -12px black;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "projects-container extras";
+}
+
+    /* inside main */
+.main .projects-container,
+.main .announcements-container,
+.main .trending-container {
+    display: grid;
+    grid-template-rows: 30px;
+}
+
+.projects-container {
+    margin-right: 20px;
+}
+
+.projects-header,
+.announcements-header,
+.trending-header {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.projects-container .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.projects .project {
+    background-color: #76B041;
+    background-color: var(--white);
+    border-radius: 5% 25%;
+    box-shadow: var(--std-box-shadow);
+    border-left: 8px solid var(--yellow);
+    border-top: 3px solid var(--yellow);
+
+    padding: 25px 20px;
+    height: 200px;
+    
+    display: grid;
+    grid-template-rows: 25px 1fr 25px;
+    justify-content: start;
+    align-items: start;
+}
+
+.project .project-header {
+    font-weight: bold;
+}
+
+.project .project-text {
+    font-size: 0.9rem;
+    justify-self: start;
+    color: grey
+}
+
+.project .project-utls {
+    justify-self: end;
+    align-self: flex-end;
+
+    display: flex;
+    gap: 20px;
+}
+
+.main .extras {
+    grid-area: extras;
+    display: grid;
+    gap: 30px;
+}
+
+.announcements-container .announcements,
+.trending-container .trending {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    
+    
+    padding: 8px 15px 8px 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--std-box-shadow);
+}   
+
+.announcement {
+    /* background-color: #76B041; */
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+    margin: 0;
+    padding: 14px 0 18px 0;
+    
+    overflow: hidden;  
+    /* multi-line ellipse needs external js library */
+}
+
+.announcement:nth-last-child(1) {
+    border-bottom: 0;
+}
+
+.announcement-header {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.announcement-text {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: grey;
+}
+
+.trending-container .trending {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px 15px;
+    
+    gap: 15px;
+}
+
+.trending .trending-profile {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+
+    font-size: 0.8rem;
+}
+
+.trending-profile .trending-profile-info {
+    align-self: center;
+    height: min-content;
+}
+
+.trending-profile .trending-profile-tag {
+    color: grey;
+    /* height: min-content; */
+    /* margin-top: -5px;  */
+    /* don't wanna use -ve margin */
+}
+
+.trending-profile .trending-profile-pic {
+    display: grid;
+    align-items: center;
+}
+
+.trending-profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
