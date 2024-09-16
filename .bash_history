@@ -1,6 +1,3 @@
-exit
-cd .tmux.conf 
-nv .tmux.conf 
 tmu
 tmux
 exit
@@ -497,4 +494,7 @@ exit
 clear
 npm run dev
 clear
+exit
+nv
+n
 exit

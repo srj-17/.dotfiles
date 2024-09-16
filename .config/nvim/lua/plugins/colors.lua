@@ -9,14 +9,17 @@ return {
     },
     {
         "folke/tokyonight.nvim",
+        dependencies = {
+            "nvim-lualine/lualine.nvim",
+        },
         lazy = false,
         priority = 1000,
         config = function()
             require("tokyonight").setup({
-                transparent = true,
+                transparent = false,
                 styles = {
-                    sidebars = "transparent",
-                    floats = "transparent",
+                    -- sidebars = "transparent",
+                    -- floats = "transparent",
                     functions = {
                         italic = true,
                         bold = true,
@@ -30,6 +33,9 @@ return {
                 },
             })
             vim.cmd.colorscheme("tokyonight-moon")
+            require("lualine").setup({
+                options = { theme = "tokyonight-moon", }
+             })
         end,
     },
 	{
@@ -46,16 +52,13 @@ return {
         end
 	},
     {
-        -- theme kanagawa
-        "catppuccin/nvim",
+        "morhetz/gruvbox",
         config = function()
-            require("catppuccin").setup({
-                flavour = "mocha",
-                name = "catppuccin",
-                priority = 1000,
-            })
-            -- set theme catppucchin each time nvim starts
-            -- vim.cmd.colorscheme("catppuccin")
-        end,
+            -- vim.cmd.colorscheme("gruvbox");
+            --
+            -- require("lualine").setup({
+                --     options = { theme = "tokyonight-moon", }
+                --  })
+        end
     },
 }
