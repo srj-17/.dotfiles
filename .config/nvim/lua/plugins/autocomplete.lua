@@ -16,10 +16,16 @@
 
 return {
     {
-        -- brackets autocompletion, unrelated to anything below
-        'm4xshen/autoclose.nvim',
-        config = function ()
-            require("autoclose").setup()
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+        -- use opts = {} for passing setup options
+        -- this is equivalent to setup({}) function
+    },
+    {
+        "numToStr/Comment.nvim",
+        config = function()
+            require("Comment").setup({})
         end
     },
     {
