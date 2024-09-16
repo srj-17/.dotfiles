@@ -1,500 +1,500 @@
+exit
+cd .tmux.conf 
+nv .tmux.conf 
+tmu
+tmux
+exit
+curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh
+clear
+ls
+cd .local/share/fonts/fonts/
+ls
+cd ttf/
+ls
+cd ..
+ls
+cd variable/
+ls
+cd
+clear
+curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh
+clear
+cd .local/share/fonts/
+ls
+cd fonts/
+ls
+cd ttf/
 ls
 clear
-tmux-sessionizer
 exit
+clear
+ls
+clear
+exit
+cd .local/share/fonts/fonts/ttf/.uuid 
+cd .local/share/fonts/fonts/ttf/
+ls
+clear
+cd ..
+rm * -rf
+clear
+cd
+clear
+curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh
+clear
+exit
+clear
+ls
+cd ~/.local/share/fonts/
+ls
+cd fonts/
+ls
+l
+cd ..
+cd TypeTogether/
+ls
+cd TrueType/
+ls
+cd
+find -ri jetbrains
+man find
+find JetBrains .
+clear
+find jetbrains .local/share/fonts/
+clear
+find JetBrains .local/share/fonts/
+find JetBrains ./fonts/
+find JetBrains ~/.fonts/
+exit
+clear
+xpath -q -e 'fontconfig/dir[1]/text()[1]' /etc/fonts/fonts.conf
+clear
+cd /usr/share/fonts/
+ls
+clea
+clear
+clear
+cd
+nv /etc/fonts/fonts.conf 
+nv /usr/local/share/fonts/
+cd /usr/local/share/fonts/
+ls
+cd
+nv /etc/fonts/fonts.conf 
+ls
+cd /etc/fonts/
+ls
+cd conf.d/
+ls
+cd ../conf.avail/
+ls
+cd
+clear
+exit
+nv .tmux.conf 
+clear
+exit
+nv something.md
+nv something.md
+clear
+ls
+clear
+exit
+cla
+clear
+ls
+nv something.md 
+exit
+clear
+cd ~
+ls .zsh*
+rm .zsh_history -rf
+clear
+zsh
+ls
+cd /etc/fonts/
+ls
+nv fonts.conf 
+ls /usr/share/fonts /usr/local/share/fonts 
+nv fonts.conf 
+ls ~/.fonts/
+cd /usr/share/fonts
+ls opentype/
+ls Playwrite
+ls truetype/
+cd truetype/
+lls
+clear
+lls
+ls
+clear
+ls
+mkdir JetBrainsMono/
+sudo mkdir JetBrainsMono/
+sudo mv ../*.ttf JetBrainsMono/
+ls
+cd JetBrainsMono/
+ls
+cd ..
+ls
+cd JetBrainsMono/
+sudo mv *.ttf ..
+cd ..
+sudo rm JetBrainsMono -rf
+clear
+mv ~/Downloads/NerdFontsSymbolsOnly/*.ttf ..
+sudo mv ~/Downloads/NerdFontsSymbolsOnly/*.ttf ..
+ls
+cd ..
+ls
+mv *.ttf truetype/
+sudo mv *.ttf truetype/
+ls
+cd truetype/
+ls
+clear
+exit
+clear
+cd -
+clear
+$OLDPWD = /usr/local/fonts/
+$OLDPWD:/usr/local/fonts/
+$OLDPWD:/usr/share/fonts/
+cd /usr/share/fonts
+ls
+cd truetype/
+ls
+rm *NerdFontSymbo* -rf
+ls
+ls *Nerd
+ls *Nerd*
+rm SymbolsNerd*.ttf
+rm SymbolsNerd*.ttf -rf
+sudo rm SymbolsNerd*.ttf -rf
+clear
+ls
+clear
+cd
+ls
+cd Downloads/
+ls
+rm NerdFontsSymbolsOnly/ Tokyonight-Dark/ JetBrainsMono(1).zip -rf
+rm NerdFontsSymbolsOnly/ Tokyonight-Dark/ JetBrainsMono\(1\).zip -rf
+ls
+rm JetBrainsMono-2.304.zip -rf
+cd jetbrains/
+ls
+cd fonts/
+lls
+ls
+cd ttf/
+ls
+cd ../../..
+ls
+rm jetbrains/ -rf
+mkdir jb
+unzip --help
+man unzip
+clear
+rm JetBrainsMono.zip -rf
+cd ~
+man fin
+man find
+clear
+clear
+ls
+clear
+ls Downloads/
+cd Downloads/
+clear
+mkdir jbm
+unzip JetBrainsMono.zip -d jbm/
+ls
+rm jb -rf
+cd jbm/
+ls
+cd /usr/share/fonts
+ls
+ls cmap/
+ls cMap/
+ls opentype/
+cd truetype/
+ls
+mkdir JetBrainsMono
+sudo mkdir JetBrainsMono
+sudo mv Jet*.ttf JetBrainsMono
+ls
+cd ..
+ls
+ls Playwrite_NG_Modern/
+ls Playwrite_NG_Modern/static/
+sudo ls Playwrite_NG_Modern/static/
+cd truetype/
+ls
+mkdir playrightNG
+ls
+ls
+ls PlaywriteNGModern-*
+ls pla*
+sudo mkdir playwriteNG 
+mv PlaywriteNGModern-*.ttf playwriteNG/
+sudo mv PlaywriteNGModern-*.ttf playwriteNG/
+clear
+ls
+mkdir Roboto
+sudo mkdir Roboto
+mv Roboto*.ttf Roboto
+sudo mv Roboto*.ttf Roboto
+clear
+ls
+sudo mv ~/Downloads/jbm/*.ttf JetBrainsMono/
+clear
+exit
+nv
+nv
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+cd Downloads/
+mkdir symbols
+unzip NerdFontsSymbolsOnly.zip -d symbols/
+cd /usr/share/fonts
+ls
+cd truetype/
+sudo mkdir Symbols
+sudo mkdir SymbolsNerdFont
+clear
+sudo mv ~/Downloads/symbols/*.ttf SymbolsNerdFont/
+clear
+cd JetBrainsMono/
+ls
+mv *Nerd* ~/Downloads/symbols/
+sudo mv *Nerd* ~/Downloads/symbols/
+clear
+exit
+clear
+jq
+clear
+exit
+exit
+exit
+clear
+clear
+set -g status-style 'bg=#333333 fg=#5eacd3'
+nv ~/.tmux.conf 
+clear
+clea
+clear
+exit
+clear
+clear
+cd
+clear
+nv ~/.tmux.conf 
+exit
+clea
+exit
+nv ~/.tmux.conf 
+clear
+clear
+clear
+nv ~/.tmux.conf 
+exit
+clear
+exit
+nv ~/.tmux.conf 
+exit
+clear
+nv ~/.tmux.conf 
+exit
+clear
+ls
+clear
+exit
+clear
+t
+exit
+exit
+exit
+clear
+exit
+exit
+clear
+clear
+exit
+exit
+clear
+exit
+exit
+clear
+clear
+exit
+exit
+clear
+exit
+clear
+ls
+aljkja
+clear
+exit
+clear
+exit
+clear
+exit
+clear
+exit
+clear
+exit
+exit
+cd repos/srj-17/todo-list/
+exit
+clear
+exi
+exit
+clear
+exit
+clear
 :q
 exit
 clear
+exit
 tmux-sessionizer
-nv ~/.config/gtk-3.0/gtk.css 
-nv ~/.config/gtk-3.0/gtk.css 
-clear
-clea
-clear
-nv ~/.config/nvim/
 exit
 clear
 ls
+nv
 clear
+cd ~/Downloads/
 ls
-cd Desktop/
-ls
-nv ~/.bashrc 
-nv .dir_colors
-nv ~/.bashrc 
-nv ~/.dir_colors 
-nv ~/.dir_colors 
-ls
-clear
-ls
-cd
-ls
-clear
-exit
-ls
-clear
-exit
-clear
-nv ~/.bashrc
-ls
-clear
-nv .bashrc 
-bash
-bash
-exit
-clear
-cd .
-cd
-nv .bashrc 
-echo -e "\\033[48;5;95;38;5;214mhello world\\033[0m"
-echo -e "\\033[48;5;95;38;5;025mhello world\\033[0m"
-nv .bashrc 
-nv .bashrc 
-bash
-exit
-exit
-clear
-ls
-clear
-cd repos/
-ls
-clear
-cd random/
-ls
-clear
-nv ~/.bashrc 
-bash
-exit
-clear
-ls
-clear
-nv .bashrc 
-bash
-exit
-clear
-nv .bashrc 
-bash
-exit
-nv ~/.config/nvim/
-nv .bash
-nv .bashrc 
-echo -e "\\033[48;5;95;38;5;214mhello world\\033[0m"
-clear
-#!/bin/bash
-color=16;
-while [ $color -lt 245 ]; do     echo -e "$color: \\033[38;5;${color}mhello\\033[48;5;${color}mworld\\033[0m";     ((color++)); done  
-clear
-nv .bashrc 
-bash
-exit
-n
-n
-clear
-ls
-clear
-n
-clear
-nv ~/.bashrc 
-nv ~/.bashrc 
-bash
-exit
-clear
-exit
-clear
-ls
-ls
-clear
-ls
-clear
-nv ~/.dir_colors 
-ls
-cd bin/
-ls
-clear
-ls
-clear
-cd
-clear
-n
-nv .bashrc 
-bash
-exit
-exit
-clear
-ls
-cd Documents/
-ls
-cd notes\ cs/
-ls
-clear
-cd ..
-ls
-clear
-cd
-nv .bashrc 
-bash
-clear
-nv .bashrc 
-ls
-clear
-ls
-exit
-clear
-ls
-clear
-nv ~/.bashrc 
-ls
-exit
-clear
-ls
-clear
-exit
-clear
-ls
-clear
-ls
-clear
-ls
-clear
-ls
-ls
-clear
-nv ~/.bashrc
-exit
-clear
-ls
-clear
-clear
-nv ~/.bashrc 
-exit
-clear
-ls
-clear
-exit
-ls
-clear
-bash
-exit
-ls
-clear
-ls
-clear
-cd ~/.bashrc 
-nv ~/.bashrc 
-echo $COLORTERM
-clear
-truecolor
-clear
-printf "\x1b[${bg};2;${red};${green};${blue}m\n"
-clear
-ls
-ls
-clear
-nv ~/.bashrc 
-nv ~/.bashrc 
-exit
-ls
-clear
-nv ~/.bashrc 
-ls 
-clear
-ls
-clear
-cd cd repos/
-cd repos/
-ls
-cd
-nv .bashrc 
-ls -F
-nv .bashrc 
-ls -F --color=auto
-clear
-cd .bashrc 
-nv .bashrc 
-exit
-ls
-clear
-clear
-echo $LS_COLOR
-echo $LS_COLORS
-1;36
-clear
-echo 1;36
-clear
-echo 
-echo \[\e[1;36]\]
-clear
-nv .bashrc 
-ls
-clear
-cd clea
-cd repos/
-ls
-lear
-clear
-exit
-ls
-nv ~/.bashrc 
-clear
-cd 
-clear
-ls
-exit
-clear
-ls
-clear
-ls
-nv .bashrc 
-exit
-l
-ls
-clear
-ls
-clear
-ls
-cd bin/
-ls
-clear
-cd ~/.bashrc 
-nv ~/.bashrc 
-echo $dir_colors
-nv ~/.bashrc 
-set colored-stats on
-ls
-cd ls
-cd
-clear
-set colored-stats on
-clear
-ls
-colored-stats=on
-nv ~/.inputrc 
-exit
-n
-n
-clear
-exit
-clear
-exit
-clear
-exit
-clear
-nv .gitignore 
-git init
-git add .
-ls
-rm .git/ -rf
-clear
-ls .gi*
-git init
-clear
-git add .
-git status
-git commit -m "first commit"
-clear
-git remote add origin git@github.com:srj-17/.dotfiles.git
-git push -u origin main
-git status
-nv .gitignore 
-rm .git/ -rf
-clear
-git init
-git add .
-git commit -m "firstcommit"
-clear
-git remote add origin git@github.com:srj-17/.dotfiles.git
-clear
-git remote
-clear
-git push -u origin main
-clea
-clear
-ls
+rm NerdFontsSymbolsOnly.zip JetBrainsMono.zip symbols/ -rf
 clear
-clear
-exit
-clear
-ls .config/
-ls .config/syncthing/
-clear
-nv .gitignore 
-clear
-exit
-clear
-clear
-nv ~/.bashrc 
-cd clear
-nv ~/.inputrc 
-clear
-exit
-clear
-ls
-ls
-cd myscripts
 ls
-clear
-ls
-clear
-cd ..
-ls
-cd bin/
-ls
-clear
-ls
-cd
-clear
-tmux-sessionizer
-ls
-clear
+nv ~/.tmux.conf 
 tmux
-tmux-sessionizer
-clea
-clear
-ls
-clear
-sudo apt install zsh
-clear
-sudo apt install zsh
-clear
-zsh --version
-clear
-zsh
-clear
-ls
-clear
-sudo apt install jetbrains-mono-nerd
-sudo apt search jetbrains
-clear
-clear
-cd Sync/notes/
-ls
-mkdir _random
-cd _random/
-ls
-touch payment.md
-clear
-nv payment.md 
-nv ~/.config/nvim/lua/plugins/autocomplete.lua 
-nv payment.md 
-nv ~/.config/nvim/lua/plugins/autocomplete.lua 
-nv payment.md 
-nv ~/.config/nvim/lua/plugins/autocomplete.lua 
-n
-n
-nv ~/.config/nvim/lua/plugins/autocomplete.lua 
-cd ~/.config/nvim/lua/plugins/
-n
-n
-n
-n
-n
-ls
-clear
-ls
-clear
-ls
-clear
-n
-n
-cd -
-n
-n
-clear
-ls
-cd -
-ls
-n autocomplete.lua 
-clear
-ls
-clear
-cd
-cd dot
-cd dotfiles/
-ls
-clear
-git add .
-lazygit
-clear
-git push
-clear
-ls
-git status
-cd .config/
-ls
-rm google-chrome/ -rf
-git add .
-git commit -m "remove google chrome"
-clear
-ls
-cd ..
-ls
-touch .gitignore
-nv .gitignore 
-ls
-cd .config/
-ls
-ls
-ls
-clear
-ls
-git add .
-ls
-git status
-rm .git/ -rf
-clear
-ls
-cd ../
-ls
-nv .gitignore 
-clear
-ls
-cd .config/
-cd ..
-clear
-ls .config/
-tmux
-tmux ls
-tmux a
-exit
-exit
-clear
-man def
-man diff
-man diff
-clear
-touch 1.txt 2.txt
-echo "hello" > 1.txt
-echo "hello, world" > 2.txt
-clear
-ls
-clear
-diff -q 1.txt 2.txt 
-clear
-man diff
-diff -n 1.txt 2.txt 
-clear
-man diff
-diff --normal 1.txt 2.txt 
-clear
-man sed
-sed quote 1.txt 
-sed 1.txt 
-man bc
 bc
 clear
-man bc
+bash --version
 clear
-bc --help
+ls
 clear
+nv ~/.tmux.conf 
+tmux
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+nv ~/.tmux.conf 
+tmux
+tmux
+tmux
+tmux
+tmux
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
 clear
-git clone https://github.com/priya-jain-dev/Terminal
-cllear
+py ~/*.py
+clear
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+py ~/*.py
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+tmu
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+py ~/*.py
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+tmux
+tmux
+nv ~/.tmux.conf 
+exit
+clear
+exit
+clear
+exit
+clear
+tmu
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+exit
+clear
+exit
+clear
+exit
+exit
+:q
+exit
+exit
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf 
+tmux
+nv ~/.tmux.conf
+tmux a
+nv ~/.tmux.conf
+tmux a
+tmux
+nv ~/.tmux.conf
+exit
 clear
 clear
 exit
 exit
+clea
+clear
+clear
+ls
+nv ~/.tmux.conf 
+clear
+
+clear
+nv
+nv ~/.config/nvim/lua/options.lua 
+nv ~/.config/nvim/lua/options.lua 
+nv ~/.config/nvim/lua/options.lua 
+clear
+work
+clear
+apt search work
+sudo apt install work
+clear
+nv ~/.config/nvim/lua/options.lua 
 exit
-exit
-exit
+clear
+npm run dev
 clear
 exit

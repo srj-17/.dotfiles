@@ -1,8 +1,7 @@
 -- for seeing what mostly used options are, its helpful starting out with options 
 -- command (:)
---
---
--- 
+
+
 -- setup line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -30,9 +29,9 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.wrap = false
 
 
--- keep cursor at middle of screen when scrolling 
+-- keep cursor 8 places from top and bottom
 -- scrolloff = scrolloffset
-vim.opt.scrolloff = 999
+vim.opt.scrolloff = 8
 
 
 -- in visual block mode, treat the nvim screen as a grid of cells instead of sequence of characters
@@ -59,3 +58,8 @@ vim.opt.foldmethod = "syntax"
 
 -- avoid lines longer than 80 columns
 vim.opt.colorcolumn = '80'
+
+-- write the swapfile (the file you're currently editing) to the disk in 50 
+-- seconds of inactivity
+vim.opt.updatetime = 50
+

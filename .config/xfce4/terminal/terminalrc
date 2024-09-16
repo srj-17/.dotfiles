@@ -1,13 +1,13 @@
 [Configuration]
 BackgroundDarkness=0.910000
-FontName=JetBrains Mono NL 13
+FontName=JetBrains Mono 13
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
 MiscBordersDefault=FALSE
 MiscCursorBlinks=FALSE
 MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
-MiscDefaultGeometry=89x22+188+115
+MiscDefaultGeometry=89x22+188+125
 MiscInheritGeometry=FALSE
 MiscMenubarDefault=FALSE
 MiscMouseAutohide=FALSE
