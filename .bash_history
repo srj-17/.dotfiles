@@ -1,223 +1,3 @@
-n
-n
-nv ~/.config/nvim/lua/autocmds.lua 
-n
-nv 
-nv ~/.config/nvim/lua/plugins/
-clear
-exit
-clear
-npm run dev
-clear
-exit
-clear
-ls
-clear
-n
-nvim --startuptime startuptime.log .
-nv ~/.config/nvim/lua/plugins/navigation.lua 
-nvim --startuptime startuptimeaftertabs.log .
-nv ~/.config/nvim/lua/plugins/navigation.lua 
-clear
-nvim --clean --startuptime startuptime.log
-nv startuptime.log 
-nvim --clean
-clear
-exit
-clear
-tmux-sessionizer
-tmux-sessionizer
-nv ~/myscripts/
-clear
-cd
-clear
-clear
-tmux-sessionizer
-tmux-sessionizer
-clear
-tmux-sessionizer
-clear
-nv ~/.inputrc 
-clear
-exit
-nv ~/.config/gtk-3.0/
-exit
-cler
-clear
-ls
-exit
-clear
-ls
-clear
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-clear
-quote 
-clear
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-clear
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-clear
-n
-nv ~/.config/gtk-3.0/
-exit
-clear
-ls
-clear
-clear
-tmux-sessionizer
-exit
-n
-exit
-clear
-ls
-ping www.google.com
-clear
-tmux-sessionizer
-nv ~/.config/gtk-3.0/
-exit
-exit
-clear
-tmux-sessionizer
-nv ~/.config/xfce4/terminal/terminalrc 
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-clear
-exit
-clear
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-nv ~/.config/xfce4/terminal/terminalrc 
-exi
-exit
-clear
-exit
-clear
-ls
-clear
-tmux-sessionizer
-quote 
-nv ~/myscripts/quote 
-clear
-exit
-clear
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-clear
-n
-nv ~/.config/gtk-3.0/
-exit
-clear
-nv ~/.config/xfce4/terminal/terminalrc 
-clear
-n
-clear
-tmux-sessionizer
-exit
-clear
-ls
-nv
-nv .config/gtk-3.0/gtk.css 
-exit
-clear
-ls
-n
-n .config/xfce4/terminal/terminalrc 
-n .config/xfce4/terminal/terminalrc 
-nv .config/xfce4/terminal/terminalrc 
-nv .config/gtk-3.0/gtk.css 
-exit
-clear
-n
-nv .config/gtk-3.0/gtk.css 
-exit
-nv
-nv ~/.config/gtk-3.0/gtk.css 
-exit
-clear
-nv ~/.config/gtk-3.0/gtk.css 
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-clear
-nv ~/.config/xfce4/terminal/terminalrc 
-clear
-ls
-exit
-clear
-ls
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-clear
-nv ~/.config/gtk-3.0/gtk.css 
-exit
-clear
-nv ~/.config/xfce4/terminal/terminalrc 
-ls
-n
-clear
-n
-nv ~/.config/xfce4/terminal/terminalrc 
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-clear
-nv
-n
-nv ~/.config/xfce4/terminal/terminalrc 
-exit
-clear
-ls
-clear
-ls
-ls
-clear
-clear
-ls
-clear
-exit
-n
-exit
-clear
-nv ~/.config/gtk-3.0/gtk.css 
-clear
-ls
-clear
-n
-n
-clear
-nv ~/.config/nvim/lua/plugins/
-echo $TERM
-clear
-clear
-ls
-clear
-clear
-ls
-clear
 ls
 clear
 tmux-sessionizer
@@ -495,6 +275,226 @@ n
 clear
 exit
 clear
+exit
+clear
+exit
+clear
+nv .gitignore 
+git init
+git add .
+ls
+rm .git/ -rf
+clear
+ls .gi*
+git init
+clear
+git add .
+git status
+git commit -m "first commit"
+clear
+git remote add origin git@github.com:srj-17/.dotfiles.git
+git push -u origin main
+git status
+nv .gitignore 
+rm .git/ -rf
+clear
+git init
+git add .
+git commit -m "firstcommit"
+clear
+git remote add origin git@github.com:srj-17/.dotfiles.git
+clear
+git remote
+clear
+git push -u origin main
+clea
+clear
+ls
+clear
+clear
+exit
+clear
+ls .config/
+ls .config/syncthing/
+clear
+nv .gitignore 
+clear
+exit
+clear
+clear
+nv ~/.bashrc 
+cd clear
+nv ~/.inputrc 
+clear
+exit
+clear
+ls
+ls
+cd myscripts
+ls
+clear
+ls
+clear
+cd ..
+ls
+cd bin/
+ls
+clear
+ls
+cd
+clear
+tmux-sessionizer
+ls
+clear
+tmux
+tmux-sessionizer
+clea
+clear
+ls
+clear
+sudo apt install zsh
+clear
+sudo apt install zsh
+clear
+zsh --version
+clear
+zsh
+clear
+ls
+clear
+sudo apt install jetbrains-mono-nerd
+sudo apt search jetbrains
+clear
+clear
+cd Sync/notes/
+ls
+mkdir _random
+cd _random/
+ls
+touch payment.md
+clear
+nv payment.md 
+nv ~/.config/nvim/lua/plugins/autocomplete.lua 
+nv payment.md 
+nv ~/.config/nvim/lua/plugins/autocomplete.lua 
+nv payment.md 
+nv ~/.config/nvim/lua/plugins/autocomplete.lua 
+n
+n
+nv ~/.config/nvim/lua/plugins/autocomplete.lua 
+cd ~/.config/nvim/lua/plugins/
+n
+n
+n
+n
+n
+ls
+clear
+ls
+clear
+ls
+clear
+n
+n
+cd -
+n
+n
+clear
+ls
+cd -
+ls
+n autocomplete.lua 
+clear
+ls
+clear
+cd
+cd dot
+cd dotfiles/
+ls
+clear
+git add .
+lazygit
+clear
+git push
+clear
+ls
+git status
+cd .config/
+ls
+rm google-chrome/ -rf
+git add .
+git commit -m "remove google chrome"
+clear
+ls
+cd ..
+ls
+touch .gitignore
+nv .gitignore 
+ls
+cd .config/
+ls
+ls
+ls
+clear
+ls
+git add .
+ls
+git status
+rm .git/ -rf
+clear
+ls
+cd ../
+ls
+nv .gitignore 
+clear
+ls
+cd .config/
+cd ..
+clear
+ls .config/
+tmux
+tmux ls
+tmux a
+exit
+exit
+clear
+man def
+man diff
+man diff
+clear
+touch 1.txt 2.txt
+echo "hello" > 1.txt
+echo "hello, world" > 2.txt
+clear
+ls
+clear
+diff -q 1.txt 2.txt 
+clear
+man diff
+diff -n 1.txt 2.txt 
+clear
+man diff
+diff --normal 1.txt 2.txt 
+clear
+man sed
+sed quote 1.txt 
+sed 1.txt 
+man bc
+bc
+clear
+man bc
+clear
+bc --help
+clear
+clear
+git clone https://github.com/priya-jain-dev/Terminal
+cllear
+clear
+clear
+exit
+exit
+exit
+exit
 exit
 clear
 exit

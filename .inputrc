@@ -1,4 +1,6 @@
 # fuzzy find in your projects using tmux-sessionizer when you press ^f
 # \n means enter
 "\C-f": "tmux-sessionizer\n"
+
+# to keep the tab completion using cd colored
 set colored-stats on
