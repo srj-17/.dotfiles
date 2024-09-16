@@ -1,314 +1,3 @@
-tmu
-tmux
-exit
-curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh
-clear
-ls
-cd .local/share/fonts/fonts/
-ls
-cd ttf/
-ls
-cd ..
-ls
-cd variable/
-ls
-cd
-clear
-curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh
-clear
-cd .local/share/fonts/
-ls
-cd fonts/
-ls
-cd ttf/
-ls
-clear
-exit
-clear
-ls
-clear
-exit
-cd .local/share/fonts/fonts/ttf/.uuid 
-cd .local/share/fonts/fonts/ttf/
-ls
-clear
-cd ..
-rm * -rf
-clear
-cd
-clear
-curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh
-clear
-exit
-clear
-ls
-cd ~/.local/share/fonts/
-ls
-cd fonts/
-ls
-l
-cd ..
-cd TypeTogether/
-ls
-cd TrueType/
-ls
-cd
-find -ri jetbrains
-man find
-find JetBrains .
-clear
-find jetbrains .local/share/fonts/
-clear
-find JetBrains .local/share/fonts/
-find JetBrains ./fonts/
-find JetBrains ~/.fonts/
-exit
-clear
-xpath -q -e 'fontconfig/dir[1]/text()[1]' /etc/fonts/fonts.conf
-clear
-cd /usr/share/fonts/
-ls
-clea
-clear
-clear
-cd
-nv /etc/fonts/fonts.conf 
-nv /usr/local/share/fonts/
-cd /usr/local/share/fonts/
-ls
-cd
-nv /etc/fonts/fonts.conf 
-ls
-cd /etc/fonts/
-ls
-cd conf.d/
-ls
-cd ../conf.avail/
-ls
-cd
-clear
-exit
-nv .tmux.conf 
-clear
-exit
-nv something.md
-nv something.md
-clear
-ls
-clear
-exit
-cla
-clear
-ls
-nv something.md 
-exit
-clear
-cd ~
-ls .zsh*
-rm .zsh_history -rf
-clear
-zsh
-ls
-cd /etc/fonts/
-ls
-nv fonts.conf 
-ls /usr/share/fonts /usr/local/share/fonts 
-nv fonts.conf 
-ls ~/.fonts/
-cd /usr/share/fonts
-ls opentype/
-ls Playwrite
-ls truetype/
-cd truetype/
-lls
-clear
-lls
-ls
-clear
-ls
-mkdir JetBrainsMono/
-sudo mkdir JetBrainsMono/
-sudo mv ../*.ttf JetBrainsMono/
-ls
-cd JetBrainsMono/
-ls
-cd ..
-ls
-cd JetBrainsMono/
-sudo mv *.ttf ..
-cd ..
-sudo rm JetBrainsMono -rf
-clear
-mv ~/Downloads/NerdFontsSymbolsOnly/*.ttf ..
-sudo mv ~/Downloads/NerdFontsSymbolsOnly/*.ttf ..
-ls
-cd ..
-ls
-mv *.ttf truetype/
-sudo mv *.ttf truetype/
-ls
-cd truetype/
-ls
-clear
-exit
-clear
-cd -
-clear
-$OLDPWD = /usr/local/fonts/
-$OLDPWD:/usr/local/fonts/
-$OLDPWD:/usr/share/fonts/
-cd /usr/share/fonts
-ls
-cd truetype/
-ls
-rm *NerdFontSymbo* -rf
-ls
-ls *Nerd
-ls *Nerd*
-rm SymbolsNerd*.ttf
-rm SymbolsNerd*.ttf -rf
-sudo rm SymbolsNerd*.ttf -rf
-clear
-ls
-clear
-cd
-ls
-cd Downloads/
-ls
-rm NerdFontsSymbolsOnly/ Tokyonight-Dark/ JetBrainsMono(1).zip -rf
-rm NerdFontsSymbolsOnly/ Tokyonight-Dark/ JetBrainsMono\(1\).zip -rf
-ls
-rm JetBrainsMono-2.304.zip -rf
-cd jetbrains/
-ls
-cd fonts/
-lls
-ls
-cd ttf/
-ls
-cd ../../..
-ls
-rm jetbrains/ -rf
-mkdir jb
-unzip --help
-man unzip
-clear
-rm JetBrainsMono.zip -rf
-cd ~
-man fin
-man find
-clear
-clear
-ls
-clear
-ls Downloads/
-cd Downloads/
-clear
-mkdir jbm
-unzip JetBrainsMono.zip -d jbm/
-ls
-rm jb -rf
-cd jbm/
-ls
-cd /usr/share/fonts
-ls
-ls cmap/
-ls cMap/
-ls opentype/
-cd truetype/
-ls
-mkdir JetBrainsMono
-sudo mkdir JetBrainsMono
-sudo mv Jet*.ttf JetBrainsMono
-ls
-cd ..
-ls
-ls Playwrite_NG_Modern/
-ls Playwrite_NG_Modern/static/
-sudo ls Playwrite_NG_Modern/static/
-cd truetype/
-ls
-mkdir playrightNG
-ls
-ls
-ls PlaywriteNGModern-*
-ls pla*
-sudo mkdir playwriteNG 
-mv PlaywriteNGModern-*.ttf playwriteNG/
-sudo mv PlaywriteNGModern-*.ttf playwriteNG/
-clear
-ls
-mkdir Roboto
-sudo mkdir Roboto
-mv Roboto*.ttf Roboto
-sudo mv Roboto*.ttf Roboto
-clear
-ls
-sudo mv ~/Downloads/jbm/*.ttf JetBrainsMono/
-clear
-exit
-nv
-nv
-clear
-ls
-clear
-ls
-clear
-ls
-clear
-cd Downloads/
-mkdir symbols
-unzip NerdFontsSymbolsOnly.zip -d symbols/
-cd /usr/share/fonts
-ls
-cd truetype/
-sudo mkdir Symbols
-sudo mkdir SymbolsNerdFont
-clear
-sudo mv ~/Downloads/symbols/*.ttf SymbolsNerdFont/
-clear
-cd JetBrainsMono/
-ls
-mv *Nerd* ~/Downloads/symbols/
-sudo mv *Nerd* ~/Downloads/symbols/
-clear
-exit
-clear
-jq
-clear
-exit
-exit
-exit
-clear
-clear
-set -g status-style 'bg=#333333 fg=#5eacd3'
-nv ~/.tmux.conf 
-clear
-clea
-clear
-exit
-clear
-clear
-cd
-clear
-nv ~/.tmux.conf 
-exit
-clea
-exit
-nv ~/.tmux.conf 
-clear
-clear
-clear
-nv ~/.tmux.conf 
-exit
-clear
-exit
-nv ~/.tmux.conf 
-exit
-clear
-nv ~/.tmux.conf 
-exit
-clear
 ls
 clear
 exit
@@ -498,3 +187,314 @@ exit
 nv
 n
 exit
+tmux
+clear
+clear
+ls
+clear
+nv
+clear
+nv
+clear
+nv ~/repos/unix/
+clera
+clear
+ls
+clear
+tmux-sessionizer
+clear
+cd dotfiles/
+git add .
+lazygit
+lazygit
+clear
+clear
+nv
+nv ~/.config/nvim/lua/plugins/colors.lua 
+nv ~/.config/nvim/lua/plugins/colors.lua 
+nv ~/.config/nvim/lua
+nv ~/.config/nvim/lua
+nv
+nv ~/.config/nvim/lua
+ls
+tmux-sessionizer
+nv ~/.config/nvim/lua/
+nv ~/.config/nvim/lua/
+nv ~/.config/nvim/lua/
+nv ~/.config/nvim/lua/
+nv ~/.config/nvim/lua/
+n
+nv ~/.config/nvim/lua/
+nv ~/.config/nvim/lua/plugins/colors.lua 
+nv ~/.config/nvim/lua/plugins/colors.lua 
+nv ~/.config/nvim/lua/plugins/colors.lua 
+git add .
+git commit -m "add gruvbox theme; not activate"
+clear
+clear
+clear
+ls
+clear
+git add .
+cd .config/nvim/
+ls
+nv lua/
+nv lua/
+nv lua/
+nv lua/
+nv lua/
+nv lua/
+nv lua/
+cd ../..
+git add .
+lazygit
+clear
+exit
+cd dotfiles/
+git push
+clear
+ls
+clear
+nv ~/.config/nvim/
+nv ~/.config/nvim/
+nv ~/.config/nvim/
+nv ~/.config/nvim/
+nv ~/.config/nvim/
+nv ~/.config/nvim/
+cd
+cd .config/nvim/
+n
+n
+clear
+clear
+n
+n
+n
+n
+cd /home/srj/.mozilla/firefox/c4mwh1o5.default-release
+ls
+ls chrome/
+ls
+clea
+cd chrome/
+ls
+nv userChrome.css 
+nv userChrome.css 
+cd ~/.dotfiles
+cd ~/dotfiles/
+ls
+n
+cd .config/nvim/
+n
+n
+n
+cd ~/Sync/notes/
+ls
+n
+cd -
+ls
+n
+n
+cd
+cd Sync/notes/
+n
+nv ~/.config/nvim/lua/plugins/obsidian.lua 
+nv ~/.config/nvim/lua/plugins/obsidian.lua 
+n
+nv ~/.config/nvim/lua/plugins/obsidian.lua 
+n
+nv ~/.config/nvim/lua/plugins/obsidian.lua 
+nv ~/.config/nvim/lua/plugins/obsidian.lua 
+clear
+exit
+cd Sync/notes/
+n
+n
+n
+n
+n
+cd _dailyNotes/
+ls
+cd ..
+ls
+n
+cd _templates/
+ls
+mv Daily\ Note.md _dailyNote.md
+ls
+:w
+n
+cd ..
+n
+n
+clear
+cd
+clear
+nv .inputrc 
+exit
+clear
+:q
+nv ~/.tmux.conf 
+clear
+exit
+clear
+exit
+clear
+ls
+clear
+n
+n
+clear
+n
+n
+n
+n
+clear
+n
+n
+clear
+clear
+clear
+n
+n
+n
+n
+n
+clear
+cd ~/Sync/notes/
+n
+clear
+clear
+ls
+cd _templates/
+ls
+n _dailyNote.md 
+n _dailyNote.md 
+:w
+clear
+clear
+n
+cd
+n
+n
+n
+n
+cd repos/
+ls
+n srj-17/
+n srj-17/
+n srj-17/
+clear
+ls
+n srj-17/
+clear
+ls
+n
+cd 
+cd Sync/notes/
+ls
+cd _dailyNotes/
+ls
+rm cd..
+ls
+ls *16*
+cd ..
+ls
+ls *16*
+cd _templates/
+ls *16*
+clear
+ls
+cd ../
+ls
+cd _random/
+ls
+cd ..
+ls
+cd _assets/
+ls
+cd
+ls
+cd  Sync/
+ls
+cd notes/
+ls
+find *16*
+ls
+cd _dailyNotes/
+ls
+cd ...
+cd ..
+cd notes/_dailyNotes/
+ls
+cd ..
+ls
+cd ..
+rm notes/ -rf
+clear
+cd _templates/
+ls
+n _dailyNote.md 
+clear
+cd
+cd
+n
+n
+cd repos/
+ls
+cd srj-17/
+ls
+cd n
+n
+clear
+n
+n
+n
+cd
+cd ~/.config/nvim/
+n
+n
+n
+exit
+clear
+clear
+clear
+ls
+clear
+sudo apt search doom
+clear
+cd
+clear
+n
+n
+cd Sync/notes/_dailyNotes/
+ls
+cd ..
+ls
+rm _Daily\ Notes/ -rf
+clea
+clear
+ls
+n
+n
+hclear
+clear
+n
+n
+n
+n
+clear
+cd
+clear
+cd Downloads/
+ls
+git clone --depth 1 --single-branch https://github.com/doomemacs/doomemacs
+du doomemacs/
+du -h doomemacs/
+clear
+sudo apt install emacs
+clear
+rm doomemacs/ -rf
+clear
+n
+clear

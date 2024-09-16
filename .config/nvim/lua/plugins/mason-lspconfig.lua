@@ -1,4 +1,23 @@
 return {
+    {
+        "williamboman/mason.nvim",
+        config = function()
+            require("mason").setup({
+                ensure_installed= {
+                    "css-lsp",
+                    "stylua",
+                    "selene",
+                    "luacheck",
+                    "shellcheck",
+                    "shfmt",
+                    "tailwindcss-language-server",
+                    "typescript-language-server",
+                    "css-lsp",
+                },
+            })
+        end
+    },
+    {
     "williamboman/mason-lspconfig.nvim",
     dependencies = {
         "mason.nvim",
@@ -23,4 +42,5 @@ return {
             },
         })
     end
+},
 }

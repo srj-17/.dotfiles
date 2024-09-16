@@ -4,3 +4,5 @@
 
 # to keep the tab completion using cd colored
 set colored-stats on
+
+"\C-n": ""

@@ -100,5 +100,63 @@ return {
             -- or leave it empty to use the default settings
             -- refer to the configuration section below
         }
-    }
+    },
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+        opts = {},
+        config = function ()
+            -- require("ibl").setup({})
+        end
+    },
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        },
+        keys = {
+            {
+                "<leader>?",
+                function()
+                    require("which-key").show({ global = false })
+                end,
+                desc = "Buffer Local Keymaps (which-key)",
+            },
+        },
+    },
+    {
+        "folke/zen-mode.nvim",
+        config = function()
+            vim.keymap.set("n", "<leader>zz", function()
+                require("zen-mode").setup {
+                    window = {
+                        width = 90,
+                        options = { }
+                    },
+                }
+                require("zen-mode").toggle()
+                vim.wo.wrap = false
+                vim.wo.number = true
+                vim.wo.rnu = true
+            end)
+
+
+            vim.keymap.set("n", "<leader>zZ", function()
+                require("zen-mode").setup {
+                    window = {
+                        width = 80,
+                        options = { }
+                    },
+                }
+                require("zen-mode").toggle()
+                vim.wo.wrap = false
+                vim.wo.number = false
+                vim.wo.rnu = false
+                vim.opt.colorcolumn = "0"
+            end)
+        end
+    },
 }

@@ -18,7 +18,7 @@ vim.keymap.set("n", "<C-k>", "<C-w>k", { silent = true, desc = "to the up split"
 vim.keymap.set("n", "<C-h>", "<C-w>h", { silent = true, desc = "to the left split" })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { silent = true, desc = "to the right split" })
 
-vim.keymap.set("n", "<leader>x", ":Close<Enter>", { desc = "close the current window"} )
+vim.keymap.set("n", "<leader>x", ":bd<Enter>", { desc = "Buffer Delete"} )
 -- cool things
 -- ctrl z => move vim to background
 -- fg <enter> to move it back to foreground after running commands
