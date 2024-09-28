@@ -13,10 +13,10 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "<C-BS>", "<Esc>dbi", { silent = true, desc = 'delete from the cursor to back of the word'})
 
 -- moving between vim splits
-vim.keymap.set("n", "<C-j>", "<C-w>j", { silent = true, desc = "to the bottom split" })
-vim.keymap.set("n", "<C-k>", "<C-w>k", { silent = true, desc = "to the up split" })
-vim.keymap.set("n", "<C-h>", "<C-w>h", { silent = true, desc = "to the left split" })
-vim.keymap.set("n", "<C-l>", "<C-w>l", { silent = true, desc = "to the right split" })
+vim.keymap.set("n", "<C-j>", "<C-w><Up>", { desc = "to the bottom split" })
+vim.keymap.set("n", "<C-k>", "<C-w><Down>", { desc = "to the up split" })
+vim.keymap.set("n", "<C-h>", "<C-w><Left>", { desc = "to the left split" })
+vim.keymap.set("n", "<C-l>", "<C-w><Right>", { desc = "to the right split" })
 
 vim.keymap.set("n", "<leader>x", ":bd<Enter>", { desc = "Buffer Delete"} )
 -- cool things

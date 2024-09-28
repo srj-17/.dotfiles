@@ -1873,6 +1873,15 @@
             "sideBarBackground": "#181818",
             "statusBarBackground": "#181818",
             "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
         }
     },
     "windowsState": {
@@ -1880,12 +1889,11 @@
             "folder": "file:///home/srj/repos/srj-17/todo-list",
             "backupPath": "/home/srj/.config/Code/Backups/62630d723baee46bad49bb4734bcdd65",
             "uiState": {
-                "mode": 3,
-                "display": 13761487533244480,
-                "width": 1366,
-                "height": 768,
+                "mode": 1,
                 "x": 0,
                 "y": 0,
+                "width": 1365,
+                "height": 767,
                 "zoomLevel": 1
             }
         },
@@ -1897,5 +1905,5 @@
             "name": "EDITH"
         }
     ],
-    "windowControlHeight": 22
+    "windowControlHeight": 42
 }

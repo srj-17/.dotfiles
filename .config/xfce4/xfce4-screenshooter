@@ -5,9 +5,9 @@ last_extension=png
 screenshot_dir=file:/home/srj/Pictures
 enable_imgur_upload=true
 show_in_folder=false
-action=4
+action=2
 delay=0
-region=2
+region=3
 show_mouse=1
 show_border=1
 

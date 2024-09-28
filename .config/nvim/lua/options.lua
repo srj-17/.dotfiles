@@ -63,3 +63,4 @@ vim.opt.colorcolumn = '80'
 -- seconds of inactivity
 vim.opt.updatetime = 50
 
+

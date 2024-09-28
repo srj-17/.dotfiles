@@ -39,6 +39,19 @@ require("remaps")
 -- load autocmds
 require("autocmds")
 
+-- load self commands
+vim.api.nvim_create_user_command("Pandoc", function(args)
+	vim.cmd(
+		"!pandoc -i "
+			.. vim.fn.fnameescape(vim.fn.expand("%"))
+			.. " -o "
+			.. vim.fn.fnameescape(vim.fn.expand("%:r"))
+			.. "."
+			.. args.args
+	)
+end, {
+	nargs = 1,
+})
 
 -- run setup function from lazy to setup lazy
 -- by providing a list 

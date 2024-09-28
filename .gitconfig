@@ -10,3 +10,6 @@
 
 [includeif "gitdir:~/repos/ranhoodlum/"]
     path = .gitconfig-ranhoodlum
+
+[includeif "gitdir:~/repos/collage"]
+    path = .gitconfig-ranhoodlum

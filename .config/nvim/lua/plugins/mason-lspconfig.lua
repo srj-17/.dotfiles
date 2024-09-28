@@ -36,7 +36,7 @@ return {
                     local capabilities = require("cmp_nvim_lsp").default_capabilities()
                     require("lspconfig")[server_name].setup({
                         -- Also, setup up completion configuration provided by cmp-nvim-lsp for each server
-                        capabilities = capabilities
+                        capabilities = capabilities,
                     })
                 end,
             },

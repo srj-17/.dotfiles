@@ -12,5 +12,5 @@ return {
         -- wrap git commands so that you can do those from neovim
         "tpope/vim-fugitive",
 
-    }
+    },
 }

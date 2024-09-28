@@ -1,8 +1,0 @@
-2024-09-01 13:18:57.088 [info] read schema from vscode: vscode://schemas/settings/default
-2024-09-01 13:18:57.162 [info] cancelled
-2024-09-01 13:18:57.336 [info] read schema from vscode: vscode://schemas/settings/resourceLanguage
-2024-09-01 13:18:57.337 [info] read schema from vscode: vscode://schemas/ignoredSettings
-2024-09-01 13:18:57.403 [info] read schema from vscode: vscode://schemas/launch
-2024-09-01 13:18:57.406 [info] read schema from vscode: vscode://schemas/token-styling
-2024-09-01 13:18:57.406 [info] read schema from vscode: vscode://schemas/textmate-colors
-2024-09-01 13:18:57.406 [info] read schema from vscode: vscode://schemas/workbench-colors

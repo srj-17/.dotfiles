@@ -5,3 +5,4 @@ ac('TextYankPost', {
     vim.highlight.on_yank({ timeout = 110 }) -- milliseconds
   end,
 })
+

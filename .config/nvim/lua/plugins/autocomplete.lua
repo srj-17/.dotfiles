@@ -42,6 +42,9 @@ return {
             'saadparwaiz1/cmp_luasnip',
             -- vscode like friendly-snippets
             'rafamadriz/friendly-snippets',
+            'hrsh7th/cmp-buffer',
+            'hrsh7th/cmp-path',
+            'hrsh7th/cmp-nvim-lsp',
         },
     },
     {
@@ -113,11 +116,10 @@ return {
                 }),
                 -- completion sources
                 sources = cmp.config.sources({
-                    -- { name = 'nvim_lsp' },
                     { name = 'luasnip' }, -- For luasnip users.
                     { name = 'nvim_lsp'},
                     { name = 'path' },
-                    { name = 'buffer' },
+                    { name = 'buffer', },
                 })
             })
         end
