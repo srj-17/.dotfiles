@@ -1,114 +1,3 @@
-cd .config/i3/
-ls
-clear
-open 
-open .
-thunar .
-clear
-open .
-clear
-git clone https://github.com/horst3180/arc-theme --depth 1 && cd arc-theme
-ls
-cd 
-git clone https://github.com/horst3180/arc-theme --depth 1 && cd arc-theme
-./autogen.sh 
-sudo make install
-ls
-sudo make install
-./autogen.sh 
-sudo apt install gtk2-engines-murrine
-clear
-cd ../
-rm arc-theme/ -rf
-cd Do
-cd Downloads/
-ls
-mkdir tokyonight
-unzip Tokyonight-Dark-B.zip -d tokyonight/
-cd tokyonight/
-ls
-cd t
-cd Tokyonight-Dark-B/
-ls
-nv dock.theme 
-sudo apt install plank
-ls
-cd
-mkdir .themes
-cp Downloads/tokyonight/Tokyonight-Dark-B/dock.theme .themes/
-cd .local/share/
-ls
-mkdir plank
-cd plank/
-ls
-mkdir themes
-cp ~/.themes/dock.theme themes/
-sudo cp themes/dock.theme /usr/share/plank/themes/
-ls
-cd /usr/
-cd share/pl
-cd share/
-ls
-cd plank/
-ls
-cd themes/
-ls
-cd dock.theme 
-nv dock.theme 
-sudo rm dock.theme 
-cd 
-rm .themes/
-rm .themes/ -rf
-cd .config/
-ls
-cd .config/
-ls
-nv gtk
-nv .
-cd assets/
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-cd .local/share/fonts/
-cd ../
-ls
-cd plank/
-ls
-cd themes/
-ls
-cd ../../
-rm plank/
-rm plank/ -rf
-clear
-i3 --version
-sudo apt update i3
-sudo apt install i3
-clear
-cd
-sudo apt install i3
-clear
-exit
-clear
-cd repos/unix/nvim/
-ls
-cd ../i3/
-ls
-nv intro.md 
-nv config.md
-nv auto-loading.md
-nv wallpaper.md
-clear
-nv monitors.md
-nv workspaces.md
-nv aesthetics.md
-clear
-clear
-cd
-cd .config/i3/
-ls
 nv config 
 exit
 xport
@@ -497,4 +386,115 @@ nv .config/i3
 clear
 cd /home/srj/Pictures/wallpapers/my_neighbour_todoro.jpg 
 exit
+exit
+clear
+cd .config/i3
+ls
+n
+cd 
+cd dotfiles/
+ls
+git add .
+lg
+ls
+nv README.md 
+git add .
+lg
+nv README.md 
+git add .
+lg
+clear
+git push
+clear
+cd
+cd .config/i3/
+nv config 
+nv config 
+dmenu
+dmenu_run
+rofi
+sudo apt install rofi
+clear
+rofi
+clear
+rofi -show run
+clear
+nv config 
+cd .config
+cd i3
+ls
+nv config 
+nv config 
+exit
+exit
+clear
+cd .config
+ls
+cd 
+cd .config
+ls
+clea
+clear
+cd i3
+ls
+clear
+clear
+clear
+nv config 
+man rofi
+echo $XDG_CONFIG_DIRS 
+cd
+cd .config
+ls
+clear
+mkdir rofi
+cd rofi/
+ls
+nv config.rasi
+cd ../
+cd i3
+ls
+nv config 
+cd i3
+cd ../rofi/
+ls
+nv config.rasi 
+rm config.rasi 
+ls
+man rofi
+rofi --dump-config > config.rasi
+man rofi
+rofi -dump-config > config.rasi
+nv config.rasi 
+nv config.rasi 
+rofi-theme-selector 
+clear
+nv config.rasi 
+clear
+
+ear
+rm -rf ~/.config/rofi
+  git clone git@github.com:w8ste/Tokyonight-rofi-theme.git ~/.config/rofi
+git clone git@github.com:w8ste/Tokyonight-rofi-theme.git ~/.config/rofi
+ls
+ls
+cd ..
+rm -rf rofi
+ls
+clear
+  git clone git@github.com:w8ste/Tokyonight-rofi-theme.git ~/.config/rofi
+cd rofi/
+ls
+nv config.rasi 
+ sudo mv ~/.config/rofi/tokyonight.rasi /usr/share/rofi/themes
+  sudo mv ~/.config/rofi/tokyonight_big1.rasi /usr/share/rofi/themes
+  sudo mv ~/.config/rofi/tokyonight_big2.rasi /usr/share/rofi/themes
+rofi-theme-selector 
+clear
+rofi-theme-selector 
+clear
+clear
+ls
+rm -rf README.md 
+clear
 exit

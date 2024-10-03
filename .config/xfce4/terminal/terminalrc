@@ -1,5 +1,5 @@
 [Configuration]
-BackgroundDarkness=0.880000
+BackgroundDarkness=0.980000
 FontName=JetBrains Mono 13
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
@@ -40,10 +40,10 @@ DropdownWidth=77
 DropdownShowBorders=TRUE
 CellWidthScale=1.100000
 DropdownAnimationTime=245
-ColorBackground=#1f2335
+ColorBackground=#1a1a1b1b2626
 ColorCursor=#6262a0a0eaea
 ColorSelection=#9999c1c1f1f1
 ColorSelectionBackground=#6262a0a0eaea
 TabActivityColor=#bfff3fff3fff
-ColorSelectionUseDefault=FALSE
+ColorForeground=#f6f6f5f5f4f4
 
