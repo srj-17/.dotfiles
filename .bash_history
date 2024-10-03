@@ -1,500 +1,500 @@
-nv init.lua 
-nv lua/
+cd .config/i3/
+ls
+clear
+open 
+open .
+thunar .
+clear
+open .
+clear
+git clone https://github.com/horst3180/arc-theme --depth 1 && cd arc-theme
 ls
 cd 
+git clone https://github.com/horst3180/arc-theme --depth 1 && cd arc-theme
+./autogen.sh 
+sudo make install
 ls
-cd repos/unix/nvim/
-ls
-cd concepts/
-ls
-cd understanding_nvim/
-ls
-nv 2-plugins-colorschemes.md 
-nv 2-plugins-colorschemes.md 
-nv 2-plugins-colorschemes.md 
-cd ~/.config/nvim/
-ls
-nv init.lua 
-ls
+sudo make install
+./autogen.sh 
+sudo apt install gtk2-engines-murrine
 clear
-cd ~/repos/unix/nvim/
+cd ../
+rm arc-theme/ -rf
+cd Do
+cd Downloads/
 ls
-n
-cd ~/.local/share/nvim
+mkdir tokyonight
+unzip Tokyonight-Dark-B.zip -d tokyonight/
+cd tokyonight/
 ls
-cd lazy/
+cd t
+cd Tokyonight-Dark-B/
 ls
-cd lazy.nvim/
+nv dock.theme 
+sudo apt install plank
 ls
 cd
-cd .config/nvim/
-nv init.lua 
-nv init.lua 
+mkdir .themes
+cp Downloads/tokyonight/Tokyonight-Dark-B/dock.theme .themes/
+cd .local/share/
+ls
+mkdir plank
+cd plank/
+ls
+mkdir themes
+cp ~/.themes/dock.theme themes/
+sudo cp themes/dock.theme /usr/share/plank/themes/
+ls
+cd /usr/
+cd share/pl
+cd share/
+ls
+cd plank/
+ls
+cd themes/
+ls
+cd dock.theme 
+nv dock.theme 
+sudo rm dock.theme 
+cd 
+rm .themes/
+rm .themes/ -rf
+cd .config/
+ls
+cd .config/
+ls
+nv gtk
+nv .
+cd assets/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd .local/share/fonts/
+cd ../
+ls
+cd plank/
+ls
+cd themes/
+ls
+cd ../../
+rm plank/
+rm plank/ -rf
+clear
+i3 --version
+sudo apt update i3
+sudo apt install i3
+clear
+cd
+sudo apt install i3
 clear
 exit
 clear
-cd audio/
+cd repos/unix/nvim/
 ls
+cd ../i3/
 ls
+nv intro.md 
+nv config.md
+nv auto-loading.md
+nv wallpaper.md
 clear
-cp *.mp3 ~/Sync/
+nv monitors.md
+nv workspaces.md
+nv aesthetics.md
 clear
 clear
+cd
+cd .config/i3/
 ls
-cd ..
-ls
-touch notes.md
-nv notes.md 
-clewar
-clear
-nv notes.md 
+nv config 
+exit
+xport
+xprop 
 exit
 clear
-ls
-cd to_print/
-ls
+cd .config/i3/config 
+cd .config/i3/
+nv config 
 clear
-mupdf Listening\ Matching\ both\ types.pdf 
-mupdf full_listening/Sample\ listening\ answer\ sheet.pdf 
-clear
-clear
-ls
-tree
-mupdf full_listening/Ielts\ \ Listening\ book\ 18\ Test\ 1\ question\ sheet.pdf 
-clear
-clear
-ls
-cd ..
-ls
-cd audio/
-ls
-cd ..
-ls
-cd ..
-ls
-cd 10/
-ls
-clear
-ls
-mupdf Sample\ listening\ answer\ sheet.pdf 
+nv config 
 clear
 exit
 clear
-cd repos/ielts/
+cd .config/i3/config 
+cd .config/i3/
+nv config 
+clear
+exit
+exit
+clear
+cd .config/i3/
 ls
-cd daily_notes/
+nv config 
+exit
+clear
+htop
+clear
+exit
+clear
+exit
+clear
+clearr
+clear
+cd .config/i3/
 ls
-ls 9
-cd 8
+nv config 
+clear
+n
+clear
+ 
+clear
+df -h
+clear
+clear
+exit
+clear
+exit
+clear
+sudo apt install picom
+clear
+picom
+clear
+exit
+clear
+cd repos/unix/i3/
 ls
-ls map_labeling/
-open .
-cd ../9/
+mkdir transparency.md
+nv transparency.md/
+clear
+exit
+clear
+cd .config/i3/
 ls
-mupdf to_print/Listening\ Matching\ both\ types.pdf 
+nv config 
+cd /etc/
+find i3
+cd i3
+ls
+nv config
+cd
+find i3-status
+find i3_status
+find -r i3-status
+clear
+cd .config
+ls
+cd
+clear
 clear
 ls
+cd /etc/xdg/
+ls
+cd
+cd /
+cd etc/
+clear
+cd
+clear
+clear
+sudo apt install xbps
+clear
+sudo apt search xbps
+sudo apt install i3-gaps
+clear
+i3 --version
+sudo apt update i3
+clear
+i3 --version
+sudo apt install i3-wm
 clear
 tmux
 clear
+cd .config/i3/
+ls
 ls
 clear
+nv config 
+man i3status
 clear
-open .
-cp audio/*.mp3 ~/Sync/
-nv notes.md 
-nv notes.md 
-nv notes.md 
-clear
-cd ../../
 ls
-cd resr
-cd resources/
+man i3status
+clear
+man i3status
+mkdir i3status
+mv i3status/ ..
 ls
-cd a1_tests/
+cd ..
+cd i3status/
 ls
-nv to_teach.md 
+nv config
+nv config 
+mv config hello
+nv hello 
+i3status
 clear
-exit
-cd repos/ielts/daily_notes/
+i3status man
+man i3status
+i3status -c hello 
+clear
+nv hello 
+i3status -c hello 
+clear
+mv hello config
+clear
+nv config 
+i3status -c config 
+clear
+i3status -c /etc/i3status.conf 
+clear
+rm config
+clear
+cp /etc/i3status.conf config
 ls
-cd 9/
-ls
-cd ../10/
-ls
-open .
-exit
-exit
-clear
-ytfzf light cafe rain 
-ytfzf -am light cafe rain 
-clear
-exit
-clear
-cd ../tic-tac-toe/
-n
-n
- exit
-clear
-clear
-n
-cd ../tic-tac-toe/
-n
-g log
-git log
-lg
-cd ../todo-list/
-n
-cd ../tic-tac-toe/
-n
-cd ../todo-list/
-n
-cd ../tic-tac-toe/
-n
-cd ../todo-list/
-n
-exit
-clear
-npm run dev
-clear
-exit
-clear
-cp *.mp3 ~/Sync/
-ls
+nv conf
+nv config 
 clear
 cd
 clear
-ear
+sudo apt install nitrogen
 clear
-tmux-sessionizer
+clear
+cd Pictures/
+ls
+mkdir wallpapers
+mv my_neighbour_todoro.jpg wallpapers/
+ls
+clear
+picom
+clear
+cd 
+cd .config/i3/
+nv config 
+clear
+cd .config/i3
+ls
+nv config 
+cd ..
+ls
+nv picom.conf
+exit
+clear
+ls
+clear
+exit
+clear
+exit
+clear
+exit
+clear
+exit
+clear
+exit
+clear
+exit
+clear
+exit
+clear
+man blur
+man picom
+sudo apt remove feh
+clear
+sudo apt autoremove
+clear
+nv ~/.config/i3/config 
+tmux
+nv ~/.config/i3/config 
+n
+clear
+clear
+sudo apt install i3
+clear
+sudo apt install i3-wm
+clear
+sudo apt search i3
+clear
+sudo apt search i3-wm
+sudo apt search i3*
+clear
+nv ~/.config/i3/config 
+exit
 clear
 cd repos/
 ls
-cd ielts/
-ls
-cd daily_notes/
-ls
-mkdir listening
-mv * listening/
-ls
-ls listening/
-ls
 clear
-mkdir reading
-open /media/disk2/ielts/
-cd reading/
-ls
-mkdir 1
-cd 1/
-ls
-cp /media/disk2/ielts/reading/Day\ 1/ .
-cp /media/disk2/ielts/reading/Day\ 1/ . -r
+cd 
 clear
+cd .config/gtk-
+cd .config/gtk-3.0/
 ls
-mv Day\ 1/* .
-ls
-rm Day\ 1/ -rf
-ls
-rm Introduction\ to\ Reading\ \ .pptx 
-ls
-clear
-ls
-cd ..
-ls
-mkdir 2
-clear
-ls
-clear
-mupdf to_print/reading_day_1_intro.pdf 
-mupdf /media/disk2/ielts/__resources/books/Ielts\ \ Cambridge\ book\ \ 18.pdf 
-ls
-mupdf to_print/reading_matching_headings.pdf 
-mupdf /media/disk2/ielts/__resources/books/Ielts\ \ Cambridge\ book\ \ 18.pdf 
-open .
-open /media/disk2/ielts/__resources/books/Ielts\ \ Cambridge\ book\ \ 18.pdf 
-open /media/disk2/ielts/__resources/books/Ielts\ 
-open /media/disk2/ielts/__resources/books/Ielts\ 
-open /media/disk2/ielts/__resources/books/
-mupdf /media/disk2/ielts/__resources/books/Ielts\ \ Cambridge\ book\ \ 18.pdf 
-mupdf to_print/reading_matching_headings.pdf 
+nv gtk.css 
+nv
 clear
 exit
 clear
-nv notes.md 
+nv ~/.config/
+nv ~/.config/
+nv .config/picom.conf 
+clear
+nv .config/picom.conf 
+clear
+clear
+n
+exit
+clear
+n
 clear
 exit
 clear
-cd repos/ielts/
-ls
-cd daily_notes/
-cd reading/
-ls
-cd 2/
-ls
-ls
-cd ../1/
-ls
-cp /media/disk2/ielts/reading/Day\ 2/ .
-ls
-cp /media/disk2/ielts/reading/Day\ 2/ . -r
-ls
-mv Day\ 2/* .
-ls
-rm Day\ 2/ -rf
-ls
+exit
 clear
-ls
-rm Reading\ Matching\ Headings.pptx 
-ls
 clear
+cd .config/nvim/
 ls
-libreoffice *
-ls
-rm *.docx
-ls
-mupdf reading_day_1_intro.pdf 
-mupdf reading_matching_headings.pdf 
+neofetch
 clear
-mupdf reading_day_1_intro.pdf 
-mupdf reading_day_1_intro.pdf 
-mupdf reading_matching_headings.pdf 
+neofetch
 clear
-nv notes.md
-ls
-mkdir to_print
-mv * top
-mv * to_print/
-ls
-touch notes.md
-nv notes.md 
+n
+nv 
+n
+n
+clear
+cd ../
+nv picom.conf 
+tmux
+clear
+clear
+nv i3/config 
+nv picom.conf 
+clear
+clear
+clear
+nv i3/config 
+clear
+nv i3/config 
+tmux
+clear
+exit
+clear
+exit
+clear
+n
+clear
+exit
+clear
+nv .config/i3/config 
 clear
 tmux
-ls
-open to_print/
-ls
 clear
-exit
-clear
-cd repos/ielts/daily_notes/reading/
-cd 1/
-ls
-nv notes.md 
-clear
-exit
-cd repos/ielts/
-ls
-cd daily_notes/reading/2/
-ls
-cp /media/disk2/ielts/reading/Day\ 3/* .
-ls
-open .
-ls
-rm *.docx Reading\ True\ for\ NG.pptx 
-mkdir to_print
-mv * to_print/
-ls
-touch notes.md
-clear
-ls
-mupdf to_print/reading_tfng.pdf 
-mupdf /media/disk2/ielts/__resources/books/Ielts\ \ Cambridge\ book\ \ 18.pdf
-mupdf to_print/reading_tfng.pdf 
-mupdf /media/disk2/ielts/__resources/books/Ielts\ \ Cambridge\ book\ \ 18.pdf
-clear
-mupdf to_print/reading_tfng.pdf 
-clear
-nv notes.md 
-clear
-clear
-cd ..
-ls
-mkdir 3
-cp /media/disk2/ielts/reading/Day\ 4/* 3/
-ls
-cd 3/
-s
-ls
-open .
-cd ..
-ls
-cd 2/
-nv notes.md 
-ls
-ls ../3/
-ls
-open ../3/
-mv ../3/reading_matching_info.pdf to_print/
-open to_print/
-cleawr
-ls /media/disk2/ielts/reading/
-clear
-exit
-cleawr
-clear
-cd repos/ielts/
-ls
-cd daily_notes/
-ls
-cd listening/
-ls
-cd 10/
-s
-ls
-open .
-exit
-clear
-cd /media/disk2/
-keepassx Copy\ of\ Database_pass_2024_01_20.kdbx 
-clear
-exit
-clear
-cd repos/e
-exit
-clear
-mupdf *.pdf
-mupdf 'mcq/Reading MCQ sample qn.pdf'
-clear
-mupdf to_print/flowchart_reading.pdf 
-mupdf to_print/flowchart_reading.pdf 
-mupdf to_print/sample_mcq.pdf 
-cleawr
-clear
-exit
-clear
-nv notes.md 
-clear
-tree /media/disk2/ielts/reading/Day\ 8/
-tree /media/disk2/ielts/reading/hh/
-tree /media/disk2/ielts/reading/
-clear
-tree /media/disk2/ielts/reading/
-clear
-open .
-mv 'mcq/Reading MCQ sample qn.pdf' to_print/sample_mcq.pdf
-open to_print/
-clear
-nv notes.md 
-cleawr
-clear
-exit
-clear
-cd repos/ielts/
-ls
-cd daily_notes/
-ls
-cd reading/
-l
-ls
-clear
-cd 3/
-ls
-mkdir mcq
-clear
-tree to_print/
-clear
-ls
-cd flowchart/
-ls
-cd ..
-ls
-mv flowchart/*.pdf to_print/
-ls
-clear
-tree to_print/
-clear
-tree /media/disk2/ielts/reading/
-cp /media/disk2/ielts/reading/Day\ 7/* mcq/
-tree mcq/
-open mcq/
-open mcq/
-nv notes.md 
 tmux
 exit
+clear
+clear
 n
+clear
 exit
 clear
-tmux-sessionizer
+cd .config/picom.conf 
+nv .config/picom.conf 
+tmux
 clear
-cd repos/unix/nvim/concepts/
+clear
+cd .config/i3
 ls
-cd understanding_nvim/
-n
-exit
-n
+nv config 
+clear
+nv config 
+clear
+nv config 
+clear
 clear
 exit
 clear
-tmux-sessionizer
-exit
 clear
-nv ~/myscripts/tmux-sessionizer 
-exit
 clear
 exit
-exit
-exit
 clear
-tmux-sessionizer
-nv ~/myscripts/tmux-sessionizer 
-nv ~/myscripts/tmux-sessionizer 
-tmux-sessionizer
-clear
-nv ~/myscripts/tmux-sessionizer 
-clear
-tmux-sessionizer
-tmux-sessionizer
-nv ~/myscripts/tmux-sessionizer 
-tmux --help
-man tmux
-tmux -c echo "hello"
-tmux -c echo
 clear
 n
+clear
+exit
+clear
+clear
+clear
+htop
+clear
+exit
+clear
+xprop 
+exit
+clear
+cd .config/
+ls
+nv picom.conf 
+cd i3
+ls
+nv config 
+clear
 n
+clear
+exit
+clear
+clear
+exit
+clear
+exit
+clear
+sudo reboot
+clear
+exit
+clear
+exit
+exit
+clear
+xfce4-terminal
+exit
+exit
+xfce4-terminal
+exit
+cd .config/redshift.conf 
+cd .config
+ls
+cd i3
+ls
+nv config 
+exit
+exit
+clear
+xfce4-terminal --help
+xfce4-terminal --command=tmux
+clear
+ cd .config/i3
+ls
+nv config 
 cd
-clear
-mkdir data
-git clone https://github.com/erikdubois/i3-installation-on-latest-linux-mint
-ls
-mv i3-installation-on-latest-linux-mint/ data/
-ls
-cd d
-cd data/
-ls
-clear
-ls
-cd i3-installation-on-latest-linux-mint/
-ls
-cd installation-of-i3/
-ls
-open .
-ls
-cd ..
-ls
-cd s
-cd scripts/
-ls
-nv i3exit.sh 
-cd ../installation-of-i3/
-ls
-nv 700-install-fonts-v1.sh 
-ls -al
-cd ..
-ls
-nv README.md 
-ls
-cd installation-of-i3/
-ls
-nv 100-install-i3-gaps-next-v1.sh 
-clear
-tree
-cd ../../
-rm i3-installation-on-latest-linux-mint/ -rf
-clear
-cd ..
-rm data/ -rf
+n
+exit
+exit
+exit
+exit
+exit
+n
 clear
 exit
-cal
 clear
+exit
+n
+exit
+clear
+n
+exit
+clear
+nv .config/i3
+nv .config/i3
+clear
+cd /home/srj/Pictures/wallpapers/my_neighbour_todoro.jpg 
+exit
 exit
