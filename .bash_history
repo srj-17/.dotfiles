@@ -1,203 +1,3 @@
-nv config 
-exit
-xport
-xprop 
-exit
-clear
-cd .config/i3/config 
-cd .config/i3/
-nv config 
-clear
-nv config 
-clear
-exit
-clear
-cd .config/i3/config 
-cd .config/i3/
-nv config 
-clear
-exit
-exit
-clear
-cd .config/i3/
-ls
-nv config 
-exit
-clear
-htop
-clear
-exit
-clear
-exit
-clear
-clearr
-clear
-cd .config/i3/
-ls
-nv config 
-clear
-n
-clear
- 
-clear
-df -h
-clear
-clear
-exit
-clear
-exit
-clear
-sudo apt install picom
-clear
-picom
-clear
-exit
-clear
-cd repos/unix/i3/
-ls
-mkdir transparency.md
-nv transparency.md/
-clear
-exit
-clear
-cd .config/i3/
-ls
-nv config 
-cd /etc/
-find i3
-cd i3
-ls
-nv config
-cd
-find i3-status
-find i3_status
-find -r i3-status
-clear
-cd .config
-ls
-cd
-clear
-clear
-ls
-cd /etc/xdg/
-ls
-cd
-cd /
-cd etc/
-clear
-cd
-clear
-clear
-sudo apt install xbps
-clear
-sudo apt search xbps
-sudo apt install i3-gaps
-clear
-i3 --version
-sudo apt update i3
-clear
-i3 --version
-sudo apt install i3-wm
-clear
-tmux
-clear
-cd .config/i3/
-ls
-ls
-clear
-nv config 
-man i3status
-clear
-ls
-man i3status
-clear
-man i3status
-mkdir i3status
-mv i3status/ ..
-ls
-cd ..
-cd i3status/
-ls
-nv config
-nv config 
-mv config hello
-nv hello 
-i3status
-clear
-i3status man
-man i3status
-i3status -c hello 
-clear
-nv hello 
-i3status -c hello 
-clear
-mv hello config
-clear
-nv config 
-i3status -c config 
-clear
-i3status -c /etc/i3status.conf 
-clear
-rm config
-clear
-cp /etc/i3status.conf config
-ls
-nv conf
-nv config 
-clear
-cd
-clear
-sudo apt install nitrogen
-clear
-clear
-cd Pictures/
-ls
-mkdir wallpapers
-mv my_neighbour_todoro.jpg wallpapers/
-ls
-clear
-picom
-clear
-cd 
-cd .config/i3/
-nv config 
-clear
-cd .config/i3
-ls
-nv config 
-cd ..
-ls
-nv picom.conf
-exit
-clear
-ls
-clear
-exit
-clear
-exit
-clear
-exit
-clear
-exit
-clear
-exit
-clear
-exit
-clear
-exit
-clear
-man blur
-man picom
-sudo apt remove feh
-clear
-sudo apt autoremove
-clear
-nv ~/.config/i3/config 
-tmux
-nv ~/.config/i3/config 
-n
-clear
-clear
 sudo apt install i3
 clear
 sudo apt install i3-wm
@@ -497,4 +297,204 @@ clear
 ls
 rm -rf README.md 
 clear
+exit
+clear
+n
+clear
+n
+cd .config/nvim/
+nv
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+clear
+git add .
+lg
+clear
+clear
+cd /etc/xdg/Xwayland-session.d/
+ls
+cd ..
+ls
+clear
+neofetch
+clear
+cd ~/.config
+ls
+cd neofetch/
+ls
+cd ascii/
+n
+neofetch
+clear
+n
+neofetch
+clear
+neofetch
+clear
+cd ../
+ls
+nv config.conf 
+neofetch --colors 1
+neofetch --colors 2
+neofetch --colors 3
+neofetch --colors 4
+neofetch --colors 5
+neofetch --colors 6
+neofetch --colors 2
+neofetch --colors 3
+neofetch --colors 4
+clear
+nv config.conf 
+neofetch
+nv config.conf 
+neofetch
+nv config.conf 
+neofetch
+nv config.conf 
+neofetch
+clear
+nv config.conf 
+neofetch
+nv config.conf 
+clear
+n
+neofetch
+clear
+clear
+cd
+clear
+n
+clear
+clear
+ls
+clear
+cd myscripts
+ls
+cd ..
+ls
+clear
+n
+clear
+n
+n
+n
+n
+n
+cd .config/xfce4/terminal/
+ls
+nv terminalrc 
+clear
+n
+n
+n
+n
+clear
+n
+clear
+n
+n
+n
+clear
+cd
+cd dotfiles/
+git add .
+cd .config/rofi/
+ls
+ls -a
+rm .git/ -rf
+clear
+cd ../..
+git add .
+lg
+cd .config/xfce4/terminal/
+nv terminalrc 
+cd ~/.dotnet/
+cd ..
+cd dotfiles/
+git add .
+lg
+n
+git add .
+lg
+clear
+exit
+cd dotfiles/
+git push
+n
+cd .config/
+nv nvim/
+nv nvim/
+clear
+exi
+exit
+exit
+exit
+exit
+exit
+exit
+clear
+n
+exit
+clear
+cd .config/i3/
+n
+n
+n
+cd
+n
+cd .config/zsh/
+ls
+ls
+ls
+clear
+cd ..
+ls
+nv zsh/.zshrc 
+exit
+clear
+n
+exit
+clear
+exit
+exit
+clear
+exit
+exit
+clear
+cd .config/  
+ls
+cd i3
+ls
+nv config 
+exit
+clear
+exit
+clear
+nv ~/.config/i3
+nv ~/.config/i3
+exit
+clear
+cd .config/i3
+nv config 
+exit
+clear
+exit
+clear
+man i3-msg
+clear
+nv ~/.config/i3/config 
+nv ~/.config/i3/config 
+clear
+exirt
 exit

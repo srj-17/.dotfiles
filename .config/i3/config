@@ -257,14 +257,19 @@ default_floating_border pixel 1
 # ----------------------- auto assignments to workspaces ---------------- #
 # class of apps found using xprop, second WM_CLASS string
 # firefox
-exec firefox
 assign [class="firefox"] $ws1
 for_window [class="firefox"] fullscreen enable
+exec firefox
 
 # work workspace 
-exec xfce4-terminal --command=tmux
 ## comment or uncomment this out based on what kind of dev workflow you want
 ## do you want a single view workflow or multitask
-# assign [class="Xfce4-terminal"] $ws2
-# for_window [class="Xfce4-terminal"] fullscreen enable
+assign [class="Xfce4-terminal"] $ws2
+for_window [class="Xfce4-terminal"] fullscreen enable
+exec xfce4-terminal --command=tmux
+
+# this is kindof what I want? Open terminal on workspace 2 at the beginning and 
+# if I open the terminal later, it opens on the workspace I want to open on
+# exec --no-startup-id i3-msg 'workspace 1; exec firefox'
+# exec --no-startup-id i3-msg 'workspace 2; exec xfce4-terminal'
 # ------------------------------------------------------------------------#
