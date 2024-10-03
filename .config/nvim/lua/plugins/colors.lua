@@ -16,10 +16,10 @@ return {
         priority = 1000,
         config = function()
             require("tokyonight").setup({
-                transparent = true,
+                transparent = false,
                 styles = {
-                    sidebars = "transparent",
-                    floats = "transparent",
+                    -- sidebars = "transparent",
+                    -- floats = "transparent",
                     functions = {
                         italic = true,
                         bold = true,
@@ -32,9 +32,9 @@ return {
                     comments = { },
                 },
             })
-            vim.cmd.colorscheme("tokyonight-moon")
+            vim.cmd.colorscheme("tokyonight-night")
             require("lualine").setup({
-                options = { theme = "tokyonight-moon", }
+                options = { theme = "auto" },
              })
         end,
     },
