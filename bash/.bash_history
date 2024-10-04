@@ -1,52 +1,3 @@
-xfce4-terminal
-exit
-exit
-xfce4-terminal
-exit
-cd .config/redshift.conf 
-cd .config
-ls
-cd i3
-ls
-nv config 
-exit
-exit
-clear
-xfce4-terminal --help
-xfce4-terminal --command=tmux
-clear
- cd .config/i3
-ls
-nv config 
-cd
-n
-exit
-exit
-exit
-exit
-exit
-n
-clear
-exit
-clear
-exit
-n
-exit
-clear
-n
-exit
-clear
-nv .config/i3
-nv .config/i3
-clear
-cd /home/srj/Pictures/wallpapers/my_neighbour_todoro.jpg 
-exit
-exit
-clear
-cd .config/i3
-ls
-n
-cd 
 cd dotfiles/
 ls
 git add .
@@ -497,4 +448,69 @@ exit
 clear
 clear
 n
+exit
+clear
+exit
+clear
+cd repos/
+t clone https://github.com/srj-17/.dotfiles ~
+git clone https://github.com/srj-17/.dotfiles ~
+git clone https://github.com/srj-17/.dotfiles ielts/
+ielts/d
+git clone https://github.com/srj-17/.dotfiles ielt
+clear
+ls
+cd 
+ls
+ls -a
+cat .gitconfig
+clear
+ls
+ls .gitconfig
+ls .git*
+cat .gitconfig
+cd repos/
+ls
+git clone https://github.com/srj-17/.dotfiles
+clear
+cd
+git clone git@github.com:srj-17/.dotfiles.git ~/do
+ls
+ls do
+rm do -rf
+clear
+ls
+clear
+exit
+clear
+ls
+cd .config/nvim
+ls
+clear
+exit
+clear
+ls
+cd dotfiles/
+ls
+ls i3/
+tree i3 -la
+man rofi
+clear
+ls
+exit
+clear
+ls
+cd dotfiles/
+ls
+ls terminal/
+ls -a terminal/
+ls gtk/
+ls gtk/ -la
+ls misc/
+ls -la misc/
+ls -la tmux/
+ls
+cd .config
+cd misc/.config/
+ls
 exit

@@ -1777,3 +1777,21 @@
 10:05:09.522003 table@compaction committed F-2 S-3KiB Ke·0 D·118 T·92.089003ms
 10:05:09.530022 table@remove removed @398
 10:05:09.530893 table@remove removed @397
+16:04:46.533514 db@close closing
+16:04:46.630759 db@close done T·96.078758ms
+=============== Oct 4, 2024 (+0545) ===============
+16:04:48.013120 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:04:48.015102 version@stat F·[0 1] S·348KiB[0B 348KiB] Sc·[0.00 0.00]
+16:04:48.015141 db@open opening
+16:04:48.015247 journal@recovery F·1
+16:04:48.023246 journal@recovery recovering @402
+16:04:48.029367 memdb@flush created L0@405 N·72 S·2KiB "\x00\x00\x00...md,v18131":"\x0e\x00\x00...md,d18078"
+16:04:48.030301 version@stat F·[1 1] S·350KiB[2KiB 348KiB] Sc·[0.25 0.00]
+16:04:48.045593 db@janitor F·5 G·1
+16:04:48.045613 db@janitor removing table-401
+16:04:48.045681 db@open done T·30.530772ms
+16:04:49.433197 table@compaction L0·1 -> L1·1 S·350KiB Q·18140
+16:04:49.443419 table@build created L1@408 N·4655 S·348KiB "\x00\x00\x00..653,v2669":"\x0e\x00\x00..1b1,v9777"
+16:04:49.443462 version@stat F·[0 1] S·348KiB[0B 348KiB] Sc·[0.00 0.00]
+16:04:49.444453 table@compaction committed F-1 S-2KiB Ke·0 D·72 T·11.221562ms
+16:04:49.445091 table@remove removed @404
