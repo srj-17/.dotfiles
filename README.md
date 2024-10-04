@@ -46,8 +46,8 @@ mv ~/dotfiles ~/dotfiles_backup
 git clone git@github.com:srj-17/.dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
-4. Stow the files that you need the configurations For
-example:
+4. Stow the files that you need the configurations 
+For example:
 ```bash
 stow nvim
 ```
