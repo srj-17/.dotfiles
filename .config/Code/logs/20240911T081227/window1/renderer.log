@@ -1,6 +1,0 @@
-2024-09-11 08:12:30.734 [info] Started local extension host with pid 50251.
-2024-09-11 08:12:32.166 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
-2024-09-11 08:12:36.129 [info] [perf] Render performance baseline is 90ms
-2024-09-11 08:18:04.948 [error] [Extension Host] Error: Unexpected SIGPIPE
-	at process.<anonymous> (/usr/share/code/resources/app/out/bootstrap-fork.js:1:2146)
-	at process.emit (node:events:519:28)

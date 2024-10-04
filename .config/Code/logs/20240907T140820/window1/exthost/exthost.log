@@ -1,6 +1,0 @@
-2024-09-07 14:08:23.944 [info] Extension host with pid 53675 started
-2024-09-07 14:08:23.944 [info] Skipping acquiring lock for /home/srj/.config/Code/User/workspaceStorage/034cc26f4fefa56b92e97344df0baad1.
-2024-09-07 14:08:24.237 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
-2024-09-07 14:08:24.251 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
-2024-09-07 14:08:24.740 [info] Extension host terminating: renderer closed the MessagePort
-2024-09-07 14:08:24.742 [info] Extension host with pid 53675 exiting with code 0

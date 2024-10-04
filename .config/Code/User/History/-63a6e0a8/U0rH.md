@@ -1,3 +1,0 @@
-# JSON
-- JavaScript Object Notation
-- 

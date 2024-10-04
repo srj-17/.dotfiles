@@ -1,6 +1,0 @@
-.one {
-    padding: 10px;
-    margin: auto;
-    width: clamp(100px, 50vw, 500px);
-    background-color: black;
-}

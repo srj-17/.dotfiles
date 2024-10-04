@@ -21,3 +21,5 @@
 - `Xfce-4 terminal emulator`
 - `picom` for compositor
 - `lxappearance` for setting gtk themes
+
+> use stow to manage all these dotfiles

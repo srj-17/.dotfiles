@@ -1,1 +1,0 @@
-add7 = (number) => number + 7;

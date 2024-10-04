@@ -1,9 +1,0 @@
-# JSON
-- JavaScript Object Notation
-- Its a universal way to transmit data in the web
-- First, its a *text file / string* with extension `.json`
-- It *follows* the js object *syntax*, so called JSON.
-- MIME Type of `application/json`
-    - MIME type = media type / content type 
-    - they're strings sent along with file to denote their media type
-- 

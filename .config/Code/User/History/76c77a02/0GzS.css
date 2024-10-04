@@ -1,8 +1,0 @@
-.container {
-    display: grid;
-    background-color: yellow;
-    border: 2px solid black;
-    gap: 5px;
-
-    grid-template-columns: 1fr 4fr;
-}

@@ -1,3 +1,0 @@
-interface mybool {
-    true;
-}
