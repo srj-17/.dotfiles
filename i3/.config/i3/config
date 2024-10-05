@@ -215,10 +215,6 @@ bindsym $mod+shift+x exec i3lock
 exec --no-startup-id nitrogen --restore
 # restore is for restoring the last set wallpaper when logged in again
 
-
-# for redshift 
-exec redshift
-
 # --------------------- appearance ---------------------------#
 set $bg-color #2f343f
 set $inactive-bg-color #2f343f
@@ -275,3 +271,7 @@ exec xfce4-terminal --command=tmux
 # exec --no-startup-id i3-msg 'workspace 1; exec firefox'
 # exec --no-startup-id i3-msg 'workspace 2; exec xfce4-terminal'
 # ------------------------------------------------------------------------#
+
+# ----------------------------------autostarts-----------------------------#
+# exec --no-startup-id redshift-gtk
+# -------------------------------------------------------------------------#

@@ -123,6 +123,7 @@ return {
                 vim.keymap.set("n", "<leader>ont", "<Cmd>ObsidianNewFromTemplate<Enter>", { desc = "Obsidan n from Template"} )
                 vim.keymap.set("n", "<leader>on", "<Cmd>ObsidianNew<Enter>", { desc = "Obsidan New Note"} )
                 vim.keymap.set("n", "<leader>ot", "<Cmd>ObsidianToday<Enter>", { desc = "Obsidan: Today's Daily Note"} )
+                vim.keymap.set("n", "<leader>os", "<Cmd>ObsidianSearch<Enter>", { desc = "Obsidan: Search"} )
 
                 vim.opt.conceallevel = 2
             end

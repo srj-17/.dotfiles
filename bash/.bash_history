@@ -1,356 +1,3 @@
-cd dotfiles/
-ls
-git add .
-lg
-ls
-nv README.md 
-git add .
-lg
-nv README.md 
-git add .
-lg
-clear
-git push
-clear
-cd
-cd .config/i3/
-nv config 
-nv config 
-dmenu
-dmenu_run
-rofi
-sudo apt install rofi
-clear
-rofi
-clear
-rofi -show run
-clear
-nv config 
-cd .config
-cd i3
-ls
-nv config 
-nv config 
-exit
-exit
-clear
-cd .config
-ls
-cd 
-cd .config
-ls
-clea
-clear
-cd i3
-ls
-clear
-clear
-clear
-nv config 
-man rofi
-echo $XDG_CONFIG_DIRS 
-cd
-cd .config
-ls
-clear
-mkdir rofi
-cd rofi/
-ls
-nv config.rasi
-cd ../
-cd i3
-ls
-nv config 
-cd i3
-cd ../rofi/
-ls
-nv config.rasi 
-rm config.rasi 
-ls
-man rofi
-rofi --dump-config > config.rasi
-man rofi
-rofi -dump-config > config.rasi
-nv config.rasi 
-nv config.rasi 
-rofi-theme-selector 
-clear
-nv config.rasi 
-clear
-
-ear
-rm -rf ~/.config/rofi
-  git clone git@github.com:w8ste/Tokyonight-rofi-theme.git ~/.config/rofi
-git clone git@github.com:w8ste/Tokyonight-rofi-theme.git ~/.config/rofi
-ls
-ls
-cd ..
-rm -rf rofi
-ls
-clear
-  git clone git@github.com:w8ste/Tokyonight-rofi-theme.git ~/.config/rofi
-cd rofi/
-ls
-nv config.rasi 
- sudo mv ~/.config/rofi/tokyonight.rasi /usr/share/rofi/themes
-  sudo mv ~/.config/rofi/tokyonight_big1.rasi /usr/share/rofi/themes
-  sudo mv ~/.config/rofi/tokyonight_big2.rasi /usr/share/rofi/themes
-rofi-theme-selector 
-clear
-rofi-theme-selector 
-clear
-clear
-ls
-rm -rf README.md 
-clear
-exit
-clear
-n
-clear
-n
-cd .config/nvim/
-nv
-n
-n
-n
-n
-n
-n
-n
-n
-n
-n
-n
-n
-n
-clear
-git add .
-lg
-clear
-clear
-cd /etc/xdg/Xwayland-session.d/
-ls
-cd ..
-ls
-clear
-neofetch
-clear
-cd ~/.config
-ls
-cd neofetch/
-ls
-cd ascii/
-n
-neofetch
-clear
-n
-neofetch
-clear
-neofetch
-clear
-cd ../
-ls
-nv config.conf 
-neofetch --colors 1
-neofetch --colors 2
-neofetch --colors 3
-neofetch --colors 4
-neofetch --colors 5
-neofetch --colors 6
-neofetch --colors 2
-neofetch --colors 3
-neofetch --colors 4
-clear
-nv config.conf 
-neofetch
-nv config.conf 
-neofetch
-nv config.conf 
-neofetch
-nv config.conf 
-neofetch
-clear
-nv config.conf 
-neofetch
-nv config.conf 
-clear
-n
-neofetch
-clear
-clear
-cd
-clear
-n
-clear
-clear
-ls
-clear
-cd myscripts
-ls
-cd ..
-ls
-clear
-n
-clear
-n
-n
-n
-n
-n
-cd .config/xfce4/terminal/
-ls
-nv terminalrc 
-clear
-n
-n
-n
-n
-clear
-n
-clear
-n
-n
-n
-clear
-cd
-cd dotfiles/
-git add .
-cd .config/rofi/
-ls
-ls -a
-rm .git/ -rf
-clear
-cd ../..
-git add .
-lg
-cd .config/xfce4/terminal/
-nv terminalrc 
-cd ~/.dotnet/
-cd ..
-cd dotfiles/
-git add .
-lg
-n
-git add .
-lg
-clear
-exit
-cd dotfiles/
-git push
-n
-cd .config/
-nv nvim/
-nv nvim/
-clear
-exi
-exit
-exit
-exit
-exit
-exit
-exit
-clear
-n
-exit
-clear
-cd .config/i3/
-n
-n
-n
-cd
-n
-cd .config/zsh/
-ls
-ls
-ls
-clear
-cd ..
-ls
-nv zsh/.zshrc 
-exit
-clear
-n
-exit
-clear
-exit
-exit
-clear
-exit
-exit
-clear
-cd .config/  
-ls
-cd i3
-ls
-nv config 
-exit
-clear
-exit
-clear
-nv ~/.config/i3
-nv ~/.config/i3
-exit
-clear
-cd .config/i3
-nv config 
-exit
-clear
-exit
-clear
-man i3-msg
-clear
-nv ~/.config/i3/config 
-nv ~/.config/i3/config 
-clear
-exirt
-exit
-exit
-clear
-exit
-clear
-exit
-clear
-exit
-clear
-exit
-clear
-exit
-clear
-exit
-exit
-exit
-exit
-clear
-exit
-exit
-exit
-exit
-exit
-exit
-exit
-clear
-exit
-exit
-exit
-clear
-exit
-clear
-exit
-clear
-exit
-exit
-clear
-clear
-firefox --help
-firefox --headless
-man firefox
-firefox --help
-firefox --help | grep fullscreen
-firefox --help | firefox-source-docs
-firefox --help | grep firefox-source-docs
-exit
-clear
-clear
 firefox --kiosk www.google.com
 firefox --kisok www.google.com
 firefox --kisok www.google.com
@@ -513,4 +160,341 @@ ls
 cd .config
 cd misc/.config/
 ls
+exit
+clear
+redshift
+clear
+clear
+ls
+clear
+cd dotfiles/
+ls
+clear
+ls
+git push
+clear
+clear
+clear
+ls
+clear
+ls
+cd 
+ls
+clear
+cd /usr/local/man/
+ls
+cd man1/
+ls
+nv ytfzf.1 
+cd ../man5
+ls
+ls -la
+clear
+cd
+echo $TMUX
+echo $PATH
+cd /usr/local/sbin/
+ls
+ls
+ls -a
+cd /usr//local/bin/
+ls
+ls -la
+cd /opt/nvim-linux64/
+ls
+ls -la
+clear
+ls
+tree -la
+clear
+ls
+ls bin/
+ls lib/
+ls lib/nvim/
+ls lib/nvim/parser/
+clear
+ls -la share/applications/
+clear
+cd /usr/local/
+ls
+cd bin/
+ls
+cd ..
+ls
+clear
+redshift
+randr
+xrandr
+clear
+exit
+redshift-gtk
+clear
+cd dotfiles/
+ls
+cd i3/.config/i3/
+ls
+nv config 
+clear
+exit
+clear
+cd .config/i3/
+ls
+nv config 
+clear
+exit
+clear
+cd .config/
+ls
+nv redshift.conf 
+mkdir redshift
+mv redshift.conf redshift
+ls
+clear
+exit
+redshift --help
+redshift -h
+redshift -c ~/.config/redshift.conf 
+sudo redshift -c ~/.config/redshift.conf 
+ls
+clear
+ls
+ls -la
+cd .config/
+ls
+ls -la
+clear
+ls
+mkdir redshift
+mv redshift.conf redshift
+ls
+redshift -c redshift/redshift.conf 
+redshift
+nv /etc/apparmor
+sudo apt remove redshift
+clear
+sudo apt install redshift
+ls
+sudo apt install redshift-gt
+sudo apt install redshift-gtk
+clear
+ls .config/
+cd .config/
+cd redshift/
+ls
+redshift-gtk
+redshift-gtk
+clear
+sudo apt install geoclue-2.0
+clear
+redshift -c ~/.config/redshift/redshift.conf 
+redshift-gtk -c ~/.config/redshift/redshift.conf 
+clear
+clear
+exit
+clear
+neofetch
+clea
+clear
+exit
+man redshift
+man redshift | grep config
+clear
+cd .config/
+ls
+mv redshift/redshift.conf .
+clear
+ls
+rm redshift -rf
+clear
+ls
+clear
+nv redshift.conf 
+ls
+clear
+redshift
+clear
+cd .config/
+ls
+clear
+cd xfce4/
+l
+ls
+cd ..
+clear
+exit
+clear
+redshift -c .config/redshift/redshift.conf 
+clear
+sudo apt remove redshift
+clear
+ls
+sudo apt remove geoclue-2.0
+clear
+exit
+clear
+redshift
+clear
+clear
+clear
+sudo apt update
+sudo apt upgrade
+clear
+sudo apt autoclean
+clear
+sudo apt autoclean
+clear
+exit
+clear
+df -h
+clear
+exit
+clear
+sudo apt update
+clear
+clear
+exit
+clear
+clear
+exit
+clear
+echo $PATH 
+clear
+exit
+clear
+cd /etc/environment
+nv /etc/environment
+clear
+exit
+clear
+ls .ssh
+ls .ssh*
+tree .ssh
+clear
+exit
+clear
+cd /home/srj/.mozilla/firefox/c4mwh1o5.default-release/
+ls
+cd ..
+ls
+cd kulsklts.default/
+ls
+nv times.json 
+clear
+nv profiles.ini
+ls
+cd ..
+ls
+nv profiles.ini 
+clear
+ls
+clear
+ls
+mkdir -p /media/disk2/firefox_backup_profile
+cp * -r /media/disk2/firefox_backup_profile/
+clear
+clear
+cd
+ls
+cd .config/redshift/
+ls
+redshift
+clear
+cd
+cd dotfiles/
+ls
+lazygit
+clear
+ls
+clea
+clear
+ls
+cd bash/
+ls
+ls -a
+nv .bash_profile 
+nv .bashrc 
+clear
+ls
+cd
+cd dotfiles/
+ls
+cd misc/
+ls
+ls -a
+cd .config/
+ls
+mkdir redshift
+mv redshift.conf redshift
+clear
+ls
+cd ..
+ls
+clear
+exit
+clear
+exit
+clear
+nv /etc/fstab
+cd
+nv
+clear
+sudo apt clean
+sudo apt autoclean
+clear
+sudo apt autoremove
+sudo dpkg --configure -a
+clear
+sudo apt autoremove
+sudo apt autoclean
+sudo dpkg --configure -a
+clear
+n
+clear
+sudo apt autoclean
+sudo apt clean
+sudo apt autoremove
+sudo apt remove
+sudo apt remove
+dpkg
+clear
+dpkg
+clear
+ls
+clear
+sudo apt remove code
+sudo apt -r install code
+sudo apt purge code
+sudo dpkg --configure -a
+clea
+clear
+clear
+sudo apt remove
+sudo apt autoclean
+sudo apt autoremove
+clear
+exit
+clear
+ls
+cd /media/
+ls
+cd /disk2
+cd disk2/
+ls
+mkdir to_backup
+mv firefox_backup_profile/ to_backup/
+ls
+clear
+cd to_backup/
+ls
+cp ~/.ssh/ .
+cp ~/.ssh/ . -r
+clear
+ls
+touch README.md
+nv README.md 
+clear
+ls
+ls -a
+clear
+clear
 exit
