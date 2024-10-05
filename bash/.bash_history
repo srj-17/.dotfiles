@@ -1,53 +1,3 @@
-firefox --kiosk www.google.com
-firefox --kisok www.google.com
-firefox --kisok www.google.com
-clear
-exit
-clear
-exit
-exit
-clear
-nv config 
-clear
-nv
-:w
-clear
-clear
-clear
-tmux
-ls
-tmux -ls
-tmux ls
-cd ..
-clear
-clear
-exit
-clear
-clear
-exit
-clear
-cd 
-nv .tmux.conf 
-clear
-clear
-exit
-clear
-man stow
-stow --help
-sudo apt install stow
-clear
-man stow
-info stow
-clear
-mkdir eg_dotfile
-cd eg_dotfile/
-ls
-man stow
-cd ~/dotfiles/
-ls
-rm install.sh -rf
-clear
-ls
 cd .config/
 ls
 man stow
@@ -497,4 +447,54 @@ ls
 ls -a
 clear
 clear
+exit
+clear
+nv
+nv 
+cd .config/
+ls
+cd nvim
+ls
+cd lua/
+ls
+cd plugins/
+ls
+nv obsidian.lua 
+nv
+nv
+cleawr
+clewar
+clear
+cd
+cd dotfiles/
+ls
+git add .
+git commit
+clear
+git status
+git push
+clear
+clear
+cd
+clear
+nv
+clear
+clear
+clear
+clear
+clear
+ot
+clear
+ot
+os
+clear
+ot
+os
+clear
+clear
+nv --h
+nv -h
+nv +ObsidianSearch
+nv +ObsidianSearch
+nv .bash_aliases 
 exit
