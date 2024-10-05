@@ -1,321 +1,3 @@
-cd .config/
-ls
-man stow
-clear
-cd ..
-git add .
-git commit -m "occasional commit"
-clear
-yazi
-sudo apt install yazi
-clear
-ls -la | grep stow
-ls -la | grep nvim
-ls -la | grep nvim
-cd .config/
-ls -la | grep nvim
-sudo apt install yazi
-clear
-ls
-ls
-cd ../..
-ls
-clear
-clear
-cd .config
-ls
-cd
-n
-clear
-nv .
-nv
-clear
-cd .config/i3/
-nv config 
-tmux
-clear
-ls
-tmux ls
-tmux
-exit
-clear
-exit
-clear
-exit
-clear
-clear
-n
-exit
-clear
-exit
-clear
-cd repos/
-t clone https://github.com/srj-17/.dotfiles ~
-git clone https://github.com/srj-17/.dotfiles ~
-git clone https://github.com/srj-17/.dotfiles ielts/
-ielts/d
-git clone https://github.com/srj-17/.dotfiles ielt
-clear
-ls
-cd 
-ls
-ls -a
-cat .gitconfig
-clear
-ls
-ls .gitconfig
-ls .git*
-cat .gitconfig
-cd repos/
-ls
-git clone https://github.com/srj-17/.dotfiles
-clear
-cd
-git clone git@github.com:srj-17/.dotfiles.git ~/do
-ls
-ls do
-rm do -rf
-clear
-ls
-clear
-exit
-clear
-ls
-cd .config/nvim
-ls
-clear
-exit
-clear
-ls
-cd dotfiles/
-ls
-ls i3/
-tree i3 -la
-man rofi
-clear
-ls
-exit
-clear
-ls
-cd dotfiles/
-ls
-ls terminal/
-ls -a terminal/
-ls gtk/
-ls gtk/ -la
-ls misc/
-ls -la misc/
-ls -la tmux/
-ls
-cd .config
-cd misc/.config/
-ls
-exit
-clear
-redshift
-clear
-clear
-ls
-clear
-cd dotfiles/
-ls
-clear
-ls
-git push
-clear
-clear
-clear
-ls
-clear
-ls
-cd 
-ls
-clear
-cd /usr/local/man/
-ls
-cd man1/
-ls
-nv ytfzf.1 
-cd ../man5
-ls
-ls -la
-clear
-cd
-echo $TMUX
-echo $PATH
-cd /usr/local/sbin/
-ls
-ls
-ls -a
-cd /usr//local/bin/
-ls
-ls -la
-cd /opt/nvim-linux64/
-ls
-ls -la
-clear
-ls
-tree -la
-clear
-ls
-ls bin/
-ls lib/
-ls lib/nvim/
-ls lib/nvim/parser/
-clear
-ls -la share/applications/
-clear
-cd /usr/local/
-ls
-cd bin/
-ls
-cd ..
-ls
-clear
-redshift
-randr
-xrandr
-clear
-exit
-redshift-gtk
-clear
-cd dotfiles/
-ls
-cd i3/.config/i3/
-ls
-nv config 
-clear
-exit
-clear
-cd .config/i3/
-ls
-nv config 
-clear
-exit
-clear
-cd .config/
-ls
-nv redshift.conf 
-mkdir redshift
-mv redshift.conf redshift
-ls
-clear
-exit
-redshift --help
-redshift -h
-redshift -c ~/.config/redshift.conf 
-sudo redshift -c ~/.config/redshift.conf 
-ls
-clear
-ls
-ls -la
-cd .config/
-ls
-ls -la
-clear
-ls
-mkdir redshift
-mv redshift.conf redshift
-ls
-redshift -c redshift/redshift.conf 
-redshift
-nv /etc/apparmor
-sudo apt remove redshift
-clear
-sudo apt install redshift
-ls
-sudo apt install redshift-gt
-sudo apt install redshift-gtk
-clear
-ls .config/
-cd .config/
-cd redshift/
-ls
-redshift-gtk
-redshift-gtk
-clear
-sudo apt install geoclue-2.0
-clear
-redshift -c ~/.config/redshift/redshift.conf 
-redshift-gtk -c ~/.config/redshift/redshift.conf 
-clear
-clear
-exit
-clear
-neofetch
-clea
-clear
-exit
-man redshift
-man redshift | grep config
-clear
-cd .config/
-ls
-mv redshift/redshift.conf .
-clear
-ls
-rm redshift -rf
-clear
-ls
-clear
-nv redshift.conf 
-ls
-clear
-redshift
-clear
-cd .config/
-ls
-clear
-cd xfce4/
-l
-ls
-cd ..
-clear
-exit
-clear
-redshift -c .config/redshift/redshift.conf 
-clear
-sudo apt remove redshift
-clear
-ls
-sudo apt remove geoclue-2.0
-clear
-exit
-clear
-redshift
-clear
-clear
-clear
-sudo apt update
-sudo apt upgrade
-clear
-sudo apt autoclean
-clear
-sudo apt autoclean
-clear
-exit
-clear
-df -h
-clear
-exit
-clear
-sudo apt update
-clear
-clear
-exit
-clear
-clear
-exit
-clear
-echo $PATH 
-clear
-exit
-clear
-cd /etc/environment
-nv /etc/environment
-clear
-exit
-clear
 ls .ssh
 ls .ssh*
 tree .ssh
@@ -497,4 +179,322 @@ nv -h
 nv +ObsidianSearch
 nv +ObsidianSearch
 nv .bash_aliases 
+exit
+clear
+cd .ssh
+ls
+nv config 
+ls
+nv config 
+cd
+cd .gitconfig-ranhoodlum 
+nv .gitconfig-ranhoodlum 
+nv .gitconfig
+ls
+nv .gitconfig-ranhoodlum 
+clear
+exi
+clear
+exit
+clear
+os
+os
+clear
+ot
+clear
+ot
+nvim --cmd ObsidianToday
+clear
+ot
+clear
+clear
+clear
+cd dotfiles/
+git add .
+git commit
+clear
+ot
+cd ..
+ls
+cd Sync/
+ls
+cd notes/
+ls
+ls -a
+ls .git/
+clear
+git add .
+clear
+git commit
+clear
+git push
+clear
+git remote
+git remote --verbose
+clear
+ls
+clear
+git remote add origin https://github.com/ranhoodlum/for_obsidian
+git remote -v
+git push orign main
+clear
+cd 
+nv .gitconfig
+cd Sync/
+cd notes/
+ls
+git push
+git push --set-upstream origin main
+l
+ls
+clear
+ls
+ls | grep .git
+ls -la| grep .git
+clear
+ls
+git remote
+git remote add sshorigin git@github.com:ranhoodlum/for_obsidian.git
+git push sshorigin main
+rm .git/ -rf
+clear
+ls
+git init
+git add .
+git commit -m "first commit"
+clear
+git branch -M main
+clear
+git remote add origin git@github.com:ranhoodlum/obsidianNotes.git
+git push -u origin main
+clear
+nv README.md
+git add .
+git commit -m "update readme"
+git push
+ear
+clear
+nv README.md 
+git add .
+git commit -m "update readme"
+ls
+nv README.md 
+git add 
+git add .
+git commit -m "update readme"
+git push
+nv README.md 
+nv README.md 
+clear
+git add .
+git commit -m "update readme"
+git push
+1
+nv README.md 
+clear
+git add .
+nv README.md 
+git add .
+git commit -m "update readme"
+clear
+ls
+cd
+clea
+clear
+ls
+clear
+ls
+rm eg_dotfile/ -rf
+clear
+ls
+ls Downloads/
+cd Downloads/
+l
+ls
+clear
+ls
+mupdf 993-Article\ Text-990-1-10-20080129.pdf 
+rm 993-Article\ Text-990-1-10-20080129.pdf 
+rm arrow_drop_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg 
+rm BUhRrHan.html 
+rm fstab 
+clear
+ls
+rm Ielts\ Listening.pptx 
+ls jbm/
+nv jbm/OFL.txt 
+nv jbm/README.md 
+rm jbm
+rm jbm -rf
+clear
+ls
+rm nani*
+ls
+clear
+ls
+ls nvim-configs/
+rm nvim-configs/ -rf
+clear
+ls
+rm jflap.jar -rf
+clear
+ls
+mupdf questions\ on\ ai.pdf 
+clear
+ls
+mupdf questions\ on\ ai.pdf 
+clear
+ls
+rm Task\ 2\ Writing\ Samples.docx tokyonight/ Tokyonight-Dark-B.zip -rf
+clear
+ls
+cd
+ls
+ls Documents/
+ls Documents/notes\ cs/
+rm Documents/notes\ cs/ -rf
+clear
+ls
+ls Desktop/
+ls Music/
+ls node_modules/
+clear
+ls
+ls Pictures/
+cd Pictures/
+pix career_advice.png 
+pix career_advice.png 
+ls
+apt search photo
+apt search image
+clear
+ls
+cd
+ls
+ls Public/
+cat something.md 
+cat something.md >> hello.txt
+ls
+cat hello.txt 
+rm hello.txt 
+clear
+ls
+ot
+cat something.md 
+rm something.md 
+ls
+clear
+ls
+ls temporary_git/
+ls repos/
+clear
+ls
+ls Sync/
+ls
+clear
+ls
+ls Templates/
+clear
+ls
+ls Terminal/
+ls Terminal/Grep/
+cd Terminal/
+ls
+cd grep.bash 
+cat grep.bash 
+clear
+ls
+./gre
+sh grep.bash 
+clear
+ls
+cd Grep/
+ls
+cd ..
+ls
+cd ..
+ls
+rm Terminal/ -rf
+ls
+clear
+ls
+ls temporary_git/
+cd temporary_git/
+ls
+cat something.txt 
+cd ..
+rm temporary_git/ -rf
+clear
+ls
+ls Vie
+ls Videos/
+ls Templates/
+clear
+ls
+exit
+clear
+nv dotfiles/i3/.config/picom.conf 
+nv dotfiles/i3/.config/picom.conf 
+nv dotfiles/i3/.config/picom.conf 
+ls
+nv dotfiles/i3/.config/picom.conf 
+nv dotfiles/i3/.config/picom.conf 
+exit
+clear
+nv .config/picom.conf 
+nv .config/picom.conf 
+pkill picom
+clear
+nv .config/i3/config 
+exit
+clear
+exit
+clear
+cd Sync/notes/
+ls
+git add .
+git commit -m "update readme"
+git push
+clear
+clear
+clear
+clear
+ls
+cd
+clear
+ls
+cd .config/
+ls
+cd ..
+ls
+cd .config/i3
+ls
+nv config 
+man piconf
+man picom
+ls
+clear
+cd
+xclip
+clear
+cat .config/i3/config | grep picom | xclip
+cat .config/i3/config | grep picom | xclip -selection c
+clear
+ls
+clear
+ls
+clear
+man xclip
+cd .config/
+cd
+nv .bash_aliases 
+exit
+clear
+cat .config/i3/config | grep picom | copy
+paste
+clear
+exit
+clear
+exit
+clear
 exit
