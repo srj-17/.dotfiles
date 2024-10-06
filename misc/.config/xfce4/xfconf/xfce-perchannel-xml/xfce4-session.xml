@@ -7,7 +7,6 @@
     <property name="SaveOnExit" type="bool" value="true"/>
     <property name="AutoSave" type="empty"/>
     <property name="SessionName" type="string" value="Default"/>
-    <property name="StartAssistiveTechnologies" type="bool" value="false"/>
   </property>
   <property name="sessions" type="empty">
     <property name="Failsafe" type="empty">

@@ -1,101 +1,3 @@
-mv .ssh/ ~
-ls
-cd
-clear
-mv Downloads/gitconfig .gitconfig
-clear
-ls
-git clone git@github.com:srj-17/.dotfiles.git
-cd .ssh/
-ls
-nv known_hosts.old 
-vi known_hosts.old 
-nv known_hosts
-vi known_hosts
-clear
-ls
-vi config 
-rm known_hosts known_hosts.old id_ed25519* ranhoodlum*
-ls
-clear
-ssh-keygen -t ed25519 -C "your_email@example.com"
-clear
-ls
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-clear
-ls
-cat id_ed25519.pub 
-rm id_ed25519 id_ed25519.pub 
-ls
-clear
-ssh-add ~/.ssh/id_ed25519
-ssh-keygen -t ed25519 -C "saugatrijal17@gmail.com"
-clear
-eval "$(ssh agent -s)"
-eval "$(ssh-agent -s)"
-clear
-ssh-add ~/.ssh/id_ed25519
-clear
-cat id_ed25519.pub 
-sudo apt install xclip
-clear
-cat id_ed25519.pub | xclip -selection c
-ls
-cat config 
-clear
-ls
-clear
-git clone git@github.com:srj-17/.dotfiles.git
-clear
-ls
-cd ..
-ls
-git clone git@github.com:srj-17/.dotfiles.git
-clear
-cd .dotfiles/
-ls
-cd ..
-ls
-ls .
-ls .*
-rm .bash*
-cd .dotfiles/
-stow bash/
-sudo apt install stow
-clear
-stow bash/
-cd ..
-ls
-vi .bashrc 
-exit
-clear
-clear
-ls
-clear
-exit
-clear
-cd
-ls
-sudo apt install syncthing
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
-clear
-exit
-vi .bashrc 
-clear
-exit
-clear
-sudo apt install vim
-vi .bashrc 
-exit
-exit
-clear
-ls
-/etc/fonts/
-/etc/fonts/
-vi /etc/fonts/fonts.conf 
 mkdir .fonts
 vi /etc/fonts/fonts.conf 
 cd .fonts/
@@ -497,4 +399,102 @@ exit
 clear
 for i in {0..255} ; do     printf "\x1b[48;5;%sm%3d\e[0m " "$i" "$i";     if (( i == 15 )) || (( i > 15 )) && (( (i-15) % 6 == 0 )); then         printf "\n";     fi; done
 clear
+exit
+:q
+clear
+exit
+clear
+ls
+clear
+ls
+clear
+exit
+tmux
+clear
+cd .dotfiles/
+clear
+git add .
+git commit -m "change tmux statusline color"
+clear
+tmux
+nv
+clear
+ls
+tmux
+clear
+exit
+clear
+exit
+localectl set-x11-keymap us '' '' caps:escape_shifted_capslock
+grep "caps" /usr/share/X11/xkb/rules/
+grep "caps" /usr/share/X11/xkb/rules/base
+grep "caps" /usr/share/X11/xkb/rules/base.lst 
+cat "caps" /usr/share/X11/xkb/rules/base.lst 
+clear
+cat --help
+clear
+localectl set-x11-keymap us '' '' caps:escape_shifted_capslock
+sudo apt install rofil
+clear
+exit
+sudo apt install hyrland
+clear
+exit
+clear
+nv
+ot
+clear
+nv ~/.config/nvim/lua/plugins/colors.lua 
+nv
+nv
+clear
+nv
+clear
+nv
+nv ~/.config/nvim/lua/plugins/colors.lua 
+clear
+exit
+nv
+clear
+cd .config/
+ls
+cd xfce4/xfconf/
+ls
+cd xfce-perchannel-xml/
+ls
+nv xfce4-terminal.xml 
+exit
+clear
+nv xfce4-terminal.xml 
+cd .config/
+cd xfce4/xfconf/
+cd xfce-perchannel-xml/
+nv xfce4-terminal.xml 
+exit
+exit
+clear
+exit
+clear
+nv
+clear
+localectl
+clear
+localectl
+clear
+ls
+cd 
+cdl
+clear
+ls
+clear
+cd dot
+cd .dotfiles/
+ls
+clear
+ls
+cd misc/
+ls
+cd ..
+ls
+stow misc/
 exit

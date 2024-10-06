@@ -16,10 +16,10 @@ return {
         priority = 1000,
         config = function()
             require("tokyonight").setup({
-                transparent = true,
+                transparent = false,
                 styles = {
-                    sidebars = "transparent",
-                    floats = "transparent",
+                    -- sidebars = "transparent",
+                    -- floats = "transparent",
                     functions = {
                         italic = true,
                         bold = true,
