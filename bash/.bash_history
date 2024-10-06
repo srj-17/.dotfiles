@@ -1,239 +1,3 @@
-ls .ssh
-ls .ssh*
-tree .ssh
-clear
-exit
-clear
-cd /home/srj/.mozilla/firefox/c4mwh1o5.default-release/
-ls
-cd ..
-ls
-cd kulsklts.default/
-ls
-nv times.json 
-clear
-nv profiles.ini
-ls
-cd ..
-ls
-nv profiles.ini 
-clear
-ls
-clear
-ls
-mkdir -p /media/disk2/firefox_backup_profile
-cp * -r /media/disk2/firefox_backup_profile/
-clear
-clear
-cd
-ls
-cd .config/redshift/
-ls
-redshift
-clear
-cd
-cd dotfiles/
-ls
-lazygit
-clear
-ls
-clea
-clear
-ls
-cd bash/
-ls
-ls -a
-nv .bash_profile 
-nv .bashrc 
-clear
-ls
-cd
-cd dotfiles/
-ls
-cd misc/
-ls
-ls -a
-cd .config/
-ls
-mkdir redshift
-mv redshift.conf redshift
-clear
-ls
-cd ..
-ls
-clear
-exit
-clear
-exit
-clear
-nv /etc/fstab
-cd
-nv
-clear
-sudo apt clean
-sudo apt autoclean
-clear
-sudo apt autoremove
-sudo dpkg --configure -a
-clear
-sudo apt autoremove
-sudo apt autoclean
-sudo dpkg --configure -a
-clear
-n
-clear
-sudo apt autoclean
-sudo apt clean
-sudo apt autoremove
-sudo apt remove
-sudo apt remove
-dpkg
-clear
-dpkg
-clear
-ls
-clear
-sudo apt remove code
-sudo apt -r install code
-sudo apt purge code
-sudo dpkg --configure -a
-clea
-clear
-clear
-sudo apt remove
-sudo apt autoclean
-sudo apt autoremove
-clear
-exit
-clear
-ls
-cd /media/
-ls
-cd /disk2
-cd disk2/
-ls
-mkdir to_backup
-mv firefox_backup_profile/ to_backup/
-ls
-clear
-cd to_backup/
-ls
-cp ~/.ssh/ .
-cp ~/.ssh/ . -r
-clear
-ls
-touch README.md
-nv README.md 
-clear
-ls
-ls -a
-clear
-clear
-exit
-clear
-nv
-nv 
-cd .config/
-ls
-cd nvim
-ls
-cd lua/
-ls
-cd plugins/
-ls
-nv obsidian.lua 
-nv
-nv
-cleawr
-clewar
-clear
-cd
-cd dotfiles/
-ls
-git add .
-git commit
-clear
-git status
-git push
-clear
-clear
-cd
-clear
-nv
-clear
-clear
-clear
-clear
-clear
-ot
-clear
-ot
-os
-clear
-ot
-os
-clear
-clear
-nv --h
-nv -h
-nv +ObsidianSearch
-nv +ObsidianSearch
-nv .bash_aliases 
-exit
-clear
-cd .ssh
-ls
-nv config 
-ls
-nv config 
-cd
-cd .gitconfig-ranhoodlum 
-nv .gitconfig-ranhoodlum 
-nv .gitconfig
-ls
-nv .gitconfig-ranhoodlum 
-clear
-exi
-clear
-exit
-clear
-os
-os
-clear
-ot
-clear
-ot
-nvim --cmd ObsidianToday
-clear
-ot
-clear
-clear
-clear
-cd dotfiles/
-git add .
-git commit
-clear
-ot
-cd ..
-ls
-cd Sync/
-ls
-cd notes/
-ls
-ls -a
-ls .git/
-clear
-git add .
-clear
-git commit
-clear
-git push
-clear
-git remote
-git remote --verbose
-clear
-ls
-clear
 git remote add origin https://github.com/ranhoodlum/for_obsidian
 git remote -v
 git push orign main
@@ -497,4 +261,240 @@ exit
 clear
 exit
 clear
+exit
+git clone git@github.com:srj-17/.dotfiles.git
+clear
+ls
+cd backup_before_formatting/
+ls
+cd disk2_diskD/
+ls
+cd to_backup/
+ls
+ls -a
+mv .ssh/ ~
+ls
+cd
+clear
+mv Downloads/gitconfig .gitconfig
+clear
+ls
+git clone git@github.com:srj-17/.dotfiles.git
+cd .ssh/
+ls
+nv known_hosts.old 
+vi known_hosts.old 
+nv known_hosts
+vi known_hosts
+clear
+ls
+vi config 
+rm known_hosts known_hosts.old id_ed25519* ranhoodlum*
+ls
+clear
+ssh-keygen -t ed25519 -C "your_email@example.com"
+clear
+ls
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+clear
+ls
+cat id_ed25519.pub 
+rm id_ed25519 id_ed25519.pub 
+ls
+clear
+ssh-add ~/.ssh/id_ed25519
+ssh-keygen -t ed25519 -C "saugatrijal17@gmail.com"
+clear
+eval "$(ssh agent -s)"
+eval "$(ssh-agent -s)"
+clear
+ssh-add ~/.ssh/id_ed25519
+clear
+cat id_ed25519.pub 
+sudo apt install xclip
+clear
+cat id_ed25519.pub | xclip -selection c
+ls
+cat config 
+clear
+ls
+clear
+git clone git@github.com:srj-17/.dotfiles.git
+clear
+ls
+cd ..
+ls
+git clone git@github.com:srj-17/.dotfiles.git
+clear
+cd .dotfiles/
+ls
+cd ..
+ls
+ls .
+ls .*
+rm .bash*
+cd .dotfiles/
+stow bash/
+sudo apt install stow
+clear
+stow bash/
+cd ..
+ls
+vi .bashrc 
+exit
+clear
+clear
+ls
+clear
+exit
+clear
+cd
+ls
+sudo apt install syncthing
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
+clear
+exit
+vi .bashrc 
+clear
+exit
+clear
+sudo apt install vim
+vi .bashrc 
+exit
+exit
+clear
+ls
+/etc/fonts/
+/etc/fonts/
+vi /etc/fonts/fonts.conf 
+mkdir .fonts
+vi /etc/fonts/fonts.conf 
+cd .fonts/
+cd ~/Downloads/
+ls
+mkdir symbols
+unzip NerdFontsSymbolsOnly.zip -d symbols/
+cd symbols/
+ls
+mv *.ttf ~/.fonts/
+clear
+exit
+nv
+clear
+cd .dotfiles/
+stow nvim/
+clear
+cd
+clear
+nvim
+nvim
+nvim
+clear
+exit
+clear
+nvim
+clear
+cd .dotfiles/
+ls
+cd ..
+ls
+rm .gitconfig 
+cd .dotfiles/
+ls
+stow gitconfig/
+stow gtk/
+cd ..
+ls
+cd .config/
+ls
+cd gtk-3.0/
+ls
+cd .
+cd ..
+rm gtk-3.0/ -r
+cd ..
+ls
+cd .dotfiles/
+stow gtk/
+cd ..
+ls
+nv .gtkrc-2.0 
+rm .gtkrc-2.0 
+cd .dotfiles/
+stow gtk/
+ls
+clear
+ls
+stow i3/
+stow misc/
+clear
+clear
+ls
+cd misc/
+ls
+cd .
+cd ..
+stow misc/
+stow -h
+clear
+ls
+cd misc/
+ls
+cd ..
+ls
+clear
+ls
+cd t
+cd terminal/
+ls
+ls -a
+cd .config/
+ls
+sudo apt install tree mupdf
+clear
+ls
+clear
+cd ..
+ls
+cd ..
+ls
+tow terminal/
+stow terminal/
+clear
+exit
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
+exit
+clear
+ls
+clear
+ls
+cd .dotfiles/
+ls
+cd terminal/
+ls
+cd .config/
+ls
+cd Terminal/
+ls
+cd ../xfce4/
+ls
+cd ..
+cd ..
+cd
+ls
+cd .config/
+ls
+ls cd T
+cd Terminal
+ls
+nv terminalrc 
+nv terminalrc 
+clear
+ls
+clear
+ls
+cd 
 exit
