@@ -1,277 +1,3 @@
-git remote add origin https://github.com/ranhoodlum/for_obsidian
-git remote -v
-git push orign main
-clear
-cd 
-nv .gitconfig
-cd Sync/
-cd notes/
-ls
-git push
-git push --set-upstream origin main
-l
-ls
-clear
-ls
-ls | grep .git
-ls -la| grep .git
-clear
-ls
-git remote
-git remote add sshorigin git@github.com:ranhoodlum/for_obsidian.git
-git push sshorigin main
-rm .git/ -rf
-clear
-ls
-git init
-git add .
-git commit -m "first commit"
-clear
-git branch -M main
-clear
-git remote add origin git@github.com:ranhoodlum/obsidianNotes.git
-git push -u origin main
-clear
-nv README.md
-git add .
-git commit -m "update readme"
-git push
-ear
-clear
-nv README.md 
-git add .
-git commit -m "update readme"
-ls
-nv README.md 
-git add 
-git add .
-git commit -m "update readme"
-git push
-nv README.md 
-nv README.md 
-clear
-git add .
-git commit -m "update readme"
-git push
-1
-nv README.md 
-clear
-git add .
-nv README.md 
-git add .
-git commit -m "update readme"
-clear
-ls
-cd
-clea
-clear
-ls
-clear
-ls
-rm eg_dotfile/ -rf
-clear
-ls
-ls Downloads/
-cd Downloads/
-l
-ls
-clear
-ls
-mupdf 993-Article\ Text-990-1-10-20080129.pdf 
-rm 993-Article\ Text-990-1-10-20080129.pdf 
-rm arrow_drop_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg 
-rm BUhRrHan.html 
-rm fstab 
-clear
-ls
-rm Ielts\ Listening.pptx 
-ls jbm/
-nv jbm/OFL.txt 
-nv jbm/README.md 
-rm jbm
-rm jbm -rf
-clear
-ls
-rm nani*
-ls
-clear
-ls
-ls nvim-configs/
-rm nvim-configs/ -rf
-clear
-ls
-rm jflap.jar -rf
-clear
-ls
-mupdf questions\ on\ ai.pdf 
-clear
-ls
-mupdf questions\ on\ ai.pdf 
-clear
-ls
-rm Task\ 2\ Writing\ Samples.docx tokyonight/ Tokyonight-Dark-B.zip -rf
-clear
-ls
-cd
-ls
-ls Documents/
-ls Documents/notes\ cs/
-rm Documents/notes\ cs/ -rf
-clear
-ls
-ls Desktop/
-ls Music/
-ls node_modules/
-clear
-ls
-ls Pictures/
-cd Pictures/
-pix career_advice.png 
-pix career_advice.png 
-ls
-apt search photo
-apt search image
-clear
-ls
-cd
-ls
-ls Public/
-cat something.md 
-cat something.md >> hello.txt
-ls
-cat hello.txt 
-rm hello.txt 
-clear
-ls
-ot
-cat something.md 
-rm something.md 
-ls
-clear
-ls
-ls temporary_git/
-ls repos/
-clear
-ls
-ls Sync/
-ls
-clear
-ls
-ls Templates/
-clear
-ls
-ls Terminal/
-ls Terminal/Grep/
-cd Terminal/
-ls
-cd grep.bash 
-cat grep.bash 
-clear
-ls
-./gre
-sh grep.bash 
-clear
-ls
-cd Grep/
-ls
-cd ..
-ls
-cd ..
-ls
-rm Terminal/ -rf
-ls
-clear
-ls
-ls temporary_git/
-cd temporary_git/
-ls
-cat something.txt 
-cd ..
-rm temporary_git/ -rf
-clear
-ls
-ls Vie
-ls Videos/
-ls Templates/
-clear
-ls
-exit
-clear
-nv dotfiles/i3/.config/picom.conf 
-nv dotfiles/i3/.config/picom.conf 
-nv dotfiles/i3/.config/picom.conf 
-ls
-nv dotfiles/i3/.config/picom.conf 
-nv dotfiles/i3/.config/picom.conf 
-exit
-clear
-nv .config/picom.conf 
-nv .config/picom.conf 
-pkill picom
-clear
-nv .config/i3/config 
-exit
-clear
-exit
-clear
-cd Sync/notes/
-ls
-git add .
-git commit -m "update readme"
-git push
-clear
-clear
-clear
-clear
-ls
-cd
-clear
-ls
-cd .config/
-ls
-cd ..
-ls
-cd .config/i3
-ls
-nv config 
-man piconf
-man picom
-ls
-clear
-cd
-xclip
-clear
-cat .config/i3/config | grep picom | xclip
-cat .config/i3/config | grep picom | xclip -selection c
-clear
-ls
-clear
-ls
-clear
-man xclip
-cd .config/
-cd
-nv .bash_aliases 
-exit
-clear
-cat .config/i3/config | grep picom | copy
-paste
-clear
-exit
-clear
-exit
-clear
-exit
-git clone git@github.com:srj-17/.dotfiles.git
-clear
-ls
-cd backup_before_formatting/
-ls
-cd disk2_diskD/
-ls
-cd to_backup/
-ls
-ls -a
 mv .ssh/ ~
 ls
 cd
@@ -497,4 +223,278 @@ ls
 clear
 ls
 cd 
+exit
+clear
+cd .config/
+ls
+cd ..
+ls
+cd backup_before_formatting/
+ls
+cd disk2_diskD/
+ls
+cd documents/
+ls
+mv * ~/Documents/
+clear
+cd ..
+ls
+rm documents/ -r
+cd ielts/
+ls
+clear
+ls
+cd ..
+ls
+cd to_backup/
+ls
+clear
+nv
+ot
+clear
+cd ~/.config/nvim/lua/
+ls
+cd plugins/
+ls
+nv obsidian.lua 
+nv obsidian.lua 
+nv obsidian.lua 
+ls
+cd
+ls
+cd backup_before_formatting/
+ls
+cd disk2_diskD/
+ls
+cd to_backup/
+ls
+mv Sync/ ~
+clear
+nv
+clear
+cd
+cd .config/
+ls
+cd xfce4/
+ls
+nv terminal
+cd terminal
+nv terminalrc 
+clear
+cd
+ls
+ls
+cd backup_before_formatting/
+ls
+cd disk2_diskD/
+ls
+cd to_backup/
+ls
+mv repos/ ~
+clear
+ls
+clear
+ls
+cd Pictures/
+ls
+mv * ~/Pictures/
+clear
+ls
+cd ..
+ls
+rm Pictures/ -rf
+clear
+ls
+rm firefox_backup_profile/ -rf
+clear
+ls
+cd Downloads/
+ls
+cd ..
+rm Downloads/
+rm Downloads/ -rf
+clear
+nv README.md 
+cd .
+cd ..
+ls
+nv
+nv something.html
+clear
+clear
+clear
+ot
+clear
+ls
+clear
+ls
+ls to_backup/
+cd Wallpapers/
+ls
+clear
+ls
+clear
+ls
+cd ..
+ls
+clear
+ls
+cd ..
+ls
+cd firefox_windows_profile_backup/
+clear
+cd ..
+cd ..
+ls
+cd .config/xfce4/terminal/terminalrc 
+nv .config/xfce4/terminal/terminalrc 
+clear
+cd ..
+ls
+cd
+cd .config/xfce4/xfconf/
+ls
+cd xfce-perchannel-xml/
+ls
+nv xfce4-terminal.xml 
+cd 
+cd .dotfiles/
+ls
+sudo apt install lazygit
+clear
+git log
+git log
+git checkout -b copy-xfce-files d9d6379e2893a5ba3e08443980e2ac17ecffbc0b
+git add .
+git commit -m "change bashrc for neovim path in new installation"
+git checkout -b copy-xfce-files d9d6379e2893a5ba3e08443980e2ac17ecffbc0b
+clear
+ls
+cd .config/
+ls
+cd xfce4/
+ls
+cd terminal/
+ls
+cd ..
+ls
+cd xfc
+cd xfconf/
+ls
+cd xfce-perchannel-xml/
+ls
+git log
+clear
+ls
+find *term
+cd ..
+ls
+xfconf-query -c xfce4-terminal -lv
+cd 
+cd .config/
+ls
+cd xfce4/
+ls
+cd xfwm4/
+cd ..
+cd xfconf/
+ls
+cd xfce-perchannel-xml/
+ls
+cd 
+cd .config/xfce4/terminal
+ls
+cd .config/xfce4/
+ls
+cd terminal 
+cd terminal
+ls -la terminal 
+cd
+clear
+ls
+cd .config/
+ls
+cd
+cd .dotfiles/
+ls
+ls
+git branch 
+git checkout main
+git branch
+git branch -d copy-xfce-files
+clear
+ls
+cd ~/.config/
+ls
+cd xfce4/terminal
+ls
+nv terminalrc 
+clear
+exit
+clear
+exit
+clear
+clear
+exit
+clear
+exit
+clear
+exit
+clear
+exit
+exit
+clear
+clear
+exit
+c
+clear
+exit
+exit
+clear
+clear
+exit
+clear
+exit
+clear
+nv
+nv
+nv
+nv
+clear
+exit
+cd backup_before_formatting/
+ls
+cd disk2_diskD/
+ls
+cd to_backup/
+ls
+cd
+cd .dotfiles/
+ls
+stow tmux/
+clear
+exit
+:q
+exit
+tmux
+exit
+source ~/.tmux.conf
+exit
+exit
+tmux
+
+nv .tmux.conf 
+exit
+exit
+clear
+nv .tmux.conf 
+clear
+
+nv .tmux.conf 
+nv .tmux.conf 
+clear
+exit
+clear
+for i in {0..255} ; do     printf "\x1b[48;5;%sm%3d\e[0m " "$i" "$i";     if (( i == 15 )) || (( i > 15 )) && (( (i-15) % 6 == 0 )); then         printf "\n";     fi; done
+clear
 exit
