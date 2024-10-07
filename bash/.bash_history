@@ -1,308 +1,3 @@
-mkdir .fonts
-vi /etc/fonts/fonts.conf 
-cd .fonts/
-cd ~/Downloads/
-ls
-mkdir symbols
-unzip NerdFontsSymbolsOnly.zip -d symbols/
-cd symbols/
-ls
-mv *.ttf ~/.fonts/
-clear
-exit
-nv
-clear
-cd .dotfiles/
-stow nvim/
-clear
-cd
-clear
-nvim
-nvim
-nvim
-clear
-exit
-clear
-nvim
-clear
-cd .dotfiles/
-ls
-cd ..
-ls
-rm .gitconfig 
-cd .dotfiles/
-ls
-stow gitconfig/
-stow gtk/
-cd ..
-ls
-cd .config/
-ls
-cd gtk-3.0/
-ls
-cd .
-cd ..
-rm gtk-3.0/ -r
-cd ..
-ls
-cd .dotfiles/
-stow gtk/
-cd ..
-ls
-nv .gtkrc-2.0 
-rm .gtkrc-2.0 
-cd .dotfiles/
-stow gtk/
-ls
-clear
-ls
-stow i3/
-stow misc/
-clear
-clear
-ls
-cd misc/
-ls
-cd .
-cd ..
-stow misc/
-stow -h
-clear
-ls
-cd misc/
-ls
-cd ..
-ls
-clear
-ls
-cd t
-cd terminal/
-ls
-ls -a
-cd .config/
-ls
-sudo apt install tree mupdf
-clear
-ls
-clear
-cd ..
-ls
-cd ..
-ls
-tow terminal/
-stow terminal/
-clear
-exit
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
-exit
-clear
-ls
-clear
-ls
-cd .dotfiles/
-ls
-cd terminal/
-ls
-cd .config/
-ls
-cd Terminal/
-ls
-cd ../xfce4/
-ls
-cd ..
-cd ..
-cd
-ls
-cd .config/
-ls
-ls cd T
-cd Terminal
-ls
-nv terminalrc 
-nv terminalrc 
-clear
-ls
-clear
-ls
-cd 
-exit
-clear
-cd .config/
-ls
-cd ..
-ls
-cd backup_before_formatting/
-ls
-cd disk2_diskD/
-ls
-cd documents/
-ls
-mv * ~/Documents/
-clear
-cd ..
-ls
-rm documents/ -r
-cd ielts/
-ls
-clear
-ls
-cd ..
-ls
-cd to_backup/
-ls
-clear
-nv
-ot
-clear
-cd ~/.config/nvim/lua/
-ls
-cd plugins/
-ls
-nv obsidian.lua 
-nv obsidian.lua 
-nv obsidian.lua 
-ls
-cd
-ls
-cd backup_before_formatting/
-ls
-cd disk2_diskD/
-ls
-cd to_backup/
-ls
-mv Sync/ ~
-clear
-nv
-clear
-cd
-cd .config/
-ls
-cd xfce4/
-ls
-nv terminal
-cd terminal
-nv terminalrc 
-clear
-cd
-ls
-ls
-cd backup_before_formatting/
-ls
-cd disk2_diskD/
-ls
-cd to_backup/
-ls
-mv repos/ ~
-clear
-ls
-clear
-ls
-cd Pictures/
-ls
-mv * ~/Pictures/
-clear
-ls
-cd ..
-ls
-rm Pictures/ -rf
-clear
-ls
-rm firefox_backup_profile/ -rf
-clear
-ls
-cd Downloads/
-ls
-cd ..
-rm Downloads/
-rm Downloads/ -rf
-clear
-nv README.md 
-cd .
-cd ..
-ls
-nv
-nv something.html
-clear
-clear
-clear
-ot
-clear
-ls
-clear
-ls
-ls to_backup/
-cd Wallpapers/
-ls
-clear
-ls
-clear
-ls
-cd ..
-ls
-clear
-ls
-cd ..
-ls
-cd firefox_windows_profile_backup/
-clear
-cd ..
-cd ..
-ls
-cd .config/xfce4/terminal/terminalrc 
-nv .config/xfce4/terminal/terminalrc 
-clear
-cd ..
-ls
-cd
-cd .config/xfce4/xfconf/
-ls
-cd xfce-perchannel-xml/
-ls
-nv xfce4-terminal.xml 
-cd 
-cd .dotfiles/
-ls
-sudo apt install lazygit
-clear
-git log
-git log
-git checkout -b copy-xfce-files d9d6379e2893a5ba3e08443980e2ac17ecffbc0b
-git add .
-git commit -m "change bashrc for neovim path in new installation"
-git checkout -b copy-xfce-files d9d6379e2893a5ba3e08443980e2ac17ecffbc0b
-clear
-ls
-cd .config/
-ls
-cd xfce4/
-ls
-cd terminal/
-ls
-cd ..
-ls
-cd xfc
-cd xfconf/
-ls
-cd xfce-perchannel-xml/
-ls
-git log
-clear
-ls
-find *term
-cd ..
-ls
-xfconf-query -c xfce4-terminal -lv
-cd 
-cd .config/
-ls
-cd xfce4/
-ls
-cd xfwm4/
-cd ..
-cd xfconf/
-ls
-cd xfce-perchannel-xml/
-ls
 cd 
 cd .config/xfce4/terminal
 ls
@@ -497,4 +192,309 @@ ls
 cd ..
 ls
 stow misc/
+exit
+clear
+nv targets.md
+rm targets.md 
+clear
+exit
+clear
+clear
+cd .config/
+ls
+rm cat user-dirs.dirs 
+cat user-dirs.locale 
+cat user-dirs.locale 
+cat user-dirs.dirs
+cd 
+cd .dotfiles/
+ls
+cd misc/
+ls
+cd .config/
+ls
+rm user-dirs*
+clear
+ls
+cd xfce4/
+ls
+cd desktop/
+ls
+cd ..
+ls
+rm desktop/ -rf
+clear
+ls
+cat help
+cat helpers.rc 
+cat help.rc 
+cat xfce4-screenshooter 
+clear
+ls
+rm *.rc xfce4-screenshooter 
+clear
+ls
+ls panel/
+ls xfconf/
+clear
+clear
+clear
+cd xfconf/
+clear
+ls
+cd
+cd .config/
+lls
+ls
+clear
+cd xfce4/
+ls
+cd
+cd .dotfiles/
+stow -h
+stow --adopt misc/
+git status
+clear
+git add .
+git commit -m "pull stow files from the new pc build using stow --adopt"
+clear
+cd
+ls
+ls -la | grep xinit
+nv .xinitrc 
+localectl set-x11-keymap us '' '' caps:escape_shifted_capslock
+nv .xinitrc 
+clear
+exit
+sudo apt install rofi
+  rm -rf ~/.config/rofi
+  git clone git@github.com:w8ste/Tokyonight-rofi-theme.git ~/.config/rofi
+  sudo mv ~/.config/rofi/tokyonight.rasi /usr/share/rofi/themes
+  sudo mv ~/.config/rofi/tokyonight_big1.rasi /usr/share/rofi/themes
+  sudo mv ~/.config/rofi/tokyonight_big2.rasi /usr/share/rofi/themes
+  rm ~/.config/rofi/README.md
+rofi-theme-selector
+clear
+shutdown --help
+systemctl poweroff
+systemctl poweroff
+nv
+nv .xinitrc 
+setxkbmap
+setxkbmap --help
+setxkbmap -h
+man setxkbmap
+setxkbmap -query
+setxkbmap -option "caps:escape_shifted_capslock"
+
+nv .xinitrc 
+cp /etc/xdg/xfce4/xinitrc ~/.config/xfce4/xinitrc
+cd .config/xfce4/
+ls
+nv xinitrc 
+man xinitrc
+cd
+ls
+ls .xin*
+nv .xinitrc 
+whereis .xinitrc
+clear
+rm .xinitrc 
+whereis .xinitrc
+ln --help
+cd .dotfiles/
+ls
+cd misc/
+ls
+cd .config/
+ls
+cd ..
+ls
+ln --help
+clear
+man ln
+ln -s .xinitrc ~/.xinitrc
+cd 
+ls -a | grep xin
+clear
+nv .xinitrc 
+mv .xinitrc .xinitr
+mv .xinitr .xinitrc
+ls
+ls .xinitrc 
+nv .xinitrc 
+rm .xinitrc 
+cd .dotfiles/
+ls
+ln -s .xinitrc ~/.xinitrc
+cd
+ls
+ls
+clear
+ls
+cd .dotfiles/
+ls
+ls -a | grep xini
+cd misc/
+ls
+ls -a | grep x
+ln -s ~/.dotfiles/misc/.xinitrc ~/.xinitrc
+cd
+nv .xinitrc 
+nv .xinitrc 
+exit
+clear
+cd
+rm .xinitrc 
+exit
+localectl
+clear
+localectl set-x11-keymap us '' '' caps:escape_shifted_capslock
+nv
+clear
+nv .config/xfce4/xinitrc 
+cat .xinitrc 
+cat .xinitrc | grep caps:
+cat .xinitrc | grep caps: | copy
+nv .config/xfce4/xinitrc 
+exit
+nv
+cd
+clear
+ls
+cd .config/xfce4/
+ls
+rm xinitrc 
+cd 
+nv .xinitrc 
+cat .xinitrc | gret caps: | copy
+cat .xinitrc | grep caps: | copy
+cd .dotfiles/
+clear
+cd
+cd .config/autostart/
+ls
+nv redshift-gtk.desktop 
+ls
+cd ..
+ls auto*
+clear
+cd
+cp .xinitrc .xprofile
+ls .xprofile 
+cat .xprofile 
+clear
+exit
+localectl 
+clear
+exit
+clear
+cd /etc/default/keyboard 
+my name is saugat rijal. I love my sister. My sister's name is Samriddhi Rijal.. My father's name is Surendra Rijal. My mmother's name is Chetana rijal. 
+I am 19 years old. I study bachelors in kathmnadu. My sister studies in class 2 . My father studies, no he teachers in kathekhol, and boon academy. My sister is 
+clear
+clear
+clear
+clear
+clear
+cd Do
+cd Downloads/
+ls
+open .
+systemctl reboot
+cd .config/
+ls
+clear
+ls
+cd redshift
+ls
+nv redshift.conf 
+clear
+redshift -c redshift.conf 
+clear
+clear
+clear
+redshift
+clear
+ls
+cd
+cd .dotfiles/
+ls
+cd misc/.config/
+ls
+cd redshift/
+ls
+redshift -c redshift.conf 
+cd
+cd .config/
+ls
+cd redshift
+mv redshift.conf ..
+ls
+clear
+redshift
+redshift-gtk
+clear
+ls
+ls -a
+cd ..
+ls
+cd .do
+cd ~/.dotfiles/
+ls
+cd misc/
+ls
+cd .config/
+ls
+ln -s ~/.dotfiles/misc/.config/redshift.conf ~/.redshift.conf
+clear
+redshift-gtk
+clear
+cd
+ls
+cd .config/
+ls
+cd ..
+ls
+cd .dotfiles/
+ls
+cd misc/
+ls
+clear
+clear
+ls
+cd .config/
+ls
+ln -s ~/.dotfiles/mist/.config/redshift/redshift.conf ~/.config/
+ln -s ~/.dotfiles/mist/.config/redshift.conf ~/.config/
+cd
+ls
+cd .config/
+ls
+rm redshift.conf 
+cd ..
+ls
+ln -s ~/.dotfiles/mist/.config/redshift.conf ~/.config/
+cd .config/
+s
+ls
+redshift-gtk
+nv redshift.conf 
+rm redshift.conf redshift/ -r
+rm redshift.conf redshift
+cd ../.dotfiles/
+ls
+cd misc/
+ls
+cd .config/
+ls
+rm redshift -rf
+clear
+ls
+cp redshift.conf ~/.cn
+cp redshift.conf ~/.config/
+cd
+rm .cn 
+clear
+redshift-gtk
 exit
