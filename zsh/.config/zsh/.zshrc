@@ -1,28 +1,87 @@
-# ----------------- PROMPT ----------------------------#
-# parse_git_dirty sees what is the git status rn 
-function parse_git_dirty {
-  STATUS="$(git status 2> /dev/null)"
-  if [[ $? -ne 0 ]]; then printf ""; return; else printf " ["; fi
-  if echo ${STATUS} | grep -c "renamed:"         &> /dev/null; then printf " >"; else printf ""; fi
-  if echo ${STATUS} | grep -c "branch is ahead:" &> /dev/null; then printf " !"; else printf ""; fi
-  if echo ${STATUS} | grep -c "new file::"       &> /dev/null; then printf " +"; else printf ""; fi
-  if echo ${STATUS} | grep -c "Untracked files:" &> /dev/null; then printf " ?"; else printf ""; fi
-  if echo ${STATUS} | grep -c "modified:"        &> /dev/null; then printf " *"; else printf ""; fi
-  if echo ${STATUS} | grep -c "deleted:"         &> /dev/null; then printf " -"; else printf ""; fi
-  printf " ]"
-}
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-function parse_git_branch() {
-  # Long form
-  git rev-parse --abbrev-ref HEAD 2> /dev/null
- # Short form
-  # git rev-parse --abbrev-ref HEAD 2> /dev/null | sed -e 's/.*\/\(.*\)/\1/'
-}
+if [[ -f "/opt/homebrew/bin/brew" ]] then
+  # If you're using macOS, you'll want this enabled
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
-# %B => make the following text bold %F{colorcode} => of the following color(code) 006 => teal 
-PROMPT='%B%F{015}%~%B%F{006} 󰅂%B%F{015} '
-# right prompt; %t = time
-RPROMPT='%B%F{006}$(parse_git_branch)%F{003}$(parse_git_dirty) %B%F{015}%t'
+# Set the directory we want to store zinit and plugins
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+
+# Download Zinit, if it's not there yet
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+
+# Source/Load zinit
+source "${ZINIT_HOME}/zinit.zsh"
+
+# Add in Powerlevel10k
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
+# Add in zsh plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+# Add in snippets
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::aws
+zinit snippet OMZP::kubectl
+zinit snippet OMZP::kubectx
+zinit snippet OMZP::command-not-found
+
+# Load completions
+autoload -Uz compinit && compinit
+
+zinit cdreplay -q
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Keybindings
+bindkey -e
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+bindkey '^[w' kill-region
+
+# History
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+# Aliases
+if [ -f ~/.config/zsh/.zsh_aliases ]; then
+    source ~/.config/zsh/.zsh_aliases
+fi
+
+# Shell integrations
+# eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 # -------------------------Exports---------------------#
 # directory coloring
@@ -43,58 +102,5 @@ export BROWSER="firefox"
 export EDITOR="vi"
 export VISUAL="nvim"
 
-# for spaces between prompts
-precmd() { print "" }
-
-# # to allow for arrow key navigation during cd
-autoload -Uz compinit
-# ## to allow functions into our prompt, we set this option
-setopt PROMPT_SUBST
-# Compinit is for completion, but we're using a plugin for that below
-compinit
-zstyle ':completion:*' menu select
-
-# source plugins
-source $HOME/.config/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# --------------------- source other essential files -----------------------#
-if [ -f ~/.config/zsh/.zsh_aliases ]; then
-    source ~/.config/zsh/.zsh_aliases
-fi
-
-# keybinds
-#
-
-# History
-HISTSIZE=5000
-HISTFILE=~/.config/zsh/.zsh_history
-SAVEHIST=$HISTSIZE
-HISTDUP=erase
-setopt appendhistory
-setopt sharehistory
-
-# dups = duplicates
-setopt hist_ignore_all_dups
-setopt hist_save_no_dups
-setopt hist_ignore_dups
-setopt hist_find_no_dups
-
-# prevents our command to be written to history by adding space before it
-setopt hist_ignore_space
-
-
-#------------------------------------------------------#
-#
-
-# completion styling
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-zstyle ':completion:*' menu no
-
-# shell integrations
-# for fzf search in the shell (doesn't work)
-# eval "$(fzf --zsh)"
-
-# for better cd
-eval "$(zoxide init --cmd cd zsh)"
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
