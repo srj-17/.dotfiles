@@ -205,30 +205,13 @@ set $inactive-bg-color #24283b
 set $text-color #c0caf5 
 set $inactive-text-color #676e7d
 set $urgent-bg-color #e53935
-set $border-color  #a9b1d6 
-set $inactive-border-color #2f343f
-set $urgent-border-color #e53935
-set $indicator-color #bdc2d5
 
 # window colors
-#                           border                 background         text                 indicator
-client.focused              $border-color          $bg-color          $text-color          $bg-color 
-client.unfocused            $inactive-border-color $inactive-bg-color $inactive-text-color $bg-color 
-client.focused_inactive     $inactive-border-color $inactive-bg-color $inactive-text-color $bg-color 
-client.urgent               $urgent-border-color   $urgent-bg-color   $text-color          $bg-color 
-
-# no window borders
-hide_edge_borders both
-
-# remove title bar
-# from friendly alien youtube channel's i3 config [depricated]
-# for_window [class="^.*"] border pixel 1 
-default_border none
-default_floating_border none
-
-# bar colors
-# configured in above bar { } table in colors { } table
-# COMMENTS are GOD
+#                           border             background         text                 indicator
+client.focused              $bg-color          $bg-color          $text-color          $bg-color 
+client.unfocused            $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color 
+client.focused_inactive     $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color 
+client.urgent               $urgent-bg-color   $urgent-bg-color   $text-color          $bg-color 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -245,13 +228,26 @@ bar {
         # position top
 }
 
+# no window borders
+hide_edge_borders both
+
+# remove title bar
+# from friendly alien youtube channel's i3 config [depricated]
+# for_window [class="^.*"] border pixel 1 
+default_border none
+default_floating_border none
+
+# bar colors
+# configured in above bar { } table in colors { } table
+# COMMENTS are GOD
+
 # picom for transparency
 exec --no-startup-id picom -CGb
 
 # adding gaps 
 # gaps inner 5px
 # gaps outer 0px
-workspace 2 gaps inner 5
+# workspace 2 gaps inner 5
 
 # ----------------------- auto assignments to workspaces ---------------- #
 # class of apps found using xprop, second WM_CLASS string
