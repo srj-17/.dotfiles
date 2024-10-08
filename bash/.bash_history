@@ -117,3 +117,17 @@ exit
 exit
 exit
 exit
+clear
+ls
+cd .config/
+ls
+cd exit
+exit
+clear
+ls
+clear
+exit
+viber
+Viber
+clear
+exit

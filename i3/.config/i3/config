@@ -51,7 +51,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show drun
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -188,6 +188,47 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+# -------------------- CUSTOM ------------------------------#
+# -------------------- keybinds ---------------------------------------------#
+bindsym $mod+shift+x exec i3lock --color "$bg-color"
+
+# -------------------- auto-executions when i3 loads ------------------------#
+# for wallpaper loading (use nitrogen instead of feh, it doesn't require manual
+# intervention and loads wallpapers from folder)
+# exec_always feh --bg-scale ~/Pictures/my_neighbour_todoro.jpg
+exec --no-startup-id nitrogen --restore
+# restore is for restoring the last set wallpaper when logged in again
+
+# --------------------- appearance ---------------------------#
+set $bg-color #1a1b26 
+set $inactive-bg-color #24283b 
+set $text-color #c0caf5 
+set $inactive-text-color #676e7d
+set $urgent-bg-color #e53935
+set $border-color  #a9b1d6 
+set $inactive-border-color #2f343f
+set $urgent-border-color #e53935
+set $indicator-color #bdc2d5
+
+# window colors
+#                           border                 background         text                 indicator
+client.focused              $border-color          $bg-color          $text-color          $bg-color 
+client.unfocused            $inactive-border-color $inactive-bg-color $inactive-text-color $bg-color 
+client.focused_inactive     $inactive-border-color $inactive-bg-color $inactive-text-color $bg-color 
+client.urgent               $urgent-border-color   $urgent-bg-color   $text-color          $bg-color 
+
+# no window borders
+hide_edge_borders both
+
+# remove title bar
+# from friendly alien youtube channel's i3 config [depricated]
+# for_window [class="^.*"] border pixel 1 
+default_border none
+default_floating_border none
+
+# bar colors
+# configured in above bar { } table in colors { } table
+# COMMENTS are GOD
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -204,67 +245,30 @@ bar {
         # position top
 }
 
-# -------------------- CUSTOM ------------------------------#
-# -------------------- keybinds ---------------------------------------------#
-bindsym $mod+shift+x exec i3lock
-
-# -------------------- auto-executions when i3 loads ------------------------#
-# for wallpaper loading (use nitrogen instead of feh, it doesn't require manual
-# intervention and loads wallpapers from folder)
-# exec_always feh --bg-scale ~/Pictures/my_neighbour_todoro.jpg
-exec --no-startup-id nitrogen --restore
-# restore is for restoring the last set wallpaper when logged in again
-
-# --------------------- appearance ---------------------------#
-set $bg-color #2f343f
-set $inactive-bg-color #2f343f
-set $text-color #f3f4f5
-set $inactive-text-color #676e7d
-set $urgent-bg-color #e53935
-
-# window colors
-#                           border             background         text                 indicator
-client.focused              $bg-color          $bg-color          $text-color          #00ff00 
-client.unfocused            $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00 
-client.focused_inactive     $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00 
-client.urgent               $urgent-bg-color   $urgent-bg-color   $text-color          #00ff00 
-
-# we don't want borders for anything in i3 window
-hide_edge_borders both
-
 # picom for transparency
 exec --no-startup-id picom -CGb
 
-# remove title bar
-# from friendly alien youtube channel's i3 config
-# for_window [class="^.*"] border pixel 1 [depricated]
-default_border pixel 1
-default_floating_border pixel 1
-
-# bar colors
-# configured in above bar { } table in colors { } table
-# COMMENTS are GOD
-
-
 # adding gaps 
-# DOESN'T Work YET, will work in i3 version 4.22 and above
 # gaps inner 5px
-# gaps outer 5px
-
+# gaps outer 0px
+workspace 2 gaps inner 5
 
 # ----------------------- auto assignments to workspaces ---------------- #
 # class of apps found using xprop, second WM_CLASS string
 # firefox
 assign [class="firefox"] $ws1
 # for_window [class="firefox"] fullscreen enable
-exec firefox
+exec --no-startup-id firefox
 
 # work workspace 
 ## comment or uncomment this out based on what kind of dev workflow you want
 ## do you want a single view workflow or multitask
 assign [class="Xfce4-terminal"] $ws2
 # for_window [class="Xfce4-terminal"] fullscreen enable
-exec xfce4-terminal --command=tmux
+exec --no-startup-id xfce4-terminal --command=tmux
+
+assign [class="obsidian"] $ws3
+assign [class="ViberPC"] $ws4
 
 # this is kindof what I want? Open terminal on workspace 2 at the beginning and 
 # if I open the terminal later, it opens on the workspace I want to open on
