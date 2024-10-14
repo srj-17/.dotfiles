@@ -32,7 +32,7 @@ return {
                     comments = { },
                 },
             })
-            vim.cmd.colorscheme("tokyonight-night")
+            -- vim.cmd.colorscheme("tokyonight-night")
             require("lualine").setup({
                 options = { theme = "auto" },
              })
@@ -54,11 +54,23 @@ return {
     {
         "morhetz/gruvbox",
         config = function()
-            -- vim.cmd.colorscheme("gruvbox");
             --
             -- require("lualine").setup({
                 --     options = { theme = "tokyonight-moon", }
                 --  })
-        end
+        --     vim.cmd.colorscheme("gruvbox");
+        --
+        --     -- this is for transparency 
+        --     -- credit to theprimeagen
+        --     function ColorMyPencils(color) 
+        --         color = color or "gruvbox"
+        --         vim.cmd.colorscheme(color)
+        --
+        --         vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+        --         vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+        --
+        --     end
+        --     ColorMyPencils()
+        -- end
     },
 }

@@ -1,4 +1,4 @@
-<configuration version="37">
+<configuration version="35">
     <folder id="qs7t8-y45vv" label="Sync" path="/home/srj/Sync" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
         <device id="DKSQNXK-NOLWLJ5-CQK4NTZ-T6B4CFB-KS4R723-KDIEUOB-5NR3R2X-MGJOXAX" introducedBy="">
@@ -34,14 +34,6 @@
         <copyRangeMethod>standard</copyRangeMethod>
         <caseSensitiveFS>false</caseSensitiveFS>
         <junctionsAsDirs>false</junctionsAsDirs>
-        <syncOwnership>false</syncOwnership>
-        <sendOwnership>false</sendOwnership>
-        <syncXattrs>false</syncXattrs>
-        <sendXattrs>false</sendXattrs>
-        <xattrFilter>
-            <maxSingleEntrySize>0</maxSingleEntrySize>
-            <maxTotalSize>0</maxTotalSize>
-        </xattrFilter>
     </folder>
     <device id="DKSQNXK-NOLWLJ5-CQK4NTZ-T6B4CFB-KS4R723-KDIEUOB-5NR3R2X-MGJOXAX" name="EDITH" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
@@ -52,7 +44,6 @@
         <maxRequestKiB>0</maxRequestKiB>
         <untrusted>false</untrusted>
         <remoteGUIPort>0</remoteGUIPort>
-        <numConnections>0</numConnections>
     </device>
     <device id="LPN7N5I-FC2BECP-LNRGD4U-3M5D6ME-2UVE2VC-5WTHSIN-YNALE3A-HVFZTAQ" name="Srj_Mobile" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
@@ -63,9 +54,8 @@
         <maxRequestKiB>0</maxRequestKiB>
         <untrusted>false</untrusted>
         <remoteGUIPort>0</remoteGUIPort>
-        <numConnections>0</numConnections>
     </device>
-    <gui enabled="true" tls="false" debugging="false" sendBasicAuthPrompt="false">
+    <gui enabled="true" tls="false" debugging="false">
         <address>127.0.0.1:8384</address>
         <apikey>hMqxXqwfeYWLq2W2CHmQqHnraAgq76mx</apikey>
         <theme>default</theme>
@@ -94,6 +84,7 @@
         <urURL>https://data.syncthing.net/newdata</urURL>
         <urPostInsecurely>false</urPostInsecurely>
         <urInitialDelayS>1800</urInitialDelayS>
+        <restartOnWakeup>true</restartOnWakeup>
         <autoUpgradeIntervalH>12</autoUpgradeIntervalH>
         <upgradeToPreReleases>false</upgradeToPreReleases>
         <keepTemporariesH>24</keepTemporariesH>
@@ -119,12 +110,6 @@
         <connectionLimitEnough>0</connectionLimitEnough>
         <connectionLimitMax>0</connectionLimitMax>
         <insecureAllowOldTLSVersions>false</insecureAllowOldTLSVersions>
-        <connectionPriorityTcpLan>10</connectionPriorityTcpLan>
-        <connectionPriorityQuicLan>20</connectionPriorityQuicLan>
-        <connectionPriorityTcpWan>30</connectionPriorityTcpWan>
-        <connectionPriorityQuicWan>40</connectionPriorityQuicWan>
-        <connectionPriorityRelay>50</connectionPriorityRelay>
-        <connectionPriorityUpgradeThreshold>0</connectionPriorityUpgradeThreshold>
     </options>
     <defaults>
         <folder id="" label="" path="~" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
@@ -159,14 +144,6 @@
             <copyRangeMethod>standard</copyRangeMethod>
             <caseSensitiveFS>false</caseSensitiveFS>
             <junctionsAsDirs>false</junctionsAsDirs>
-            <syncOwnership>false</syncOwnership>
-            <sendOwnership>false</sendOwnership>
-            <syncXattrs>false</syncXattrs>
-            <sendXattrs>false</sendXattrs>
-            <xattrFilter>
-                <maxSingleEntrySize>1024</maxSingleEntrySize>
-                <maxTotalSize>4096</maxTotalSize>
-            </xattrFilter>
         </folder>
         <device id="" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
             <address>dynamic</address>
@@ -177,8 +154,6 @@
             <maxRequestKiB>0</maxRequestKiB>
             <untrusted>false</untrusted>
             <remoteGUIPort>0</remoteGUIPort>
-            <numConnections>0</numConnections>
         </device>
-        <ignores></ignores>
     </defaults>
 </configuration>
