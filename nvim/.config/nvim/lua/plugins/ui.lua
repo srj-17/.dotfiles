@@ -49,7 +49,11 @@ return {
             -- Ensure termguicolors is enabled if not already
             vim.opt.termguicolors = true
 
-            require('nvim-highlight-colors').setup({})
+            require('nvim-highlight-colors').setup({
+                -- uncomment this line if you want virtual symbols for showing colors
+                -- render = 'virtual';
+                -- virtual_symbol = '■'
+            })
 
             require("cmp").setup({
                 -- ... other configs
@@ -83,7 +87,7 @@ return {
         dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function ()
             require('lualine').setup({
-                options = { theme = 'gruvbox' }
+                options = { theme = 'auto' }
             })
         end
     },
@@ -98,16 +102,23 @@ return {
         opts = {
             -- your configuration comes here
             -- or leave it empty to use the default settings
-            -- refer to the configuration section below
+            -- refer to the configuration section 
         }
     },
     {
+        -- this is for the lines that show indentation
         "lukas-reineke/indent-blankline.nvim",
         main = "ibl",
         opts = {},
         config = function ()
-            -- require("ibl").setup({})
+            require("ibl").setup({})
         end
+        -- Or this, for animated indentation (i don't quite like it)
+        -- 'echasnovski/mini.nvim',
+        -- version = '*',
+        -- config = function()
+        --     require('mini.indentscope').setup()
+        -- end,
     },
     {
         "folke/which-key.nvim",

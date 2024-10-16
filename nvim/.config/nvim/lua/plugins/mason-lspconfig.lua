@@ -2,19 +2,7 @@ return {
     {
         "williamboman/mason.nvim",
         config = function()
-            require("mason").setup({
-                ensure_installed= {
-                    "css-lsp",
-                    "stylua",
-                    "selene",
-                    "luacheck",
-                    "shellcheck",
-                    "shfmt",
-                    "tailwindcss-language-server",
-                    "typescript-language-server",
-                    "css-lsp",
-                },
-            })
+            require("mason").setup()
         end
     },
     {
@@ -37,8 +25,22 @@ return {
                     require("lspconfig")[server_name].setup({
                         -- Also, setup up completion configuration provided by cmp-nvim-lsp for each server
                         capabilities = capabilities,
+                        on_attach = function(client, bufnr)
+                            local opts = {buffer = bufnr, remap = false}
+                            vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+                        end,
                     })
                 end,
+            },
+
+            ensure_installed= {
+                "lua_ls",
+                "clangd",
+                "markdown_oxide",
+                "ts_ls",
+                "cssls",
+                "tailwindcss",
+                -- "grammarly",
             },
         })
     end

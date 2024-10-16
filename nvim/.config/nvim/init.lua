@@ -39,6 +39,9 @@ require("remaps")
 -- load autocmds
 require("autocmds")
 
+-- load self_cmds
+-- require("self_cmds")
+
 -- run setup function from lazy to setup lazy
 -- by providing a list 
 -- of urls to different plugins

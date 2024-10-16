@@ -7,7 +7,7 @@ return {
         require("harpoon").setup({})
         local map = vim.keymap
 
-        map.set('n', '<leader>m',function() require("harpoon.mark").add_file() end, { desc = "harpoon mark" })
+        map.set('n', '<leader>mh',function() require("harpoon.mark").add_file() end, { desc = "harpoon mark" })
         map.set('n', '<leader>h',function() require("harpoon.ui").toggle_quick_menu() end, { desc = "toggle harpoon menu" })
 
         -- main file of the project lies at this location, ex: main.js, main.c, etc.

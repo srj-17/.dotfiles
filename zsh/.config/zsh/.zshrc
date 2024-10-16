@@ -54,6 +54,8 @@ bindkey -v
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
+# everything that I don't want populated in my main config, goes in .zshprofile
+source ~/.config/zsh/.zsh_profile
 
 # History
 HISTSIZE=5000
@@ -102,6 +104,8 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export BROWSER="firefox"
 export EDITOR="vi"
 export VISUAL="nvim"
+
+# ----------------- custom key
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

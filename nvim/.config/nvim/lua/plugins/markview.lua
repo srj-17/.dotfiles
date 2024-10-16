@@ -8,17 +8,12 @@ return {
             modes = { "n", "no", "c" }, -- Change these modes
             -- to what you need
 
-            -- hybrid_modes = { "n" },     -- Uses this feature on
+            hybrid_modes = { "n" },     -- Uses this feature on
             -- normal mode
+            })
 
-            -- This is nice to have
-            callbacks = {
-                on_enable = function (_, win)
-                    vim.wo[win].conceallevel = 2;
-                    vim.wo[win].concealcursor = "c";
-                end
-            },
-        })
-        vim.cmd("Markview enableAll");
-    end
+            -- vim.cmd("Markview enableAll");
+            vim.keymap.set("n", "<leader>me", ":Markview hybridToggle<CR>", { desc = "MarkDown Edit Toggle"})
+            vim.keymap.set("n", "<leader>ms", "<cmd>Markview splitToggle<CR>", { desc = "Markdown Split Toggle" })
+    end,
 }
