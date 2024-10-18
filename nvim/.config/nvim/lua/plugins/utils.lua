@@ -17,7 +17,8 @@ return {
             max_join_length = 150,
         },
         config = function()
-            vim.keymap.set("n", "<leader>t", ":TSJtoggle<CR>", { desc = "toggle "})
+            require("treesj").setup({})
+            vim.keymap.set("n", "<leader>t", ":TSJToggle<CR>", { desc = "toggle "})
         end
     },
 }

@@ -17,3 +17,10 @@ alias paste="xclip -selection clipboard -o"
 alias py="python3"
 alias mu="mupdf"
 alias lg="lazygit"
+
+# aliases for quitting / sometimes confused with vim
+alias :wq="exit"
+alias :q="exit"
+
+# i clear my screen a lot
+alias c="clear"
