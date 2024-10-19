@@ -124,7 +124,11 @@ return {
         main = "ibl",
         opts = {},
         config = function ()
-            require("ibl").setup({})
+            require("ibl").setup({
+                exclude = {
+                    filetypes = { "dashboard" }
+                }
+            })
         end
         -- Or this, for animated indentation (i don't quite like it)
         -- 'echasnovski/mini.nvim',
@@ -151,4 +155,32 @@ return {
             },
         },
     },
+--     {
+--         "nvimdev/dashboard-nvim",
+--         event = "VimEnter",
+--         config = function()
+--             -- don't mess up the indentation, the dashboard picks it up
+--             local logo = [[
+--
+--
+-- ██████  ▄▄▄       █    ██   ▄████  ▄▄▄     ▄▄▄█████▓
+-- ▒██    ▒ ▒████▄     ██  ▓██▒ ██▒ ▀█▒▒████▄   ▓  ██▒ ▓▒
+-- ░ ▓██▄   ▒██  ▀█▄  ▓██  ▒██░▒██░▄▄▄░▒██  ▀█▄ ▒ ▓██░ ▒░
+-- ▒   ██▒░██▄▄▄▄██ ▓▓█  ░██░░▓█  ██▓░██▄▄▄▄██░ ▓██▓ ░ 
+-- ▒██████▒▒ ▓█   ▓██▒▒▒█████▓ ░▒▓███▀▒ ▓█   ▓██▒ ▒██▒ ░ 
+-- ▒ ▒▓▒ ▒ ░ ▒▒   ▓▒█░░▒▓▒ ▒ ▒  ░▒   ▒  ▒▒   ▓▒█░ ▒ ░░   
+-- ░ ░▒  ░ ░  ▒   ▒▒ ░░░▒░ ░ ░   ░   ░   ▒   ▒▒ ░   ░    
+-- ░  ░  ░    ░   ▒    ░░░ ░ ░ ░ ░   ░   ░   ▒    ░      
+-- ░        ░  ░   ░           ░       ░  ░        
+--
+--
+--         ]]
+--             -- logo = string.rep("\n", 8) .. logo .. "\n\n"
+--             require("dashboard").setup({
+--                 config = {
+--                     header = vim.split(logo, "\n")
+--                 }
+--             })
+--         end
+--     },
 }

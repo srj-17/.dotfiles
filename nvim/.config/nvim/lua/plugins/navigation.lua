@@ -3,26 +3,27 @@ return {
     -- useful in larger projects
     {
         "nvim-neo-tree/neo-tree.nvim",branch = "v3.x",
+        lazy = false,
         dependencies = {
             "nvim-lua/plenary.nvim",
             "nvim-tree/nvim-web-devicons", 
             "MunifTanjim/nui.nvim",
             -- because oil.nvim breaks opening cursor under browser
-            {
-                "chrishrb/gx.nvim",
-                keys = {
-                },
-                cmd = { "Browse" },
-                init = function ()
-                    vim.g.netrw_nogx = 1 -- disable netrw gx
-                end,
-                dependencies = { "nvim-lua/plenary.nvim" },
-                config = true, -- default settings
-                submodules = false, -- not needed, submodules are required only for tests
-            }
+            -- {
+            --     "chrishrb/gx.nvim",
+            --     keys = {
+            --     },
+            --     cmd = { "Browse" },
+            --     init = function ()
+            --         vim.g.netrw_nogx = 1 -- disable netrw gx
+            --     end,
+            --     dependencies = { "nvim-lua/plenary.nvim" },
+            --     config = true, -- default settings
+            --     submodules = false, -- not needed, submodules are required only for tests
+            -- }
         },
         config = function ()
-            vim.keymap.set("n", "<leader>nt", ":NeoTree toggle<Enter>", { desc = "NeoTree toggle" })
+            vim.keymap.set("n", "<leader>nt", "<cmd>Neotree toggle<CR>", { desc = "NeoTree toggle" })
         end
     },
     -- oil.nvim for navigation the oil way
