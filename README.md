@@ -15,6 +15,8 @@ Sauce
 - Compositor: `picom`
 - `lxappearance` for setting gtk themes
 - Application Launcher: `rofi`
+- Screenshot (with PrtSc): `scrot` 
+    - in path `~/Pictures/screenshots/`
 
 # Other preferences
 - ***Editor*** - Neovim

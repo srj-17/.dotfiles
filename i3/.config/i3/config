@@ -249,6 +249,9 @@ exec --no-startup-id picom -CGb
 
 # -------------------- keybinds ---------------------------------------------#
 bindsym $mod+shift+x exec i3lock --color "$bg-color"
+
+#for screenshots
+bindsym --release Print exec scrot -s ~/Pictures/screenshots/%b%d-%H%M%S.png
 # ----------------------- auto assignments to workspaces ---------------- #
 # class of apps found using xprop, second WM_CLASS string
 # firefox

@@ -50,11 +50,13 @@ zinit cdreplay -q
 
 # Keybindings
 # use vim keybindings
-# bindkey -v
+bindkey -v
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^r' history-incremental-search-backward
 bindkey '^[w' kill-region
+bindkey '^y' expand-or-complete
+# bindkey '^p' reverse-menu-complete
 # everything that I don't want populated in my main config, goes in .zshprofile
 source ~/.config/zsh/.zsh_profile
 
