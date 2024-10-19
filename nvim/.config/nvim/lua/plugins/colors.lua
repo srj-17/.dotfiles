@@ -2,6 +2,7 @@ return {
     {
         -- theme kanagawa
         "rebelot/kanagawa.nvim",
+        lazy = true,
         config = function()
             -- set theme catppucchin each time nvim starts
             -- vim.cmd.colorscheme("kanagawa-wave")
@@ -53,6 +54,7 @@ return {
 	},
     {
         "morhetz/gruvbox",
+        lazy = true,
         config = function()
         --     vim.cmd.colorscheme("gruvbox");
         --

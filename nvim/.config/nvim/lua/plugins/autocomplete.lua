@@ -23,12 +23,6 @@ return {
         -- this is equivalent to setup({}) function
     },
     {
-        "numToStr/Comment.nvim",
-        config = function()
-            require("Comment").setup({})
-        end
-    },
-    {
         -- this doesn't seem to be working
         -- Did the setup of the servers to have snip-providing-capabilities
         -- In mason-lspconfig
