@@ -22,5 +22,3 @@ vim.keymap.set("n", "<leader>x", ":bd<Enter>", { desc = "Buffer Delete"} )
 -- cool things
 -- ctrl z => move vim to background
 -- fg <enter> to move it back to foreground after running commands
-
--- they don't work, i don't know why

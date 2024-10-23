@@ -25,9 +25,16 @@ return {
                     require("lspconfig")[server_name].setup({
                         -- Also, setup up completion configuration provided by cmp-nvim-lsp for each server
                         capabilities = capabilities,
+
+                        -- this is for go to definition setup
                         on_attach = function(client, bufnr)
                             local opts = {buffer = bufnr, remap = false}
                             vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+                            vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
+                            vim.keymap.set("n", "<leader>gr", function() vim.lsp.buf.references() end, opts)
+                            vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
+                            -- rename a variable throughout the whole project 
+                            vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
                         end,
                     })
                 end,

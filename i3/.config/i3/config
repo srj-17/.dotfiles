@@ -251,7 +251,10 @@ exec --no-startup-id picom -CGb
 bindsym $mod+shift+x exec i3lock --color "$bg-color"
 
 #for screenshots
-bindsym --release Print exec scrot -s ~/Pictures/screenshots/%b%d-%H%M%S.png
+# xfce4-screenshooter seems good enough for now
+# bindsym --release $mod+Print exec scrot -s ~/Pictures/screenshots/%b%d-%H%M%S.png
+bindsym Print exec xfce4-screenshooter
+
 # ----------------------- auto assignments to workspaces ---------------- #
 # class of apps found using xprop, second WM_CLASS string
 # firefox

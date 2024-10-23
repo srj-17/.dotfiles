@@ -15,8 +15,8 @@ Sauce
 - Compositor: `picom`
 - `lxappearance` for setting gtk themes
 - Application Launcher: `rofi`
-- Screenshot (with PrtSc): `scrot` 
-    - in path `~/Pictures/screenshots/`
+- Screenshot (with PrtSc): `xfce-4-screenshooter` 
+    - ~~in path `~/Pictures/screenshots/`~~ (would be needed for scrot)
 
 # Other preferences
 - ***Editor*** - Neovim
