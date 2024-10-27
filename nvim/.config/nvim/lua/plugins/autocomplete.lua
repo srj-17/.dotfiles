@@ -59,7 +59,7 @@ return {
                     -- snippets provided by luasnip, which are then expanded by nvim-cmp
                     expand = function(args)
                         -- we're using luasnip as snippet engine
-                        ls.lsp_expand(args.body) 
+                        ls.lsp_expand(args.body)
                     end,
                 },
                 window = {

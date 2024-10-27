@@ -21,4 +21,10 @@ return {
             vim.keymap.set("n", "<leader>t", ":TSJToggle<CR>", { desc = "toggle "})
         end
     },
+    {
+        "mbbill/undotree",
+        config = function ()
+            vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+        end
+    },
 }

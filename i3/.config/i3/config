@@ -267,7 +267,8 @@ exec --no-startup-id firefox
 ## do you want a single view workflow or multitask
 assign [class="Xfce4-terminal"] $ws2
 # for_window [class="Xfce4-terminal"] fullscreen enable
-exec --no-startup-id xfce4-terminal --command=tmux
+# exec --no-startup-id xfce4-terminal --command=tmux
+exec --no-startup-id xfce4-terminal 
 
 assign [class="ViberPC"] $ws10
 

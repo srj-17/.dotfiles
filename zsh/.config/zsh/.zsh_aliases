@@ -1,3 +1,6 @@
+alias python="python3"
+alias py="python3"
+
 alias ls="ls --color"
 alias neofetch="neofetch --source ~/.config/neofetch/ascii/luffy.txt"
 alias nv="nvim"
@@ -14,7 +17,6 @@ alias os="nvim +ObsidianSearch"
 alias copy="xclip -selection c"
 alias paste="xclip -selection clipboard -o"
 
-alias py="python3"
 alias mu="mupdf"
 alias lg="lazygit"
 
@@ -24,3 +26,6 @@ alias :q="exit"
 
 # i clear my screen a lot
 alias c="clear"
+
+# for console version of stardict dictionary
+alias def="sdcv"
