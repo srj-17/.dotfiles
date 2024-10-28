@@ -272,6 +272,8 @@ exec --no-startup-id xfce4-terminal
 
 assign [class="ViberPC"] $ws10
 
+assign [class="MuPDF"] $ws3
+
 # this is kindof what I want? Open terminal on workspace 2 at the beginning and 
 # if I open the terminal later, it opens on the workspace I want to open on
 # exec --no-startup-id i3-msg 'workspace 1; exec firefox'
