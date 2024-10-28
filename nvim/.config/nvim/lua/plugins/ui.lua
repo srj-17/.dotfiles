@@ -28,6 +28,7 @@ return {
     --     config = function()
     --         require("noice").setup({
     --             lsp = {
+    --                 -- progress = { enabled = false },
     --                 -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
     --                 override = {
     --                     ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
@@ -54,7 +55,9 @@ return {
     --                 {
     --                     filter = {
     --                         event = "notify",
-    --                         find = "No information available",
+    --                         find = {
+    --                             "No information available",
+    --                         },
     --                     },
     --                     opts = {
     --                         skip = true,
