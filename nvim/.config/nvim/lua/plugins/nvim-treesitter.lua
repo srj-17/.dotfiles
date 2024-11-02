@@ -13,7 +13,7 @@ return {
             config = function()
                 require("nvim-treesitter.configs").setup({
                     -- A list of parser names 
-                    ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
+                    ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", },
 
                     -- ensures that if you enter a file whose parser has not been installed
                     -- nvim-treesitter auto installs the parser for you 

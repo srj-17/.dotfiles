@@ -18,7 +18,7 @@ return {
         },
         config = function()
             require("treesj").setup({})
-            vim.keymap.set("n", "<leader>t", ":TSJToggle<CR>", { desc = "toggle "})
+            vim.keymap.set("n", "<leader>t", ":TSJToggle<CR>", { desc = "toggle " })
         end
     },
     {
