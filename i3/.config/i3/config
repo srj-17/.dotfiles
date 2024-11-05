@@ -198,18 +198,29 @@ exec --no-startup-id nitrogen --restore
 # restore is for restoring the last set wallpaper when logged in again
 
 # --------------------- appearance ---------------------------#
-set $bg-color #1a1b26
-set $inactive-bg-color #24283b 
-set $text-color #c0caf5 
-set $inactive-text-color #676e7d
-set $urgent-bg-color #e53935
+# set $bg-color #1a1b26
+# set $inactive-bg-color #24283b 
+# set $text-color #c0caf5 
+# set $inactive-text-color #676e7d
+# set $urgent-bg-color #e53935
+
+# gruvbox theme -- 
+# from https://github.com/morhetz/gruvbox
+set $bg-color #282828
+set $inactive-bg-color #32302f 
+set $text-color #ebdbb2
+set $inactive-text-color #a89984
+set $urgent-bg-color #fb4934
+set $border-color #ebdbb2
+set $inactive-border-color #504945
+set $urgent-border-color #fb4934
 
 # window colors
-#                           border             background         text                 indicator
-client.focused              $bg-color          $bg-color          $text-color          $bg-color 
-client.unfocused            $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color 
-client.focused_inactive     $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color 
-client.urgent               $urgent-bg-color   $urgent-bg-color   $text-color          $bg-color 
+#                           border                 background         text                 indicator
+client.focused              $border-color          $bg-color          $text-color          $bg-color 
+client.unfocused            $inactive-border-color $inactive-bg-color $inactive-text-color $bg-color 
+client.focused_inactive     $inactive-border-color $inactive-bg-color $inactive-text-color $bg-color 
+client.urgent               $urgent-border-color   $urgent-bg-color   $text-color          $bg-color 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -226,21 +237,21 @@ bar {
         # position top
 }
 
-# no window borders
+# no window borders at the edges
 hide_edge_borders both
 
 # remove title bar
 # from friendly alien youtube channel's i3 config [depricated]
 # for_window [class="^.*"] border pixel 1 
-default_border none
-default_floating_border none
+default_border pixel 2
+default_floating_border pixel 2
 
 # bar colors
 # configured in above bar { } table in colors { } table
 # COMMENTS are GOD
 
 # picom for transparency
-exec --no-startup-id picom -CGb
+exec --no-startup-id picom
 
 # adding gaps 
 # gaps inner 5px

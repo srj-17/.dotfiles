@@ -23,6 +23,7 @@ Sauce
     - And vscode sometimes -- profile given in EDITH.code-profile
 
 - ***Terminal-Emulator*** - xfce4-terminal
+    - gruvbox theme from: [here](https://github.com/xelser/gruvbox-xfce4-terminal)
 - ***Terminal Multiplexer*** - tmux
     > [!NOTE]
     > tpm won't work as I've not included ~/.tmux in the dotfiles, so please clone
