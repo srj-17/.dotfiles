@@ -63,8 +63,8 @@ vim.opt.colorcolumn = '80'
 -- seconds of inactivity
 vim.opt.updatetime = 50
 
--- enable spellchecking
-vim.opt.spell = true
+-- disable spellchecking
+vim.opt.spell = false
 
 -- set the cmdheight to 0, unless you're typing commmands (aesthetic)
 -- this feature is experimental, so it can cause some problems
