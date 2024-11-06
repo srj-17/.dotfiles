@@ -1,0 +1,12 @@
+configuration {
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    icon-theme: "Papirus-Dark";
+    show-icons:     true;
+}
+
+@theme "~/.config/rofi/gruvbox-material.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
