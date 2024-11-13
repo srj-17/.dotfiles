@@ -14,7 +14,7 @@ return {
             })
 
             -- vim.cmd("Markview enableAll");
-            vim.keymap.set("n", "<leader>em", "<cmd>Markview hybridToggle<CR>", { desc = "MarkDown Edit Toggle"})
-            vim.keymap.set("n", "<leader>sm", "<cmd>Markview splitToggle<CR>", { desc = "Markdown Split Toggle" })
+            vim.keymap.set("n", "<leader>me", "<cmd>Markview hybridToggle<CR>", { desc = "MarkDown Edit Toggle"})
+            vim.keymap.set("n", "<leader>ms", "<cmd>Markview splitToggle<CR>", { desc = "Markdown Split Toggle" })
     end,
 }

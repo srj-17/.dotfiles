@@ -70,3 +70,6 @@ vim.opt.spell = false
 -- this feature is experimental, so it can cause some problems
 -- for aesthetics
 vim.opt.cmdheight = 0
+
+-- this just annoys the heck out me sometimes in markdown, so
+vim.opt.modeline = false

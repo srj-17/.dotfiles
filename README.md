@@ -41,7 +41,7 @@ sudo apt install stow
 ```
 2. Install git
 ```bash
-sudo apt install bash
+sudo apt install git
 ```
 3. make a backup of your current dotfiles directory
 ```bash

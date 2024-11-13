@@ -69,20 +69,20 @@ return {
                             end,
                             opts = { noremap = false, expr = true, buffer = true },
                         },
-                        -- Toggle check-boxes.
-                        ["<leader>ch"] = {
-                            action = function()
-                                return require("obsidian").util.toggle_checkbox()
-                            end,
-                            opts = { buffer = true },
-                        },
-                        -- Smart action depending on context, either follow link or toggle checkbox.
-                        ["<cr>"] = {
-                            action = function()
-                                return require("obsidian").util.smart_action()
-                            end,
-                            opts = { buffer = true, expr = true },
-                        }
+                        -- -- Toggle check-boxes.
+                        -- ["<leader>ch"] = {
+                        --     action = function()
+                        --         return require("obsidian").util.toggle_checkbox()
+                        --     end,
+                        --     opts = { buffer = true },
+                        -- },
+                        -- -- Smart action depending on context, either follow link or toggle checkbox.
+                        -- ["<cr>"] = {
+                        --     action = function()
+                        --         return require("obsidian").util.smart_action()
+                        --     end,
+                        --     opts = { buffer = true, expr = true },
+                        -- }
                     },
 
                     -- Where to put new notes. Valid options are
@@ -124,6 +124,8 @@ return {
                 vim.keymap.set("n", "<leader>on", "<Cmd>ObsidianNew<Enter>", { desc = "Obsidan New Note"} )
                 vim.keymap.set("n", "<leader>ot", "<Cmd>ObsidianToday<Enter>", { desc = "Obsidan: Today's Daily Note"} )
                 vim.keymap.set("n", "<leader>os", "<Cmd>ObsidianSearch<Enter>", { desc = "Obsidan: Search"} )
+                vim.keymap.set("n", "<leader>ol", "<Cmd>ObsidianLinks<Enter>", { desc = "Obsidan: Links"} )
+                vim.keymap.set("n", "<leader>obl", "<Cmd>ObsidianBacklinks<Enter>", { desc = "Obsidan: Backlinks"} )
 
                 vim.opt.conceallevel = 2
             end

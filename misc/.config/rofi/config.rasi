@@ -4,9 +4,11 @@ configuration {
     display-drun:   "";
     display-window: "";
     display-combi:  "";
+
+    // don't know if there is this icon theme in each system tho, 
+    // so might cause errors
     icon-theme: "Papirus-Dark";
     show-icons:     true;
 }
 
 @theme "~/.config/rofi/gruvbox-material.rasi"
-//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
