@@ -1,4 +1,9 @@
 # Dotfiles : Srj-17
+
+---
+# Screenshot
+![i3 screenshot associated with dots](screenshot.png)
+
 Sauce
 ## Note to self:
 - These are private dotfiles. DO NOT make them public
