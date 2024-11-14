@@ -1,10 +1,7 @@
 # Dotfiles : Srj-17
 
----
-# Screenshot
 ![i3 screenshot associated with dots](screenshot.png)
 
-Sauce
 ## Note to self:
 - These are private dotfiles. DO NOT make them public
 - Use a different dotfile repo such as `dotfile-public` if you want to do that
