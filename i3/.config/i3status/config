@@ -7,7 +7,7 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
+        colors = false
         interval = 5
 }
 
@@ -22,38 +22,39 @@ order += "tztime local"
 
 wireless _first_ {
         # format_up = " : (%quality at %essid) %ip"
-        format_up = " : (%quality )"
-        format_down = " : down"
+        format_up = " : %quality "
+        format_down = " : down "
 }
 
 ethernet _first_ {
         format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+        format_down = "E: down "
 }
 
 battery all {
-        format = "󰂄: %status %percentage %remaining"
+        # format = "󰂄: %status %percentage %remaining "
+        format = "󰂄: %status %percentage"
         format_down = "No battery"
         status_chr = "⚡ CHR"
         status_bat = "🔋"
-        status_unk = "? UNK"
-        status_full = "☻ FULL"
+        status_unk = "? UNK "
+        status_full = "☻ FULL "
         path = "/sys/class/power_supply/BAT%d/uevent"
         low_threshold = 10
 }
 
 disk "/" {
-        format = " : %avail"
+        format = " : %avail "
 }
 
 load {
-        format = " : %1min"
+        format = " : %1min "
 }
 
 memory {
-        format = "RAM: %used | %available"
+        format = "RAM: %used | %available "
         threshold_degraded = "1G"
-        format_degraded = "MEM < %available"
+        format_degraded = "MEM < %available "
 }
 
 tztime local {
