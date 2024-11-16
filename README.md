@@ -16,9 +16,14 @@
 - Terminal Emulator: `Xfce-4`
 - Compositor: `picom`
 - `lxappearance` for setting gtk themes
+- `qt5ct` for setting qt themes (i've not set this)
 - Application Launcher: `rofi`
 - Screenshot (with PrtSc): `xfce-4-screenshooter` 
-    - ~~in path `~/Pictures/screenshots/`~~ (would be needed for scrot)
+- pdf-viewer: `mupdf` & `zathura`
+    - zathura-themes: `https://github.com/BeyondMagic/zathura-themes?tab=readme-ov-file`
+
+## Gtk themes and icons
+- gruvbox: `https://github.com/TheGreatMcPain/gruvbox-material-gtk`
 
 # Other preferences
 - ***Editor*** - Neovim

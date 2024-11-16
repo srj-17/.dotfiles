@@ -9,9 +9,6 @@ vim.g.mapleader = " "
 -- open the project view, well this is now handeled by oooiiill
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
--- configure vim to use ctrl backspace as well
-vim.keymap.set("i", "<C-BS>", "<Esc>dbi", { silent = true, desc = 'delete from the cursor to back of the word'})
-
 -- moving between vim splits
 vim.keymap.set("n", "<C-j>", "<C-w><Up>", { desc = "to the bottom split" })
 vim.keymap.set("n", "<C-k>", "<C-w><Down>", { desc = "to the up split" })
@@ -28,3 +25,5 @@ vim.keymap.set("n", "<leader>x", ":bd<Enter>", { desc = "Buffer Delete"} )
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- nohl, i use it very much
+vim.keymap.set("n", "<C-n>", "<cmd>nohl<cr>", { desc = "nohl" })

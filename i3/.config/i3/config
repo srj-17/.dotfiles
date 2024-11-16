@@ -253,11 +253,12 @@ default_floating_border pixel 2
 # picom for transparency
 exec --no-startup-id picom
 
-# adding gaps 
+# # adding gaps 
 # gaps inner 5px
 # gaps outer 0px
 # workspace 2 gaps inner 5
-
+# # border_radius 20
+#
 # -------------------- keybinds ---------------------------------------------#
 bindsym $mod+shift+x exec i3lock --color "$bg-color"
 
@@ -284,6 +285,8 @@ exec --no-startup-id xfce4-terminal
 assign [class="ViberPC"] $ws10
 
 assign [class="MuPDF"] $ws3
+
+assign [class="Zathura"] $ws3
 
 # this is kindof what I want? Open terminal on workspace 2 at the beginning and 
 # if I open the terminal later, it opens on the workspace I want to open on

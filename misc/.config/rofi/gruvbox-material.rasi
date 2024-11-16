@@ -23,8 +23,8 @@ window {
     height: 400;
     width: 600;
 
-    border: 4;
-    border-radius: 0;
+    border: 2;
+    border-radius: 2;
     border-color: @bgStatusline3;
 }
 
