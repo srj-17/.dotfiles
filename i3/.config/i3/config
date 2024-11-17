@@ -297,4 +297,15 @@ assign [class="Zathura"] $ws3
 
 # ----------------------------------autostarts-----------------------------#
 # exec --no-startup-id redshift-gtk
+# bindsym $mod+o exec --no-startup-id "alacritty --class=ObsidianToday -e ot"
+# assign [class="ObsidianToday"] scratchpad
 # -------------------------------------------------------------------------#
+
+# ----------------------------------scratchpad-----------------------------#
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+# -------------------------------------------------------------------------#
+
