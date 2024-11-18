@@ -3,8 +3,7 @@ alias py="python3"
 
 alias ls="ls --color"
 alias neofetch="neofetch --source ~/.config/neofetch/ascii/luffy.txt"
-alias nv="nvim"
-alias n="nvim ."
+alias n="nvim"
 
 # open today's note 
 alias ot="nvim +ObsidianToday"
@@ -20,9 +19,6 @@ alias paste="xclip -selection clipboard -o"
 # aliases for quitting / sometimes confused with vim
 alias :wq="exit"
 alias :q="exit"
-
-# i clear my screen a lot
-alias c="clear"
 
 # for console version of stardict dictionary
 alias def="sdcv"
