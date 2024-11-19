@@ -20,10 +20,12 @@
 - Application Launcher: `rofi`
 - Screenshot (with PrtSc): `xfce-4-screenshooter` 
 - pdf-viewer: `mupdf` & `zathura`
-    - zathura-themes: `https://github.com/BeyondMagic/zathura-themes?tab=readme-ov-file`
+    - zathura-themes: [from here](https://github.com/BeyondMagic/zathura-themes?tab=readme-ov-file)
+- image-viewer: `feh`
+    - configuration for vim keys from [yudi-matsuzake](https://gist.github.com/yudi-matsuzake/688a6273339cbb2d7a97a53d0d8ab6c7)
 
 ## Gtk themes and icons
-- gruvbox: `https://github.com/TheGreatMcPain/gruvbox-material-gtk`
+- gruvbox: [from the great mcpain](https://github.com/TheGreatMcPain/gruvbox-material-gtk)
 
 # Other preferences
 - ***Editor*** - Neovim
