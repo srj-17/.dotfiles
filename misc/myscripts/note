@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if [[ $# -eq 1 ]]; then
+    selected=$1
+else
+    # don't put these under quotes, the ~ must be expanded by bash-shell before execution
+    DIRS=(
+        ~/repos/collage/notes
+    )
+    selected=$(find ${DIRS[@]} -type f | fzf)
+fi
+
+if [[ -z $selected ]]; then
+    exit 0
+fi
+
+zathura "$selected"&

@@ -284,6 +284,11 @@ assign [class="MuPDF"] $ws3
 assign [class="Zathura"] $ws3
 
 assign [class="firefox"] $ws1
+
+# # TODO: do I want this?, really? 
+# # all the utilities that i need go i this class
+# assign [class=".*"] $ws8
+
 # for_window [class="firefox"] fullscreen enable
 
 # scratchpad assignments
