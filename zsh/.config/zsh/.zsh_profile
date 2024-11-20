@@ -1,1 +1,3 @@
-bindkey -s ^f "tmux-sessionizer\n"
+# r means carriage return  
+bindkey -s "^f" "tmux-sessionizer\r"
+bindkey -s "^n" "note\r"

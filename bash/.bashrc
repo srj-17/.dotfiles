@@ -56,6 +56,8 @@ fi
 
 # -------------- set vim keybindings ----------------#
 set -o vi
+bind '"\C-f": "tmux-sessionizer\n"'
+bind '"\C-n": "note\n"'
 # ---------------------------------------------------#
 
 
