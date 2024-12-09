@@ -7,13 +7,16 @@ else
     DIRS=(
         ~/repos/collage/notes
     )
-    selected=$(find ${DIRS[@]} -type f | fzf)
+    selected=$(find ${DIRS[@]} -type f -printf "%f\n" | rofi -dmenu -i -p " Note:")
+    full_path=$(find ${DIRS[@]} -type f -name "$selected")
+    echo "$full_path"
 fi
 
 if [[ -z $selected ]]; then
-    clear
+    echo "No note selected"
     exit 0
 fi
 
-zathura "$selected"&
+
+zathura "$full_path"&
 clear

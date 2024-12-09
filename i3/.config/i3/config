@@ -259,7 +259,9 @@ exec --no-startup-id picom
 # # adding gaps 
 # gaps inner 5px
 # gaps outer 0px
+# smart_gaps on
 # workspace $ws2 gaps inner 5px
+# workspace $ws3 gaps inner 5px
 # # border_radius 20
  
 # -------------------- keybinds ---------------------------------------------#
@@ -268,7 +270,9 @@ bindsym $mod+shift+x exec i3lock --color "$bg-color"
 #for screenshots
 # xfce4-screenshooter seems good enough for now
 # bindsym --release $mod+Print exec scrot -s ~/Pictures/screenshots/%b%d-%H%M%S.png
-bindsym Print exec xfce4-screenshooter
+bindsym Print exec --no-startup-id xfce4-screenshooter
+
+bindsym $mod+n exec ~/myscripts/note-rofi
 
 # ----------------------- auto assignments to workspaces ---------------- #
 # class of apps found using xprop, second WM_CLASS string

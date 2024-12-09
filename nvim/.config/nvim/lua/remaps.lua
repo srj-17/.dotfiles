@@ -27,3 +27,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- nohl, i use it very much
 vim.keymap.set("n", "<C-n>", "<cmd>nohl<cr>", { desc = "nohl" })
+
+-- make the current file executable
+vim.keymap.set("n", "<C-x>", "<cmd>!chmod +x %<cr>", { desc = "Make current file executable"} )

@@ -96,6 +96,7 @@ export NVM_DIR="$HOME/.nvm"
 # ----------------- setting up PATH ----------------------#
 PATH=$PATH:/home/srj/.nvm/versions/node/v20.14.0/
 PATH=$PATH:~/myscripts
+PATH=$PATH:~/go/bin/
 # This exposes the nvim directory globally
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export BROWSER="firefox"
