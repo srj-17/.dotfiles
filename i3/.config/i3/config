@@ -257,9 +257,9 @@ default_floating_border pixel 2
 exec --no-startup-id picom
 
 # # adding gaps 
-# gaps inner 5px
+gaps inner 5px
 # gaps outer 0px
-# smart_gaps on
+smart_gaps on
 # workspace $ws2 gaps inner 5px
 # workspace $ws3 gaps inner 5px
 # # border_radius 20
@@ -281,13 +281,20 @@ bindsym $mod+n exec ~/myscripts/note-rofi
 ## do you want a single view workflow or multitask
 assign [class="Xfce4-terminal"] $ws2
 
+# everything communication related goes to workspace 9 
 assign [class="ViberPC"] $ws10
 
+# everything about reading goes to workspace 3
 assign [class="MuPDF"] $ws3
 
 assign [class="Zathura"] $ws3
 
+assign [class="obsidian"] $ws3
+# ------------------------------------------
+
 assign [class="firefox"] $ws1
+
+assign [class="Google-chrome"] $ws9
 
 # # TODO: do I want this?, really? 
 # # all the utilities that i need go i this class
@@ -332,6 +339,6 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # for_window [floating] hide_edge_borders none
-for_window [floating] resize set 683 384, move absolute position center
+for_window [floating] resize set 684 384, move absolute position center
 # -------------------------------------------------------------------------#
 

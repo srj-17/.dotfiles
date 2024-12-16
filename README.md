@@ -2,10 +2,6 @@
 
 ![i3 screenshot associated with dots](screenshot.png)
 
-## Note to self:
-- These are private dotfiles. DO NOT make them public
-- Use a different dotfile repo such as `dotfile-public` if you want to do that
-
 # Installing the required apps
 # For i3
 - Window manager: `i3-wm`
