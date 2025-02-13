@@ -6,8 +6,9 @@ else
     # don't put these under quotes, the ~ must be expanded by bash-shell before execution
     DIRS=(
         ~/repos/collage/notes
+        ~/Sync/notes/_assets/
     )
-    selected=$(find ${DIRS[@]} -type f -printf "%f\n" | rofi -dmenu -i -p " Note:")
+    selected=$(find ${DIRS[@]} -type f -printf "%f\n" | grep ".pdf" | rofi -dmenu -i -p " Note:")
     full_path=$(find ${DIRS[@]} -type f -name "$selected")
     echo "$full_path"
 fi

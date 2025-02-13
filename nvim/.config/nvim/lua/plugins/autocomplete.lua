@@ -15,107 +15,107 @@
 -- snippet-engine = friendly-snippets (source) , luasnip (engine)
 
 return {
-    {
-        'windwp/nvim-autopairs',
-        event = "InsertEnter",
-        config = true
-        -- use opts = {} for passing setup options
-        -- this is equivalent to setup({}) function
-    },
-    {
-        -- this doesn't seem to be working
-        -- Did the setup of the servers to have snip-providing-capabilities
-        -- In mason-lspconfig
-        -- But didn't work [worked]
-        -- -- Didn't work before - worked after using this as a dependency 
-        'hrsh7th/cmp-nvim-lsp',
-    },
-    {
-        'L3MON4D3/LuaSnip',
-        dependencies = {
-            'saadparwaiz1/cmp_luasnip',
-            -- vscode like friendly-snippets
-            'rafamadriz/friendly-snippets',
-            'hrsh7th/cmp-buffer',
-            'hrsh7th/cmp-path',
-            'hrsh7th/cmp-nvim-lsp',
-        },
-    },
-    {
-        "hrsh7th/nvim-cmp",
-        dependencies = {
-            'L3MON4D3/LuaSnip',
-        },
-        config = function()
-            local ls = require("luasnip")
+	{
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = true,
+		-- use opts = {} for passing setup options
+		-- this is equivalent to setup({}) function
+	},
+	{
+		-- this doesn't seem to be working
+		-- Did the setup of the servers to have snip-providing-capabilities
+		-- In mason-lspconfig
+		-- But didn't work [worked]
+		-- -- Didn't work before - worked after using this as a dependency
+		"hrsh7th/cmp-nvim-lsp",
+	},
+	{
+		"L3MON4D3/LuaSnip",
+		dependencies = {
+			"saadparwaiz1/cmp_luasnip",
+			-- vscode like friendly-snippets
+			"rafamadriz/friendly-snippets",
+			"hrsh7th/cmp-buffer",
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-nvim-lsp",
+		},
+	},
+	{
+		"hrsh7th/nvim-cmp",
+		dependencies = {
+			"L3MON4D3/LuaSnip",
+		},
+		config = function()
+			local ls = require("luasnip")
 
-            -- load friendly snippets
-            require('luasnip.loaders.from_vscode').lazy_load()
+			-- load friendly snippets
+			require("luasnip.loaders.from_vscode").lazy_load()
 
-            -- Set up nvim-cmp.
-            local cmp = require("cmp")
-            cmp.setup({
-                snippet = {
-                    -- snippets provided by luasnip, which are then expanded by nvim-cmp
-                    expand = function(args)
-                        -- we're using luasnip as snippet engine
-                        ls.lsp_expand(args.body)
-                    end,
-                },
-                window = {
-                    completion = cmp.config.window.bordered(),
-                    documentation = cmp.config.window.bordered(),
-                },
-                mapping = cmp.mapping.preset.insert({
-                    ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-                    ['<C-f>'] = cmp.mapping.scroll_docs(4),
-                    ['<C-Space>'] = cmp.mapping.complete(),
-                    ['<C-e>'] = cmp.mapping.abort(),
+			-- Set up nvim-cmp.
+			local cmp = require("cmp")
+			cmp.setup({
+				snippet = {
+					-- snippets provided by luasnip, which are then expanded by nvim-cmp
+					expand = function(args)
+						-- we're using luasnip as snippet engine
+						ls.lsp_expand(args.body)
+					end,
+				},
+				window = {
+					completion = cmp.config.window.bordered(),
+					documentation = cmp.config.window.bordered(),
+				},
+				mapping = cmp.mapping.preset.insert({
+					["<C-b>"] = cmp.mapping.scroll_docs(-4),
+					["<C-f>"] = cmp.mapping.scroll_docs(4),
+					["<C-Space>"] = cmp.mapping.complete(),
+					["<C-e>"] = cmp.mapping.abort(),
 
-                    -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-                    -- https://github.com/hrsh7th/nvim-cmp/wiki/Example-mappings#luasnip
-                    -- LITERALLY MAGIC
-                    ['<CR>'] = cmp.mapping(function(fallback)
-                        if cmp.visible() then
-                            if ls.expandable() then
-                                ls.expand()
-                            else
-                                cmp.confirm({
-                                    select = true,
-                                })
-                            end
-                        else
-                            fallback()
-                        end
-                    end),
-                    ["<Tab>"] = cmp.mapping(function(fallback)
-                        if cmp.visible() then
-                            cmp.select_next_item()
-                        elseif ls.locally_jumpable(1) then
-                            ls.jump(1)
-                        else
-                            fallback()
-                        end
-                    end, { "i", "s" }),
+					-- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+					-- https://github.com/hrsh7th/nvim-cmp/wiki/Example-mappings#luasnip
+					-- LITERALLY MAGIC
+					["<CR>"] = cmp.mapping(function(fallback)
+						if cmp.visible() then
+							if ls.expandable() then
+								ls.expand()
+							else
+								cmp.confirm({
+									select = true,
+								})
+							end
+						else
+							fallback()
+						end
+					end),
+					["<Tab>"] = cmp.mapping(function(fallback)
+						if cmp.visible() then
+							cmp.select_next_item()
+						elseif ls.locally_jumpable(1) then
+							ls.jump(1)
+						else
+							fallback()
+						end
+					end, { "i", "s" }),
 
-                    ["<S-Tab>"] = cmp.mapping(function(fallback)
-                        if cmp.visible() then
-                            cmp.select_prev_item()
-                        elseif ls.locally_jumpable(-1) then
-                            ls.jump(-1)
-                        else
-                            fallback()
-                        end
-                    end, { "i", "s" }),
-                }),
-                -- completion sources
-                sources = cmp.config.sources({
-                    { name = 'luasnip' }, -- For luasnip users.
-                    { name = 'nvim_lsp'},
-                    { name = 'path' },
-                    { name = 'buffer', },
-                })
-            })
-        end
-    },
+					["<S-Tab>"] = cmp.mapping(function(fallback)
+						if cmp.visible() then
+							cmp.select_prev_item()
+						elseif ls.locally_jumpable(-1) then
+							ls.jump(-1)
+						else
+							fallback()
+						end
+					end, { "i", "s" }),
+				}),
+				-- completion sources
+				sources = cmp.config.sources({
+					{ name = "luasnip" }, -- For luasnip users.
+					{ name = "nvim_lsp" },
+					{ name = "path" },
+					{ name = "buffer" },
+				}),
+			})
+		end,
+	},
 }
