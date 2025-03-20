@@ -15,12 +15,12 @@ vim.keymap.set("n", "<C-k>", "<C-w><Down>", { desc = "to the up split" })
 vim.keymap.set("n", "<C-h>", "<C-w><Left>", { desc = "to the left split" })
 vim.keymap.set("n", "<C-l>", "<C-w><Right>", { desc = "to the right split" })
 
-vim.keymap.set("n", "<leader>x", ":bd<Enter>", { desc = "Buffer Delete"} )
+vim.keymap.set("n", "<leader>x", ":bd<Enter>", { desc = "Buffer Delete" })
 -- cool things
 -- ctrl z => move vim to background
 -- fg <enter> to move it back to foreground after running commands
 
--- when in visual mode, they allow you to move things up and down using J and K, 
+-- when in visual mode, they allow you to move things up and down using J and K,
 -- AND, they'll respect indenting, copied from primeagen
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -29,4 +29,4 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<C-n>", "<cmd>nohl<cr>", { desc = "nohl" })
 
 -- make the current file executable
-vim.keymap.set("n", "<C-x>", "<cmd>!chmod +x %<cr>", { desc = "Make current file executable"} )
+vim.keymap.set("n", "<C-x>", "<cmd>!chmod +x %<cr>", { desc = "Make current file executable" })
