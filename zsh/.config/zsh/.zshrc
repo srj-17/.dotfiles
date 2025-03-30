@@ -97,6 +97,8 @@ export NVM_DIR="$HOME/.nvm"
 PATH=$PATH:/home/srj/.nvm/versions/node/v20.14.0/
 PATH=$PATH:~/myscripts
 PATH=$PATH:~/go/bin/
+export PATH=$PATH:~/.cargo/bin/
+
 # This exposes the nvim directory globally
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export BROWSER="firefox"
@@ -107,3 +109,6 @@ export VISUAL="nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+# ---------------- postgresql password
+export DATABASE_PASSWORD="onepunchman"
