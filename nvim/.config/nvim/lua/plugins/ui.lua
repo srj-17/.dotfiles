@@ -113,7 +113,11 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
 			require("lualine").setup({
-				options = { theme = "auto" },
+				options = {
+					-- use global status line
+					globalstatus = true,
+					theme = "auto",
+				},
 			})
 		end,
 	},

@@ -30,3 +30,9 @@ vim.keymap.set("n", "<C-n>", "<cmd>nohl<cr>", { desc = "nohl" })
 
 -- make the current file executable
 vim.keymap.set("n", "<C-x>", "<cmd>!chmod +x %<cr>", { desc = "Make current file executable" })
+
+vim.keymap.set("n", "K", function()
+	vim.lsp.buf.hover({ border = "single", max_height = 25, max_width = 120 })
+end)
+
+vim.keymap.set("n", "vs", "<cmd>vsplit<cr>", { desc = "Split vertically" })

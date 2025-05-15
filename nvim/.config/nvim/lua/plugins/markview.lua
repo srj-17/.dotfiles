@@ -3,13 +3,14 @@ return {
 	lazy = false, -- Recommended
 	config = function()
 		require("markview").setup({
+			preview = {
+				-- which modes to use markview on
+				modes = { "n", "no", "c" }, -- Change these modes
+				-- to what you need
 
-			-- which modes to use markview on
-			modes = { "n", "no", "c" }, -- Change these modes
-			-- to what you need
-
-			hybrid_modes = { "n" }, -- Uses this feature on
-			-- normal mode
+				hybrid_modes = { "n" }, -- Uses this feature on
+				-- normal mode
+			},
 		})
 
 		-- vim.cmd("Markview enableAll");

@@ -20,6 +20,10 @@ return {
 	opts = {},
 	config = function()
 		require("obsidian").setup({
+			ui = {
+				enable = false,
+			},
+
 			workspaces = {
 				{
 					name = "notes",
@@ -130,7 +134,9 @@ return {
 		vim.keymap.set("n", "<leader>os", "<Cmd>ObsidianSearch<Enter>", { desc = "Obsidan: Search" })
 		vim.keymap.set("n", "<leader>ol", "<Cmd>ObsidianLinks<Enter>", { desc = "Obsidan: Links" })
 		vim.keymap.set("n", "<leader>obl", "<Cmd>ObsidianBacklinks<Enter>", { desc = "Obsidan: Backlinks" })
+		vim.keymap.set("v", "<leader>oen", ":ObsidianExtractNote ", { desc = "Obsidian Extract Note" })
 
+		-- for obsidian's ui
 		vim.opt.conceallevel = 2
 	end,
 }

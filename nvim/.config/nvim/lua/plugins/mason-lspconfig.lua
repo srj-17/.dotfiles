@@ -7,6 +7,7 @@ return {
 		config = function()
 			require("mason").setup()
 			local mason_tool_installer = require("mason-tool-installer")
+			-- especially for linters and formatters
 			mason_tool_installer.setup({
 				ensure_installed = {
 					"prettier", -- prettier formatter
@@ -21,6 +22,7 @@ return {
 					"ts_ls",
 					"cssls",
 					"tailwindcss",
+					"phpactor",
 				},
 			})
 		end,
@@ -80,6 +82,7 @@ return {
 					-- "emmet_ls",
 					-- "prismals",
 					-- "pyright",
+					"phpactor",
 				},
 			})
 		end,

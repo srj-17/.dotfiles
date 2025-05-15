@@ -272,7 +272,12 @@ bindsym $mod+shift+x exec i3lock --color "$bg-color"
 # bindsym --release $mod+Print exec scrot -s ~/Pictures/screenshots/%b%d-%H%M%S.png
 bindsym Print exec --no-startup-id xfce4-screenshooter
 
+# since i3 has starts before your shell (zsh or bash) 
+# it doesn't inherit your path. You have to either source 
+# the shell configs in i3 or use absolute paths here
 bindsym $mod+n exec ~/myscripts/note-rofi
+bindsym $mod+period exec ~/myscripts/showmoji
+bindsym $mod+shift+comma exec ~/myscripts/rofi-power-menu
 
 # ----------------------- auto assignments to workspaces ---------------- #
 # class of apps found using xprop, second WM_CLASS string
