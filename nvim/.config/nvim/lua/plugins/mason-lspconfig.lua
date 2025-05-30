@@ -31,8 +31,8 @@ return {
 		},
 		config = function()
 			local mason_lspconfig = require("mason-lspconfig")
-
 			mason_lspconfig.setup({
+				-- automatic_enable = false,
 				ensure_installed = {
 					"ts_ls",
 					"html",
@@ -46,36 +46,6 @@ return {
 					-- "pyright",
 					"phpactor",
 				},
-			})
-
-			mason_lspconfig.setup_handlers({
-				-- this setup will read all data from mason and
-				-- pull the list of all installed servers
-				-- will pass items on that list to handlers who will setup the servers
-				-- one by one
-
-				function(server_name)
-					local capabilities = require("cmp_nvim_lsp").default_capabilities()
-					require("lspconfig")[server_name].setup({
-						-- Also, setup up completion configuration provided by cmp-nvim-lsp for each server
-						capabilities = capabilities,
-
-						-- this is for go to definition setup
-						on_attach = function(client, bufnr)
-							local opts = { buffer = bufnr, remap = false }
-						end,
-					})
-				end,
-
-				-- necessary because idk why root directory was
-				-- not being detected for phpactor during :checkhealth lspconfig
-				-- https://github.com/neovim/nvim-lspconfig/blob/master/lua/lspconfig/configs/phpactor.lua
-				["phpactor"] = function()
-					local lspconfig = require("lspconfig")
-					lspconfig.phpactor.setup({
-						root_dir = vim.fn.getcwd(),
-					})
-				end,
 			})
 
 			local opts = { silent = true, noremap = true }

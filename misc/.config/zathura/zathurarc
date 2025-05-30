@@ -48,3 +48,6 @@ map i recolor
 #--------------------------- set my aesthetics -----------------------------#
 set statusbar-h-padding 0
 set statusbar-v-padding 0
+
+#--------------------------- additional settings -----------------------------#
+set selection-clipboard clipboard
