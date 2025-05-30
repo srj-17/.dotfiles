@@ -65,3 +65,6 @@ vim.opt.modeline = false
 
 -- for md files
 vim.opt.conceallevel = 2
+
+---------------- diagnostic options ---------------------------
+vim.diagnostic.config({ virtual_text = { current_line = true } })

@@ -6,11 +6,6 @@ return {
 	version = "1.*",
 
 	opts = {
-		-- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
-		-- 'super-tab' for mappings similar to vscode (tab to accept)
-		-- 'enter' for enter to accept
-		-- 'none' for no mappings
-
 		-- All presets have the following mappings:
 		-- C-space: Open menu or open docs if already open
 		-- C-n/C-p or Up/Down: Select next/previous item
@@ -25,7 +20,18 @@ return {
 		},
 
 		completion = {
-			documentation = { auto_show = true, auto_show_delay_ms = 0 },
+			documentation = { auto_show = true, window = { border = "single", max_width = 50 } },
+			menu = {
+				draw = {
+					components = {
+						label = {
+							width = {
+								max = 50,
+							},
+						},
+					},
+				},
+			},
 			accept = { auto_brackets = { enabled = true } },
 		},
 
