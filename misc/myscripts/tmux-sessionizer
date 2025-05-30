@@ -29,6 +29,9 @@ selected_name=$(basename "$selected" | tr . _)
 # if we don't have a session with the selected_name
 if ! tmux has-session -t=$selected_name 2> /dev/null; then
 
+    # for the opened windows to open in the same pwd
+    cd $selected
+
     # create a detached session
     tmux new-session -ds "$selected_name" -c $selected
 
