@@ -8,27 +8,26 @@
 --
 -- install lazyvim into the stdpath("data").."/lazy/" directory
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
--- take lazypath and check the existance of that path with 
+-- take lazypath and check the existance of that path with
 -- (vim.uv or vim.loop).fs_stat(lazypath), create the path if doesn't exist
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
-    local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-    local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+	local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
 
-    -- checks if the last command had error, if had, executes this code
-    if vim.v.shell_error ~= 0 then
-        vim.api.nvim_echo({
-            { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-            { out, "WarningMsg" },
-            { "\nPress any key to exit..." },
-        }, true, {})
-        vim.fn.getchar()
-        os.exit(1)
-    end
+	-- checks if the last command had error, if had, executes this code
+	if vim.v.shell_error ~= 0 then
+		vim.api.nvim_echo({
+			{ "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+			{ out, "WarningMsg" },
+			{ "\nPress any key to exit..." },
+		}, true, {})
+		vim.fn.getchar()
+		os.exit(1)
+	end
 end
 vim.opt.rtp:prepend(lazypath)
 -- same as vim.opt.rtp.prepend(vim.opt.rtp, lazypath)
 -- syntactic sugar
-
 
 -- load custom options
 require("options")
@@ -43,7 +42,7 @@ require("autocmds")
 -- require("self_cmds")
 
 -- run setup function from lazy to setup lazy
--- by providing a list 
+-- by providing a list
 -- of urls to different plugins
 -- that we'd like to install
 --
@@ -52,5 +51,5 @@ require("autocmds")
 --
 -- merge and return the plugins
 require("lazy").setup({
-    { import = "plugins" }
+	{ import = "plugins" },
 })

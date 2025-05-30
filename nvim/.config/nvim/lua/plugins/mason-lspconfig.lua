@@ -1,33 +1,18 @@
 return {
 	{
 		"mason-org/mason.nvim",
-		dependencies = {
-			"WhoIsSethDaniel/mason-tool-installer.nvim",
-		},
 		config = function()
 			require("mason").setup()
-
-			-- especially for linters and formatters
-			local mason_tool_installer = require("mason-tool-installer")
-			mason_tool_installer.setup({
-				ensure_installed = {
-					"prettier", -- prettier formatter
-					"stylua", -- lua formatter
-					-- "isort", -- python formatter
-					-- "black", -- python formatter
-					"pylint", -- python linter
-					"eslint_d", -- js linter
-				},
-			})
 		end,
 	},
 	{
+		-- for lsp's
 		"mason-org/mason-lspconfig.nvim",
 		dependencies = {
 			"mason-org/mason.nvim",
 			-- this is for broadcasting to the lsp about our
-			"hrsh7th/cmp-nvim-lsp",
 			"neovim/nvim-lspconfig",
+			"saghen/blink.cmp",
 		},
 		config = function()
 			local mason_lspconfig = require("mason-lspconfig")
@@ -65,6 +50,26 @@ return {
 			vim.keymap.set("n", "<leader>rn", function()
 				vim.lsp.buf.rename()
 			end, opts)
+		end,
+	},
+	{
+		-- for formatters and linters
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		dependencies = {
+			"mason-org/mason.nvim",
+		},
+		config = function()
+			local mason_tool_installer = require("mason-tool-installer")
+			mason_tool_installer.setup({
+				ensure_installed = {
+					"prettier", -- prettier formatter
+					"stylua", -- lua formatter
+					-- "isort", -- python formatter
+					-- "black", -- python formatter
+					"pylint", -- python linter
+					"eslint_d", -- js linter
+				},
+			})
 		end,
 	},
 }
