@@ -99,6 +99,10 @@ PATH=$PATH:~/myscripts
 PATH=$PATH:~/go/bin/
 export PATH=$PATH:~/.cargo/bin/
 
+# for bun package manager
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # This exposes the nvim directory globally
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export BROWSER="firefox"

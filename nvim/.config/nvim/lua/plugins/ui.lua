@@ -67,61 +67,79 @@ return {
 	--         })
 	--     end
 	-- },
+	-- {
+	-- 	-- for highlighting css colors
+	-- 	-- mini.highlight worked, but it was not working for anything except hex color
+	-- 	"brenoprata10/nvim-highlight-colors",
+	-- 	config = function()
+	-- 		-- Ensure termguicolors is enabled if not already
+	-- 		vim.opt.termguicolors = true
+	--
+	-- 		require("nvim-highlight-colors").setup({})
+	--
+	-- 		-- blink integration - copied directly from the nvim-highlight-colors docs
+	-- 		require("blink.cmp").setup({
+	-- 			completion = {
+	-- 				menu = {
+	-- 					draw = {
+	-- 						components = {
+	-- 							-- customize the drawing of kind icons
+	-- 							kind_icon = {
+	-- 								text = function(ctx)
+	-- 									-- default kind icon
+	-- 									local icon = ctx.kind_icon
+	-- 									-- if LSP source, check for color derived from documentation
+	-- 									if ctx.item.source_name == "LSP" then
+	-- 										local color_item = require("nvim-highlight-colors").format(
+	-- 											ctx.item.documentation,
+	-- 											{ kind = ctx.kind }
+	-- 										)
+	-- 										if color_item and color_item.abbr ~= "" then
+	-- 											icon = color_item.abbr
+	-- 										end
+	-- 									end
+	-- 									return icon .. ctx.icon_gap
+	-- 								end,
+	-- 								highlight = function(ctx)
+	-- 									-- default highlight group
+	-- 									local highlight = "BlinkCmpKind" .. ctx.kind
+	-- 									-- if LSP source, check for color derived from documentation
+	-- 									if ctx.item.source_name == "LSP" then
+	-- 										local color_item = require("nvim-highlight-colors").format(
+	-- 											ctx.item.documentation,
+	-- 											{ kind = ctx.kind }
+	-- 										)
+	-- 										if color_item and color_item.abbr_hl_group then
+	-- 											highlight = color_item.abbr_hl_group
+	-- 										end
+	-- 									end
+	-- 									return highlight
+	-- 								end,
+	-- 							},
+	-- 						},
+	-- 					},
+	-- 				},
+	-- 			},
+	-- 		})
+	-- 	end,
+	-- },
 	{
-		-- for highlighting css colors
-		-- mini.highlight worked, but it was not working for anything except hex color
-		"brenoprata10/nvim-highlight-colors",
-		config = function()
-			-- Ensure termguicolors is enabled if not already
-			vim.opt.termguicolors = true
-
-			require("nvim-highlight-colors").setup({})
-
-			-- blink integration - copied directly from the nvim-highlight-colors docs
-			require("blink.cmp").setup({
-				completion = {
-					menu = {
-						draw = {
-							components = {
-								-- customize the drawing of kind icons
-								kind_icon = {
-									text = function(ctx)
-										-- default kind icon
-										local icon = ctx.kind_icon
-										-- if LSP source, check for color derived from documentation
-										if ctx.item.source_name == "LSP" then
-											local color_item = require("nvim-highlight-colors").format(
-												ctx.item.documentation,
-												{ kind = ctx.kind }
-											)
-											if color_item and color_item.abbr ~= "" then
-												icon = color_item.abbr
-											end
-										end
-										return icon .. ctx.icon_gap
-									end,
-									highlight = function(ctx)
-										-- default highlight group
-										local highlight = "BlinkCmpKind" .. ctx.kind
-										-- if LSP source, check for color derived from documentation
-										if ctx.item.source_name == "LSP" then
-											local color_item = require("nvim-highlight-colors").format(
-												ctx.item.documentation,
-												{ kind = ctx.kind }
-											)
-											if color_item and color_item.abbr_hl_group then
-												highlight = color_item.abbr_hl_group
-											end
-										end
-										return highlight
-									end,
-								},
-							},
-						},
-					},
-				},
-			})
-		end,
+		-- just for oklch
+		"eero-lehtinen/oklch-color-picker.nvim",
+		event = "VeryLazy",
+		version = "*",
+		keys = {
+			-- One handed keymap recommended, you will be using the mouse
+			-- {
+			-- 	"<leader>v",
+			-- 	function()
+			-- 		require("oklch-color-picker").pick_under_cursor()
+			-- 	end,
+			-- 	desc = "Color pick under cursor",
+			-- },
+		},
+		---@type oklch.Opts
+		opts = {},
 	},
 	{
 		-- this plugin just makes fold more good looking
@@ -141,7 +159,9 @@ return {
 	{
 		-- lualine for making the status line look better
 		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
 		config = function()
 			require("lualine").setup({
 				options = {
