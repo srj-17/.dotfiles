@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Get clipboard contents
+clip=$(xclip -selection clipboard -o 2>/dev/null || echo "")
+
+# Use Rofi with clipboard as default
+query=$(echo "$clip" | rofi -dmenu -p " " -lines 1)
+
+# Exit if nothing entered
+[ -z "$query" ] && exit 0
+
+# Trim leading/trailing whitespace
+query=$(echo "$query" | xargs)
+
+# Check if it's a URL
+if [[ "$query" =~ ^https?://.* ]]; then
+    # Already a full URL
+    firefox "$query" &
+elif [[ "$query" =~ ^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(/.*)?$ ]]; then
+    # Looks like a domain without http, prepend it
+    firefox "http://$query" &
+else
+    # Treat as search query
+    encoded=$(printf "%s" "$query" | sed 's/ /+/g')
+    firefox "https://www.google.com/search?q=$encoded" &
+fi

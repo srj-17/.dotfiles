@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -107,7 +107,7 @@ bindsym $mod+f fullscreen toggle
 # i'll use it
 bindsym $mod+shift+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+e layout toggle tabbed split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -241,6 +241,7 @@ bar {
                     urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
             }
         # position top
+        mode hide
 }
 
 # no window borders at the edges
@@ -281,6 +282,7 @@ bindsym Print exec --no-startup-id xfce4-screenshooter
 bindsym $mod+n exec ~/myscripts/note-rofi
 bindsym $mod+period exec ~/myscripts/showmoji
 bindsym $mod+shift+comma exec ~/myscripts/rofi-power-menu
+bindsym $mod+semicolon exec ~/myscripts/rofi-web-search
 
 # ----------------------- auto assignments to workspaces ---------------- #
 # class of apps found using xprop, second WM_CLASS string

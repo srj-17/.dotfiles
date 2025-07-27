@@ -1,0 +1,16 @@
+[ids]
+
+*
+
+[main]
+
+# Maps capslock to escape when pressed 
+# (not overloaded because I want it to work fast)
+# and overloading causes 150ms delay, it seems
+capslock = esc
+esc = capslock
+
+# Maps super / meta / windows key to "alt" and vice versa
+leftmeta = leftalt
+leftalt = leftmeta
+rightalt = leftmeta

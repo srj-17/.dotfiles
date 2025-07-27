@@ -2,3 +2,5 @@
 # so, we specifiy to source .bashrc
 # source is basically like require() in lua / include in c (but not preprocessing part tho)
 source ~/.bashrc
+
+. "$HOME/.local/bin/env"

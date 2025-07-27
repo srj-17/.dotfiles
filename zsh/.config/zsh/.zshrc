@@ -98,6 +98,7 @@ PATH=$PATH:/home/srj/.nvm/versions/node/v20.14.0/
 PATH=$PATH:~/myscripts
 PATH=$PATH:~/go/bin/
 export PATH=$PATH:~/.cargo/bin/
+PATH=$PATH:"$HOME/.local/bin/"
 
 # for bun package manager
 export BUN_INSTALL="$HOME/.bun"

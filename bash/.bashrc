@@ -60,3 +60,5 @@ bind '"\C-f": "tmux-sessionizer\n"'
 bind '"\C-n": "note\n"'
 # ---------------------------------------------------#
 
+
+. "$HOME/.local/bin/env"

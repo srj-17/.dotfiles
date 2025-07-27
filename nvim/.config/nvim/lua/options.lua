@@ -68,3 +68,8 @@ vim.opt.conceallevel = 2
 
 ---------------- diagnostic options ---------------------------
 vim.diagnostic.config({ virtual_text = { current_line = true } })
+
+-- save undo history
+vim.opt.undofile = true
+vim.opt.undodir = vim.fn.expand("~/.nvim/undo")
+vim.opt.undolevels = 1000 -- how many undos
