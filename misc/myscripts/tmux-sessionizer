@@ -41,7 +41,7 @@ if ! tmux has-session -t=$selected_name 2> /dev/null; then
     tmux new-session -ds "$selected_name" -c $selected
 
     # create windows without attaching
-    WINDOWS=("term" "ls" "db")
+    WINDOWS=("term" "lrs")
 
     for window in "${WINDOWS[@]}"; do
         tmux new-window -t "$selected_name" -n "$window"

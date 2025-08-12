@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# credit to this post
+# https://www.reddit.com/r/commandline/comments/nqf8an/comment/h0aayz1/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+arg1=$1
+shift
+args="$*"
+
+min=${arg1:?Example: pomo 15 Take a break}
+sec=$((min * 60))
+msg="${args:?Example: pomo 15 Take a break}"
+
+echo "Pomodoro started for $min minutes."
+notify-send -u normal "Pomodoro started" "$min minutes — $msg"
+
+while true; do
+    sleep "${sec:?}" && echo "${msg:?}" && notify-send -u critical -t 0 "${msg:?}"
+done
