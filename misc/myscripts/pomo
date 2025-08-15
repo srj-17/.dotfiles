@@ -1,18 +1,63 @@
 #!/bin/bash
 
+# Usage: script work_minutes break_minutes message
+# Example: ./pomo.sh 25 5 4 "Take a break"
+# meaning pomo work_min break_min cycles msg_at_each_break_end
+
 # credit to this post
 # https://www.reddit.com/r/commandline/comments/nqf8an/comment/h0aayz1/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
-arg1=$1
-shift
-args="$*"
 
-min=${arg1:?Example: pomo 15 Take a break}
-sec=$((min * 60))
-msg="${args:?Example: pomo 15 Take a break}"
+STATEFILE="/tmp/pomodoro_end_time"
 
-echo "Pomodoro started for $min minutes."
-notify-send -u normal "Pomodoro started" "$min minutes — $msg"
+# Check if there's an active session running
+if [[ -f "$STATEFILE" ]]; then
+    now=$(date +%s)
+    end=$(cat "$STATEFILE")
+    rem=$(( end - now ))
 
-while true; do
-    sleep "${sec:?}" && echo "${msg:?}" && notify-send -u critical -t 0 "${msg:?}"
+    if (( rem > 0 )); then
+        notify-send "Pomodoro running" "$(printf 'Time remaining: %d minutes %d seconds' $((rem / 60)) $((rem % 60)))"
+        exit 0
+    else
+        # Session expired, remove state file and continue to start new pomodoro
+        rm -f "$STATEFILE"
+    fi
+fi
+
+# If no active session, start new pomodoro as usual
+work_min=${1:-60}
+break_min=${2:-15}
+cycles=${3:-4}
+shift 3 || true
+msg="${*:-Lets gooo!}"
+
+work_sec=$((work_min * 60))
+break_sec=$((break_min * 60))
+
+# Start message
+echo "Pomodoro started: $work_min min work / $break_min min break — $msg"
+notify-send -u normal "Pomodoro started" \
+    "$work_min min work / $break_min min break — $msg"
+
+for ((i=1; i<=cycles; i++)); do
+    # Work session
+    echo $(( $(date +%s) + work_sec )) > "$STATEFILE"
+    sleep "$work_sec" && \
+    echo "Break time - $msg" && \
+    notify-send -u critical -t 0 "Break time - $msg"
+
+    # Break session
+    # Don't take break after last session
+    if [[ $i -lt $cycles ]]; then
+        echo $(( $(date +%s) + break_sec )) > "$STATEFILE"
+        sleep "$break_sec" && \
+        echo "Back to work!" && \
+        notify-send -u normal "Back to work!"
+    fi
 done
+
+rm -f "$STATEFILE"  # Cleanup state file at end
+
+echo "Pomodoro complete! Congratulations on the deep work!"
+notify-send -u normal "Pomodoro complete!" \
+    "$cycles cycles finished"

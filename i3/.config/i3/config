@@ -283,6 +283,7 @@ bindsym $mod+n exec ~/myscripts/note-rofi
 bindsym $mod+period exec ~/myscripts/showmoji
 bindsym $mod+shift+comma exec ~/myscripts/rofi-power-menu
 bindsym $mod+semicolon exec ~/myscripts/rofi-web-search
+bindsym $mod+shift+p exec ~/myscripts/pomo
 
 # ----------------------- auto assignments to workspaces ---------------- #
 # class of apps found using xprop, second WM_CLASS string
