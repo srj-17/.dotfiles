@@ -38,8 +38,8 @@ require("remaps")
 -- load autocmds
 require("autocmds")
 
--- load self_cmds
--- require("self_cmds")
+-- load keymaps
+require("keymaps")
 
 -- run setup function from lazy to setup lazy
 -- by providing a list

@@ -24,6 +24,7 @@
 - key remapper = keyd
   - config: [keyd_config](./keyd_config) - copy the contents of this to your
     `/etc/keyd/default.conf`
+- [xkbswitch](https://github.com/ivanesmantovich/xkbswitch.nvim) for switching layouts (between my local and english language)
 
 ## Gtk themes and icons
 

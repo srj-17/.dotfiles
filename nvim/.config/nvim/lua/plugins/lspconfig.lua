@@ -26,33 +26,21 @@ return {
 					"html",
 					"cssls",
 					"tailwindcss",
-					-- "svelte",
 					"lua_ls",
-					-- "graphql",
-					-- "emmet_ls",
-					-- "prismals",
-					-- "pyright",
 					"phpactor",
 				},
 			})
 
-			local opts = { silent = true, noremap = true }
+			-- use defaults
+			-- grn = vim.lsp.buf.rename()
+			-- grr = vim.lsp.buf.references()
+			-- gri = vim.lsp.buf.implementation()
+			-- gO = vim.lsp.buf.document_symbol()
+			-- gra = vim.lsp.buf.code_action()
+
 			vim.keymap.set("n", "gd", function()
 				vim.lsp.buf.definition()
-			end, opts)
-			vim.keymap.set("n", "K", function()
-				vim.lsp.buf.hover()
-			end, opts)
-			vim.keymap.set("n", "<leader>gr", function()
-				vim.lsp.buf.references()
-			end, opts)
-			vim.keymap.set("n", "<leader>ca", function()
-				vim.lsp.buf.code_action()
-			end, opts)
-			-- rename a variable throughout the whole project
-			vim.keymap.set("n", "<leader>rn", function()
-				vim.lsp.buf.rename()
-			end, opts)
+			end)
 		end,
 	},
 	{

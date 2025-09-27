@@ -29,4 +29,11 @@ return {
 			vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 		end,
 	},
+	{
+		-- for when I use 2 language inputs
+		"ivanesmantovich/xkbswitch.nvim",
+		config = function()
+			require("xkbswitch").setup()
+		end,
+	},
 }

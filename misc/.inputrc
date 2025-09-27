@@ -6,3 +6,5 @@
 set colored-stats on
 
 "\C-n": ""
+
+set editing-mode vi

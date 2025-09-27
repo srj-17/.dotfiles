@@ -35,7 +35,6 @@ work_sec=$((work_min * 60))
 break_sec=$((break_min * 60))
 
 # Start message
-echo "Pomodoro started: $work_min min work / $break_min min break — $msg"
 notify-send -u normal "Pomodoro started" \
     "$work_min min work / $break_min min break — $msg"
 
@@ -43,21 +42,18 @@ for ((i=1; i<=cycles; i++)); do
     # Work session
     echo $(( $(date +%s) + work_sec )) > "$STATEFILE"
     sleep "$work_sec" && \
-    echo "Break time - $msg" && \
-    notify-send -u critical -t 0 "Break time - $msg"
+    notify-send -u critical -t "Break time - $msg"
 
     # Break session
     # Don't take break after last session
     if [[ $i -lt $cycles ]]; then
         echo $(( $(date +%s) + break_sec )) > "$STATEFILE"
         sleep "$break_sec" && \
-        echo "Back to work!" && \
         notify-send -u normal "Back to work!"
     fi
 done
 
 rm -f "$STATEFILE"  # Cleanup state file at end
 
-echo "Pomodoro complete! Congratulations on the deep work!"
 notify-send -u normal "Pomodoro complete!" \
     "$cycles cycles finished"
