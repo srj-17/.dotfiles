@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+if [[ $# -eq 1 ]]; then
+    selected=$1
+else
+    # don't put these under quotes, the ~ must be expanded by bash-shell before execution
+    DIRS=(
+        ~/Videos/
+    )
+    selected=$(find ${DIRS[@]} -type f -printf "%f\n" | rofi -dmenu -i -p " :")
+    full_path=$(find ${DIRS[@]} -type f -name "$selected")
+    echo "$full_path"
+fi
+
+if [[ -z $selected ]]; then
+    echo "No video selected"
+    exit 0
+fi
+
+
+vlc "$full_path"&
+clear
