@@ -50,13 +50,13 @@ sudo apt install unzip ripgrep luarocks jq zoxide
 
 Also install [dotnet](https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?tabs=dotnet9&pivots=os-linux-ubuntu-2404)
 
-1. Install stow with your package manager
+3. Install stow with your package manager
 
 ```bash
 sudo apt install stow
 ```
 
-2. Install git
+4. Install git
 
 ```bash
 sudo apt install git
@@ -68,14 +68,14 @@ sudo apt install git
 mv ~/dotfiles ~/dotfiles_backup
 ```
 
-3. Clone the repo in your $HOME directory
+4. Clone the repo in your $HOME directory
 
 ```bash
 git clone git@github.com:srj-17/.dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
-4. Stow the files that you need the configurations
+5. Stow the files that you need the configurations
    For example:
 
 ```bash
