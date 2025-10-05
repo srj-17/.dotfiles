@@ -70,7 +70,10 @@ return {
 			-- Auto-install debuggers listed below
 			automatic_installation = true,
 			-- Ensure these debuggers are installed (names from mason-registry)
-			ensure_installed = { "python", "node2" },
+			ensure_installed = {
+				-- "python",
+				-- "node2",
+			},
 			handlers = {}, -- Custom handlers per adapter (optional)
 		},
 	},

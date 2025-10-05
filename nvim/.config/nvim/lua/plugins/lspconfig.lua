@@ -22,12 +22,12 @@ return {
 					exclude = { "ts_ls" },
 				},
 				ensure_installed = {
-					"ts_ls",
-					"html",
-					"cssls",
-					"tailwindcss",
+					-- "ts_ls",
+					-- "html",
+					-- "cssls",
+					-- "tailwindcss",
 					"lua_ls",
-					"phpactor",
+					-- "phpactor",
 				},
 			})
 
@@ -53,12 +53,12 @@ return {
 			local mason_tool_installer = require("mason-tool-installer")
 			mason_tool_installer.setup({
 				ensure_installed = {
-					"prettier", -- prettier formatter
+					-- "prettier", -- prettier formatter
 					"stylua", -- lua formatter
 					-- "isort", -- python formatter
-					"black", -- python formatter
-					"pylint", -- python linter
-					"eslint_d", -- js linter
+					-- "black", -- python formatter
+					-- "pylint", -- python linter
+					-- "eslint_d", -- js linter
 				},
 			})
 		end,
