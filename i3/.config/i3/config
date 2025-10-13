@@ -308,7 +308,7 @@ assign [class="firefox"] $ws1
 
 assign [class="Google-chrome"] $ws9
 
-assign [class="vlc"] $ws4
+assign [class="mpv"] $ws4
 
 # # TODO: do I want this?, really? 
 # # all the utilities that i need go i this class
@@ -322,13 +322,6 @@ assign [class="vlc"] $ws4
 # was not successful
 # exec --no-startup-id xfce4-terminal --class scatchpad
 # for_window [class="scratchterm"] move scratchpad
-
-# this is kindof what I want? Open terminal on workspace 2 at the beginning and 
-# if I open the terminal later, it opens on the workspace I want to open on
-# exec --no-startup-id i3-msg 'workspace 1; exec firefox'
-# exec --no-startup-id i3-msg 'workspace 2; exec xfce4-terminal'
-# source: https://unix.stackexchange.com/questions/96798/i3wm-start-applications-on-specific-workspaces-when-i3-starts
-# ------------------------------------------------------------------------#
 
 # ----------------------------------autostarts-----------------------------#
 # exec --no-startup-id redshift-gtk
@@ -360,4 +353,3 @@ bindsym $mod+minus scratchpad show
 # for_window [floating] hide_edge_borders none
 for_window [floating] resize set 684 384, move absolute position center
 # -------------------------------------------------------------------------#
-

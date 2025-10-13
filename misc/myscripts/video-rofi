@@ -18,5 +18,5 @@ if [[ -z $selected ]]; then
 fi
 
 
-vlc "$full_path"&
+mpv "$full_path"&
 clear

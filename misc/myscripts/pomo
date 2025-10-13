@@ -1,22 +1,35 @@
 #!/bin/bash
 
-# Usage: script work_minutes break_minutes message
+# Usage: script work_minutes break_minutes cycles message
 # Example: ./pomo.sh 25 5 4 "Take a break"
 # meaning pomo work_min break_min cycles msg_at_each_break_end
 
-# credit to this post
-# https://www.reddit.com/r/commandline/comments/nqf8an/comment/h0aayz1/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+STATEFILE="/tmp/pomo_state"
+NOTIFY_SOUND="$HOME/Music/noti_sound"
 
-STATEFILE="/tmp/pomodoro_end_time"
+play_notification() {
+    if [[ -f "$NOTIFY_SOUND" ]]; then 
+        if command -v mpv &>/dev/null; then
+            mpv --really-quiet "$NOTIFY_SOUND" &
+        fi
+    fi
+}
 
 # Check if there's an active session running
 if [[ -f "$STATEFILE" ]]; then
+    read end type < "$STATEFILE"
     now=$(date +%s)
-    end=$(cat "$STATEFILE")
     rem=$(( end - now ))
 
     if (( rem > 0 )); then
-        notify-send "Pomodoro running" "$(printf 'Time remaining: %d minutes %d seconds' $((rem / 60)) $((rem % 60)))"
+        if [[ "$type" == "work" ]]; then
+            notify-send "Pomodoro running" \
+                "$(printf 'Time remaining: %d minutes %d seconds' $((rem / 60)) $((rem % 60)))"
+        else
+            notify-send "Break running" \
+                "$(printf 'Time remaining: %d minutes %d seconds' $((rem / 60)) $((rem % 60)))"
+        fi
+        play_notification
         exit 0
     else
         # Session expired, remove state file and continue to start new pomodoro
@@ -37,19 +50,21 @@ break_sec=$((break_min * 60))
 # Start message
 notify-send -u normal "Pomodoro started" \
     "$work_min min work / $break_min min break — $msg"
+play_notification
 
 for ((i=1; i<=cycles; i++)); do
     # Work session
-    echo $(( $(date +%s) + work_sec )) > "$STATEFILE"
+    echo "$(( $(date +%s) + work_sec )) work" > "$STATEFILE"
     sleep "$work_sec" && \
-    notify-send -u critical -t "Break time - $msg"
+    notify-send -u critical "Break time - $msg"
+    play_notification
 
-    # Break session
-    # Don't take break after last session
+    # Break session (skip after final cycle)
     if [[ $i -lt $cycles ]]; then
-        echo $(( $(date +%s) + break_sec )) > "$STATEFILE"
+        echo "$(( $(date +%s) + break_sec )) break" > "$STATEFILE"
         sleep "$break_sec" && \
         notify-send -u normal "Back to work!"
+        play_notification
     fi
 done
 
@@ -57,3 +72,4 @@ rm -f "$STATEFILE"  # Cleanup state file at end
 
 notify-send -u normal "Pomodoro complete!" \
     "$cycles cycles finished"
+play_notification
