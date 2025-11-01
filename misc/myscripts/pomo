@@ -29,7 +29,6 @@ if [[ -f "$STATEFILE" ]]; then
             notify-send "Break running" \
                 "$(printf 'Time remaining: %d minutes %d seconds' $((rem / 60)) $((rem % 60)))"
         fi
-        play_notification
         exit 0
     else
         # Session expired, remove state file and continue to start new pomodoro

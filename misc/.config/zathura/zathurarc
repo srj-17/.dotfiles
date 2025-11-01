@@ -44,6 +44,7 @@ set recolor-keephue             "true"                 # keep original color
 map d scroll half-down
 map u scroll half-up
 map i recolor
+map <C-d> toggle_page_mode
 
 #--------------------------- set my aesthetics -----------------------------#
 set statusbar-h-padding 0

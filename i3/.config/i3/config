@@ -312,7 +312,7 @@ assign [class="mpv"] $ws4
 
 # # TODO: do I want this?, really? 
 # # all the utilities that i need go i this class
-# assign [class=".*"] $ws8
+assign [class=".*"] $ws8
 
 # for_window [class="firefox"] fullscreen enable
 
