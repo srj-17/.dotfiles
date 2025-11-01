@@ -29,12 +29,17 @@
 | computer info | neofetch |
 | syncing between devices | syncthing |
 
+> [!IMPORTANT]
+> 
+> Also, install node.
+
 > [!NOTE]
 > tpm won't work as I've not included ~/.tmux in the dotfiles, so please clone
 > it from the official source as `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 
 > [!NOTE]
 > Wallpapers are expected from ~/Pictures/wallpapers/ using `nitrogen`
+
 
 # Applying these dotfiles
 

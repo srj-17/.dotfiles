@@ -23,13 +23,6 @@ alias :q="exit"
 # for console version of stardict dictionary
 alias def="sdcv"
 
-# git aliases
-# alias g="git"
-# alias gs="git status"
-# alias ga="git add ."
-# alias gc="git commit"
-# alias gcm="git commit -m"
-
 # other programs
 alias mu="mupdf"
 alias za="zathura"

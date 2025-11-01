@@ -21,3 +21,6 @@
 .config/xviewer/
 .config/ytdl-gui/
 zsh/.config/zsh/.zcompdump
+misc/.config/syncthing
+misc/.config/xed
+zsh/.config/zsh/.zsh_history

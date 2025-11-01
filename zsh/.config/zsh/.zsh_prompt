@@ -1,0 +1,21 @@
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# evaluate variable references inside the prompt every time it’s drawn
+setopt prompt_subst
+
+# %b = branch name, 
+# %c = state string for clean repo (everything staged)
+# %u = state string for unstaged (dirty) repo
+# nothing for a clean repo
+# %a = action (during special actions)
+# %s = vcs in use -- in our case, git
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' formats '%F{#6a736c}[ %f%F{#6a736c}%b%f%u%c%F{#6a736c} ]%f'     
+zstyle ':vcs_info:git:*' actionformats '%F{#6a736c}[ %f%F{#6a736c}%b%f|%F{red}%a%f%F{#6a736c} ]%f'
+zstyle ':vcs_info:git:*' stagedstr '%F{yellow} ●%f' 
+zstyle ':vcs_info:git:*' unstagedstr '%F{red} ✗%f'
+zstyle ':vcs_info:git:*' check-for-changes true
+
+NEWLINE=$'\n'
+PROMPT='%F{#83a598}%~%f ${vcs_info_msg_0_}'"$NEWLINE"'%F{#b8bb26}%#%f '

@@ -1,22 +1,3 @@
-# Welcome message printer
-# -----------------------------------------------------------
-# text to print
-text="Meh, I'll make it, I always do"
-# text="This too shall pass"
-
-# find terminal width and text length
-terminal_width=$(tput cols)
-text_length=${#text}
-
-# remaining space is divided into left and right widths
-padding=$(( (terminal_width - text_length) / 2 ))
-
-# calculate padding and add as much empty space as the padding
-# with %s, so padding=10, the %10s
-# %${padding}s
-printf "\033[1;46m%${padding}s%s%${padding}s\033[0m\n" "" "$text" ""
-#---------------------------------------------------------------
-
 # -------------------------Exports---------------------#
 # styling prompt
 export PS1="┌─[\[\e[01;34m\]\u\[\e[01;34m\]@\[\e[01;34m\]\h\[\e[01;34m\]:\[\e[01;34m\]\w\[\e[00m\]]\n└─╼ " 
@@ -58,7 +39,3 @@ fi
 set -o vi
 bind '"\C-f": "tmux-sessionizer\n"'
 bind '"\C-n": "note\n"'
-# ---------------------------------------------------#
-
-
-. "$HOME/.local/bin/env"
