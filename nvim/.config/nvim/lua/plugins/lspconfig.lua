@@ -22,7 +22,7 @@ return {
 					exclude = { "ts_ls" },
 				},
 				ensure_installed = {
-					-- "ts_ls",
+					"ts_ls",
 					-- "html",
 					-- "cssls",
 					-- "tailwindcss",
@@ -58,7 +58,7 @@ return {
 					-- "isort", -- python formatter
 					-- "black", -- python formatter
 					-- "pylint", -- python linter
-					-- "eslint_d", -- js linter
+					"eslint_d", -- js linter
 				},
 			})
 		end,
