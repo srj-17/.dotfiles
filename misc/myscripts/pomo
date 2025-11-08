@@ -1,8 +1,4 @@
-#!/bin/bash
-
-# Usage: script work_minutes break_minutes cycles message
-# Example: ./pomo.sh 25 5 4 "Take a break"
-# meaning pomo work_min break_min cycles msg_at_each_break_end
+#!/usr/bin/env bash
 
 STATEFILE="/tmp/pomo_state"
 NOTIFY_SOUND="$HOME/Music/noti_sound"
@@ -15,60 +11,112 @@ play_notification() {
     fi
 }
 
-# Check if there's an active session running
-if [[ -f "$STATEFILE" ]]; then
-    read end type < "$STATEFILE"
-    now=$(date +%s)
-    rem=$(( end - now ))
-
-    if (( rem > 0 )); then
-        if [[ "$type" == "work" ]]; then
-            notify-send "Pomodoro running" \
-                "$(printf 'Time remaining: %d minutes %d seconds' $((rem / 60)) $((rem % 60)))"
-        else
-            notify-send "Break running" \
-                "$(printf 'Time remaining: %d minutes %d seconds' $((rem / 60)) $((rem % 60)))"
-        fi
+function start() {
+    if [[ -f $STATEFILE ]]; then
+        notify-send "Pomodoro already running, ask for extra when you complete!"
+        status
         exit 0
-    else
-        # Session expired, remove state file and continue to start new pomodoro
-        rm -f "$STATEFILE"
     fi
-fi
 
-# If no active session, start new pomodoro as usual
-work_min=${1:-60}
-break_min=${2:-15}
-cycles=${3:-4}
-shift 3 || true
-msg="${*:-Lets gooo!}"
-
-work_sec=$((work_min * 60))
-break_sec=$((break_min * 60))
-
-# Start message
-notify-send -u normal "Pomodoro started" \
-    "$work_min min work / $break_min min break — $msg"
-play_notification
-
-for ((i=1; i<=cycles; i++)); do
-    # Work session
+    # for checking status
+    work_min=50
+    work_sec=$((work_min * 60))
     echo "$(( $(date +%s) + work_sec )) work" > "$STATEFILE"
+
+    notify-send "Pomodoro started for $work_min minutes."
+
+    echo "$work_sec"
     sleep "$work_sec" && \
-    notify-send -u critical "Break time - $msg"
-    play_notification
+        notify-send "Pomodoro complete"
+    play_notification&
 
-    # Break session (skip after final cycle)
-    if [[ $i -lt $cycles ]]; then
-        echo "$(( $(date +%s) + break_sec )) break" > "$STATEFILE"
-        sleep "$break_sec" && \
-        notify-send -u normal "Back to work!"
-        play_notification
+    # cleanup
+    rm -f "$STATEFILE"
+}
+
+function extra_pomo() {
+    if [[ -f $STATEFILE ]]; then
+        notify-send "Pomodoro already running, ask for extra when you complete!"
+        status
+        exit 0
     fi
-done
 
-rm -f "$STATEFILE"  # Cleanup state file at end
+    # for checking status
+    work_min=25
+    work_sec=$((work_min * 60))
 
-notify-send -u normal "Pomodoro complete!" \
-    "$cycles cycles finished"
-play_notification
+    echo "$(( $(date +%s) + work_sec )) work" > "$STATEFILE"
+
+    notify-send "Extra pomodoro started for $work_min minutes."
+    
+    sleep "$work_sec" &&\
+        notify-send "Extra pomodoro complete"
+    play_notification&
+
+    # cleanup
+    rm -f "$STATEFILE"
+}
+
+function break() {
+    if [[ -f $STATEFILE ]]; then
+        notify-send "Pomodoro already running, ask for extra when you complete!"
+        status
+        exit 0
+    fi
+
+    # for checking status
+    break_min=10
+    break_sec=$((break_min * 60))
+    echo "$(( $(date +%s) + break_sec )) break" > "$STATEFILE"
+
+    notify-send "Break started for $break_min minutes."
+
+    sleep "$break_sec" && notify-send "Break Complete"
+    play_notification&
+
+    # cleanup
+    rm -f "$STATEFILE"
+}
+
+function status() {
+    if [[ -f "$STATEFILE" ]]; then
+        read end type < "$STATEFILE"
+        now=$(date +%s)
+        rem=$(( end - now ))
+
+        if (( rem > 0 )); then
+            if [[ "$type" == "work" ]]; then
+                notify-send "Pomodoro running" \
+                    "$(printf 'Time remaining: %d minutes %d seconds' $((rem / 60)) $((rem % 60)))"
+            else
+                notify-send "Break running" \
+                    "$(printf 'Time remaining: %d minutes %d seconds' $((rem / 60)) $((rem % 60)))"
+            fi
+            exit 0
+        else
+            # Session expired, notify and do not remove state file here
+            rm -rf "$STATEFILE"
+        fi
+    else
+        notify-send "No tasks runnig."
+    fi
+}
+
+question="$1"
+case "$question" in
+    "start")
+        start
+        ;;
+    "break")
+        break
+        ;;
+    "status")
+        status
+        ;;
+    "extra")
+        extra_pomo
+        ;;
+    *)
+        notify-send "Wrong argument"
+        ;;
+esac

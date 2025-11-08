@@ -283,8 +283,18 @@ bindsym $mod+n exec ~/myscripts/note-rofi
 bindsym $mod+period exec ~/myscripts/showmoji
 bindsym $mod+shift+comma exec ~/myscripts/rofi-power-menu
 bindsym $mod+semicolon exec ~/myscripts/rofi-web-search
-bindsym $mod+shift+p exec ~/myscripts/pomo
 bindsym $mod+shift+v exec ~/myscripts/video-rofi
+
+set $pomo_launcher Pomo: [s]tart [b]reak s[t]atus [e]xtend [Escape] [Return]
+bindsym $mod+p mode "$pomo_launcher"
+mode "$pomo_launcher" {
+    bindsym s exec --no-startup-id ~/myscripts/pomo start; mode "default"
+    bindsym b exec --no-startup-id ~/myscripts/pomo break; mode "default"
+    bindsym t exec --no-startup-id ~/myscripts/pomo status; mode "default"
+    bindsym e exec --no-startup-id ~/myscripts/pomo extra; mode "default"
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
 
 # ----------------------- auto assignments to workspaces ---------------- #
 # class of apps found using xprop, second WM_CLASS string
@@ -292,7 +302,6 @@ bindsym $mod+shift+v exec ~/myscripts/video-rofi
 ## comment or uncomment this out based on what kind of dev workflow you want
 ## do you want a single view workflow or multitask
 assign [class="Xfce4-terminal"] $ws2
-
 # everything communication related goes to workspace 9 
 assign [class="ViberPC"] $ws10
 
@@ -304,17 +313,20 @@ assign [class="Zathura"] $ws3
 assign [class="obsidian"] $ws3
 # ------------------------------------------
 
+# browsers
 assign [class="firefox"] $ws1
 
 assign [class="Google-chrome"] $ws9
+# ------------------------------------------
 
+# media in ws4
 assign [class="mpv"] $ws4
 
-# # TODO: do I want this?, really? 
-# # all the utilities that i need go i this class
-assign [class=".*"] $ws8
+assign [class="FreeTube"] $ws4
 
-# for_window [class="firefox"] fullscreen enable
+# all the utilities that i need go i this class
+assign [class=".*"] $ws8
+# -------------------------------------------
 
 # scratchpad assignments
 #
