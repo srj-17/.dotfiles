@@ -6,10 +6,10 @@ alias neofetch="neofetch --source ~/.config/neofetch/ascii/luffy.txt"
 alias n="nvim"
 
 # open today's note 
-alias ot="nvim +ObsidianToday"
+alias ot='nvim +"Obsidian today"'
 
 # search for a note in obsidian.nvim's search dir
-alias os="nvim +ObsidianSearch"
+alias os='nvim +"Obsidian search"'
 
 # for copying and pasting into the x system clipboard
 # using command line utility xclip

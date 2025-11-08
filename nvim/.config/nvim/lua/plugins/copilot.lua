@@ -14,13 +14,20 @@ return {
 				enabled = false,
 			},
 		},
+		config = function()
+			vim.api.nvim_create_autocmd("VimEnter", {
+				callback = function()
+					vim.cmd("Copilot disable")
+				end,
+			})
+		end,
 	},
 	{
 		{
 			"CopilotC-Nvim/CopilotChat.nvim",
 			dependencies = {
 				{ "nvim-lua/plenary.nvim", branch = "master" },
-				{ "zebirenbaum/copilot.lua" },
+				{ "zbirenbaum/copilot.lua" },
 			},
 			-- build = "make tiktoken",
 			opts = {},

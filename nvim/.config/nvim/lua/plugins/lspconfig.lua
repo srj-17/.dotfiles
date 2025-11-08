@@ -27,6 +27,7 @@ return {
 					-- "cssls",
 					-- "tailwindcss",
 					"lua_ls",
+					"texlab",
 					-- "phpactor",
 				},
 			})
@@ -56,8 +57,8 @@ return {
 					-- "prettier", -- prettier formatter
 					"stylua", -- lua formatter
 					-- "isort", -- python formatter
-					-- "black", -- python formatter
-					-- "pylint", -- python linter
+					"black", -- python formatter
+					"pylint", -- python linter
 					"eslint_d", -- js linter
 				},
 			})
