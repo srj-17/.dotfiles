@@ -311,6 +311,8 @@ assign [class="MuPDF"] $ws3
 assign [class="Zathura"] $ws3
 
 assign [class="obsidian"] $ws3
+
+for_window [workspace=$ws3] layout tabbed
 # ------------------------------------------
 
 # browsers
@@ -326,6 +328,8 @@ assign [class="FreeTube"] $ws4
 
 # all the utilities that i need go i this class
 assign [class=".*"] $ws8
+
+for_window [workspace=$ws8] layout tabbed
 # -------------------------------------------
 
 # scratchpad assignments

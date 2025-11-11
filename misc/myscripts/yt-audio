@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mpv --no-video $(yt-dlp -f best -g "ytsearch:$1")

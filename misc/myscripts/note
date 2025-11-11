@@ -5,7 +5,7 @@ if [[ $# -eq 1 ]]; then
 else
     # don't put these under quotes, the ~ must be expanded by bash-shell before execution
     DIRS=(
-        ~/repos/ranhoodlum/collage/notes
+        ~/Sync/study_notes/
     )
     selected=$(find ${DIRS[@]} -type f | fzf)
 fi
