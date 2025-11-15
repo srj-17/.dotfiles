@@ -2,7 +2,13 @@ return {
 	{
 		"mason-org/mason.nvim",
 		config = function()
-			require("mason").setup()
+			require("mason").setup({
+				-- include registry for roslyn ls, for c#
+				registries = {
+					"github:mason-org/mason-registry",
+					"github:Crashdummyy/mason-registry",
+				},
+			})
 		end,
 	},
 	{
@@ -28,6 +34,9 @@ return {
 					-- "tailwindcss",
 					"lua_ls",
 					"texlab",
+					-- make sure the mason registry for roslyn is added
+					-- https://github.com/seblyng/roslyn.nvim
+					-- "roslyn" -- c#
 					-- "phpactor",
 				},
 			})

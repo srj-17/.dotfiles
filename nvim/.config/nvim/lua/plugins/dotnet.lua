@@ -1,8 +1,9 @@
 -- for dotnet programming (collage)
+--
+-- This enables us to communicate with roslyn langauge
+-- server
+-- i.e. acts as a client (neovim can't do that directly)
 return {
-	"GustavEikaas/easy-dotnet.nvim",
-	dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim" },
-	config = function()
-		require("easy-dotnet").setup()
-	end,
+	"seblyng/roslyn.nvim",
+	opts = {},
 }
