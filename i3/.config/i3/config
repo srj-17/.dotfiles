@@ -283,7 +283,7 @@ bindsym $mod+n exec ~/myscripts/note-rofi
 bindsym $mod+period exec ~/myscripts/showmoji
 bindsym $mod+shift+comma exec ~/myscripts/rofi-power-menu
 bindsym $mod+semicolon exec ~/myscripts/rofi-web-search
-bindsym $mod+shift+v exec ~/myscripts/video-rofi
+bindsym $mod+shift+m exec ~/myscripts/media-rofi
 
 set $pomo_launcher Pomo: [s]tart [b]reak s[t]atus [e]xtend [Escape] [Return]
 bindsym $mod+p mode "$pomo_launcher"
@@ -340,8 +340,8 @@ for_window [workspace=$ws8] layout tabbed
 # for_window [class="scratchterm"] move scratchpad
 
 # ----------------------------------autostarts-----------------------------#
-# exec --no-startup-id redshift-gtk
 # exec --no-startup-id xfce4-terminal --command=tmux
+exec --no-startup-id redshift -l 27.71:85.32 -t 5700:3600
 exec --no-startup-id xfce4-terminal
 
 # firefox

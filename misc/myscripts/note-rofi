@@ -18,5 +18,7 @@ if [[ -z $selected ]]; then
 fi
 
 
-zathura "$full_path"&
+# install zathura, and do 
+# `xdg-mime default $(ls /usr/share/applications ~/.local/share/applications | grep zathura -m 1)`
+xdg-open "$full_path"&
 clear

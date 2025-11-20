@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# this is a simple program for preparing my notes for the given subject
+# notes preparation means converting all image and pptx files to pdf
+# after downloading and extracing the notes, go to the download folder
+# and run this script
+# 
+# Make sure that imagemagick and libreoffice are installed
+
+sudo apt install imagemagick libreoffice
+
+# converting the images to pdf
+for i in **/*.jpg **/*.png ; do                                             
+convert "$i" "${i%.*}.pdf" && rm "$i"                                          
+done
+
+# converting the documents to pdf
+for i in **/*.docx **/*.pptx; do
+soffice --headless --convert-to pdf "$i" --outdir "$(dirname "$i")" && rm "$i"
+done
+
+# NOTE: make sure that your notes have the essential information prefixed
+# to the filename (ex: Instead of Unit-1, it should be named NCC_handwritten_unit-1)
