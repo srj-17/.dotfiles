@@ -66,8 +66,8 @@ return {
 					-- "prettier", -- prettier formatter
 					"stylua", -- lua formatter
 					-- "isort", -- python formatter
-					"black", -- python formatter
-					"pylint", -- python linter
+					-- "black", -- python formatter
+					"ruff", -- python linter and formatter
 					"eslint_d", -- js linter
 				},
 			})

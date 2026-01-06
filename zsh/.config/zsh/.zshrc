@@ -55,4 +55,3 @@ bindkey -s "^n" "note\r"
 
 # keybinds
 bindkey '^r' history-incremental-search-backward
-

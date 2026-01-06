@@ -4,3 +4,8 @@
 
 [core]
 	sshCommand = ssh -i ~/.ssh/ranhoodlum
+
+[push]
+    # push submodules before the parent repo to avoid 
+    # leaving the repo on a broken state
+    recurseSubmodules = on-demand 

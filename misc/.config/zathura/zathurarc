@@ -49,6 +49,7 @@ map <C-d> toggle_page_mode
 #--------------------------- set my aesthetics -----------------------------#
 set statusbar-h-padding 0
 set statusbar-v-padding 0
+set window-title-basename true
 
 #--------------------------- additional settings -----------------------------#
 set selection-clipboard clipboard

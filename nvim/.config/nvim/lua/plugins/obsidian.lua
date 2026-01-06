@@ -66,6 +66,6 @@ return {
 		vim.keymap.set("v", "<leader>oen", ":Obsidian extract_note ", { desc = "Obsidian Extract Note" })
 
 		-- for obsidian's ui
-		vim.opt.conceallevel = 2
+		-- vim.opt.conceallevel = 2
 	end,
 }
