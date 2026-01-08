@@ -1,21 +1,2 @@
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# ----------------- setting up PATH ----------------------#
-export PATH=$PATH:/home/srj/.nvm/versions/node/v20.14.0/
-export PATH=$PATH:~/myscripts
-export PATH=$PATH:~/go/bin/
-export PATH=$PATH:~/.cargo/bin/
-export PATH=$PATH:"$HOME/.local/bin/"
-export PATH="$PATH:/opt/nvim-linux64/bin"
-
-export PATH="$PATH:$HOME/texlive/2025/bin/x86_64-linux"
-export INFOPATH="$INFOPATH:$HOME/texlive/2025/bin/x86_64-linux"
-export MANPATH="$MANPATH:$HOME/texlive/2025/bin/x86_64-linux"
-
-export GOPATH="$HOME/go"
-
-export BROWSER="firefox"
-export EDITOR="vi"
-export VISUAL="nvim"
+# set only zsh shell specific environment variables 
+# here
