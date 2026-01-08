@@ -16,3 +16,9 @@ alias paste="xclip -selection clipboard -o"
 alias py="python3"
 alias mu="mupdf"
 alias lg="lazygit"
+
+if [ "$COLORTERM" ]; then
+    alias ls='ls -F --color=auto'
+else
+	alias ls='ls -F'
+fi

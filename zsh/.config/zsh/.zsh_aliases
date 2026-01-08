@@ -1,7 +1,11 @@
 alias python="python3"
 alias py="python3"
 
-alias ls="ls --color"
+if [ "$COLORTERM" ]; then
+    alias ls='ls -F --color'
+else
+	alias ls='ls -F'
+fi
 alias neofetch="neofetch --source ~/.config/neofetch/ascii/luffy.txt"
 alias n="nvim"
 
