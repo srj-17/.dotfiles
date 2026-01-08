@@ -87,3 +87,14 @@ cd ~/dotfiles
 stow nvim
 ```
 
+> [!NOTE]
+> Redshift config won't work in system with [apparmor](https://apparmor.net/)
+> because it can't read the files outside of `~/.config/`.
+> So, `redshift.conf` symlink created with stow won't work
+> as well. You can either change `apparmor` config for 
+> redshift (`/etc/apparmor.d/usr.bin.redshift`) 
+> or use hard links like so:
+> ```bash
+> rm ~/.config/redshift/redshift.conf
+> ln ~/.dotfiles/misc/.config/redshift/redshift.conf ~/.config/redshift/redshift.conf
+> ```
