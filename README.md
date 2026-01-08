@@ -11,9 +11,9 @@
 | Window Manager | i3-wm |
 | Statusbar | i3status (downloaded with i3-wm in debian) |
 | File Manager | Thunar |
-| Font | JetBrains Nerd fonts |
+| Font | JetBrains Nerd fonts (download necessary) |
 | Browser | firefox |
-| Terminal Emulator | xfce-4 (gruvbox theme from: [here](https://github.com/xelser/gruvbox-xfce4-terminal)) |
+| Terminal Emulator | alacritty |
 | Compoistor | picom |
 | gtk themes | lxappearance (themes [from the great mcpain](https://github.com/TheGreatMcPain/gruvbox-material-gtk)) |
 | qt themes | qt5ct |

@@ -16,10 +16,6 @@ set $mod2 Mod1
 # is used in the bar {} block below.
 font pango:JetBrainsMono 8
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
@@ -301,7 +297,7 @@ mode "$pomo_launcher" {
 # work workspace 
 ## comment or uncomment this out based on what kind of dev workflow you want
 ## do you want a single view workflow or multitask
-assign [class="Xfce4-terminal"] $ws2
+assign [class="Alacritty"] $ws2
 # everything communication related goes to workspace 9 
 assign [class="ViberPC"] $ws10
 
@@ -330,19 +326,10 @@ assign [class="FreeTube"] $ws4
 assign [class=".*"] $ws8
 
 for_window [workspace=$ws8] layout tabbed
-# -------------------------------------------
-
-# scratchpad assignments
-#
-# tried to start obsidian today note from here, and assign it to scratchpad, but
-# was not successful
-# exec --no-startup-id xfce4-terminal --class scatchpad
-# for_window [class="scratchterm"] move scratchpad
 
 # ----------------------------------autostarts-----------------------------#
-# exec --no-startup-id xfce4-terminal --command=tmux
-exec --no-startup-id redshift -l 27.71:85.32 -t 5700:3600
-exec --no-startup-id xfce4-terminal
+exec --no-startup-id redshift-gtk
+exec --no-startup-id alacritty
 
 # firefox
 exec --no-startup-id firefox

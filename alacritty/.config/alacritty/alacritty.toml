@@ -1,0 +1,21 @@
+import = [
+  "./gruvbox_material_medium_dark.toml"
+]
+
+[window]
+opacity=0.95
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
