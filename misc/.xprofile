@@ -1,24 +1,3 @@
-# why set path variables here?
-# https://stackoverflow.com/a/38094841
-
-# ----------------- setting up PATH ----------------------#
-export PATH="$PATH:/home/srj/.nvm/versions/node/v20.14.0"
-export PATH="$PATH:$HOME/myscripts"
-export PATH="$PATH:$HOME/go/bin"
-export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:/opt/nvim-linux64/bin"
-
-export PATH="$PATH:$HOME/texlive/2025/bin/x86_64-linux"
-export INFOPATH="$INFOPATH:$HOME/texlive/2025/bin/x86_64-linux"
-export MANPATH="$MANPATH:$HOME/texlive/2025/bin/x86_64-linux"
-
-export GOPATH="$HOME/go"
-
-export BROWSER="firefox"
-export EDITOR="vi"
-export VISUAL="nvim"
-
 # ---------------------- styling ls -------------------#
 eval "$( dircolors -b )" # to load LS_COLORS
 # -----------------------------------------------------#

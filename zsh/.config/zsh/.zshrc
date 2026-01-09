@@ -55,3 +55,5 @@ bindkey -s "^n" "note\r"
 
 # keybinds
 bindkey '^r' history-incremental-search-backward
+
+eval "$( dircolors -b )" # to load LS_COLORS
