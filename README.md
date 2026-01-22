@@ -13,7 +13,7 @@
 | File Manager | Thunar |
 | Font | JetBrains Nerd fonts (download necessary) |
 | Browser | firefox |
-| Terminal Emulator | alacritty |
+| Terminal Emulator | kitty |
 | Compoistor | picom |
 | gtk themes | lxappearance (themes [from the great mcpain](https://github.com/TheGreatMcPain/gruvbox-material-gtk)) |
 | qt themes | qt5ct |

@@ -27,8 +27,13 @@ return {
 				folder = "_templates",
 				date_format = "%Y-%m-%d",
 				time_format = "%H:%M",
-				-- A map for custom variables, the key should be the variable and the value a function
-				substitutions = {},
+				-- A map for custom variables, the key
+				-- should be the variable and the value a function
+				substitutions = {
+					yesterday = function()
+						return os.date("%Y-%m-%d (%A)", os.time() - 86400)
+					end,
+				},
 			},
 
 			daily_notes = {

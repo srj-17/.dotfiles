@@ -45,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -298,7 +298,7 @@ mode "$pomo_launcher" {
 # work workspace 
 ## comment or uncomment this out based on what kind of dev workflow you want
 ## do you want a single view workflow or multitask
-assign [class="Alacritty"] $ws2
+assign [class="kitty"] $ws2
 # everything communication related goes to workspace 9 
 assign [class="ViberPC"] $ws10
 
@@ -330,7 +330,7 @@ for_window [workspace=$ws8] layout tabbed
 
 # ----------------------------------autostarts-----------------------------#
 exec --no-startup-id redshift-gtk
-exec --no-startup-id alacritty
+exec --no-startup-id kitty
 
 # firefox
 exec --no-startup-id firefox
