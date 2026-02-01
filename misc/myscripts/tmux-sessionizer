@@ -8,17 +8,9 @@ else
 
     # don't put these under quotes, the ~ must be expanded by bash-shell before execution
     DIRS=(
-        # ~/projects
-        # ~/tests 
-        ~/repos
-        ~/repos/srj-17
-        ~/repos/ranhoodlum
-        ~/repos/ranhoodlum/learning/ml/
-        ~/repos/ranhoodlum/learning/web/
-        ~/Sync/notes
-        ~/repos/srj-17/comp-sci
-        ~/repos/srj-17/advent-of-code/2024/
-        ~/repos/srj-17/mini-projects/
+        ~/repos/ranhoodlum/
+        ~/repos/srj-17/
+        ~/playground/
     )
     selected=$(find ${DIRS[@]} -mindepth 1 -maxdepth 1 -type d | fzf)
 fi

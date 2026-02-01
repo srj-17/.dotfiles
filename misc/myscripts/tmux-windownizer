@@ -1,0 +1,26 @@
+#!/bin/sh
+
+DIRS=(
+    ~/.dotfiles/
+    ~/playground/
+    ~/repos/
+    ~/Sync/
+    ~/Downloads/
+)
+
+directory=$(find ${DIRS[@]} -mindepth 1 -maxdepth 4 -type d | fzf)
+window_name=$(basename "$directory" | tr . _)
+
+if [ -z "$window_name" ]
+then
+      exit
+else
+    if [ -z "$TMUX" ] 
+    then
+        cd "$directory"
+        tmux
+    else
+      tmux neww -S -c "$directory" -n "$window_name"
+    fi
+
+fi

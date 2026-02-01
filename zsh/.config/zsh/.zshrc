@@ -25,7 +25,7 @@ fi
 
 # add syntax highlighting if we've downloaded 
 if [[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] ; then
-    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+    # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
 fi
 
 # add zsh autosuggestions if we've downloaded
@@ -36,7 +36,8 @@ fi
 # case insensitive completion
 eval "$( dircolors -b )" # to load LS_COLORS
 autoload -U compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' 
+# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' 
+
 # for colors with cd <tab>
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 
 zstyle ':completion:*' menu select
@@ -51,6 +52,7 @@ fi
 # r means carriage return  
 # scripts
 bindkey -s "^f" "tmux-sessionizer\r"
+bindkey -s "^w" "tmux-windownizer\r"
 bindkey -s "^n" "note\r"
 
 # keybinds

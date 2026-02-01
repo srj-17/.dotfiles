@@ -11,25 +11,25 @@ configuration {
     show-icons:     true;
 
     // since my alt and super are swapped
-    kb-custom-1: "Super+1";
-    kb-custom-2: "Super+2";
-    kb-custom-3: "Super+3";
-    kb-custom-4: "Super+4";
-    kb-custom-5: "Super+5";
-    kb-custom-6: "Super+6";
-    kb-custom-7: "Super+7";
-    kb-custom-8: "Super+8";
-    kb-custom-9: "Super+9";
-    kb-custom-10: "Super+0";
-    kb-custom-11: "Super+exclam";
-    kb-custom-12: "Super+at";
-    kb-custom-13: "Super+numbersign";
-    kb-custom-14: "Super+dollar";
-    kb-custom-15: "Super+percent";
-    kb-custom-16: "Super+dead_circumflex";
-    kb-custom-17: "Super+ampersand";
-    kb-custom-18: "Super+asterisk";
-    kb-custom-19: "Super+parenleft";
+    kb-custom-1: "Ctrl+1";
+    kb-custom-2: "Ctrl+2";
+    kb-custom-3: "Ctrl+3";
+    kb-custom-4: "Ctrl+4";
+    kb-custom-5: "Ctrl+5";
+    kb-custom-6: "Ctrl+6";
+    kb-custom-7: "Ctrl+7";
+    kb-custom-8: "Ctrl+8";
+    kb-custom-9: "Ctrl+9";
+    kb-custom-10: "Ctrl+0";
+    kb-custom-11: "Ctrl+exclam";
+    kb-custom-12: "Ctrl+at";
+    kb-custom-13: "Ctrl+numbersign";
+    kb-custom-14: "Ctrl+dollar";
+    kb-custom-15: "Ctrl+percent";
+    kb-custom-16: "Ctrl+dead_circumflex";
+    kb-custom-17: "Ctrl+ampersand";
+    kb-custom-18: "Ctrl+asterisk";
+    kb-custom-19: "Ctrl+parenleft";
 
 	kb-select-1: "Alt+1";
 	kb-select-2: "Alt+2";

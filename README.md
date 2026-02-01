@@ -38,7 +38,8 @@
 > it from the official source as `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 
 > [!NOTE]
-> Wallpapers are expected from ~/Pictures/wallpapers/ using `nitrogen`
+> Wallpapers come from ~/.wallpapers, directly
+> set in the hyprland config
 
 
 # Applying these dotfiles

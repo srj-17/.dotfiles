@@ -22,6 +22,7 @@ vim.opt.clipboard = "unnamedplus"
 -- because wrapping creates wierd behaviour in neovim
 -- where it whe navigating, it jumps a line
 vim.opt.wrap = false
+vim.opt.textwidth = 80
 
 -- keep cursor 8 places from top and bottom
 -- scrolloff = scrolloffset
