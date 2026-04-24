@@ -4,7 +4,7 @@
 # GNU cut doesn't grok UTF-8.
 EMOJI=$(sed '1,/^exit/d' $0 | rofi -dmenu -i -p "󰞅 : " -l 10 -fn Symbola:size=20 | grep -Po '^[^ ]*')
 if [ "$EMOJI" ]; then
-	printf %s "$EMOJI" | xclip -selection c	
+	printf %s "$EMOJI" | wl-copy
     sleep 0.1
 	exit $?
 fi

@@ -25,28 +25,14 @@ return {
 			mason_lspconfig.setup({
 				automatic_enable = {
 					-- we use typescript-tools.nvim instead of mason
-					exclude = { "ts_ls" },
+					exclude = { "ts_ls", "jdtls" },
 				},
 				ensure_installed = {
 					"ts_ls",
-					-- "html",
-					-- "cssls",
-					-- "tailwindcss",
 					"lua_ls",
 					"texlab",
-					-- make sure the mason registry for roslyn is added
-					-- https://github.com/seblyng/roslyn.nvim
-					-- "roslyn" -- c#
-					-- "phpactor",
 				},
 			})
-
-			-- use defaults
-			-- grn = vim.lsp.buf.rename()
-			-- grr = vim.lsp.buf.references()
-			-- gri = vim.lsp.buf.implementation()
-			-- gO = vim.lsp.buf.document_symbol()
-			-- gra = vim.lsp.buf.code_action()
 
 			vim.keymap.set("n", "gd", function()
 				vim.lsp.buf.definition()
@@ -63,10 +49,7 @@ return {
 			local mason_tool_installer = require("mason-tool-installer")
 			mason_tool_installer.setup({
 				ensure_installed = {
-					-- "prettier", -- prettier formatter
 					"stylua", -- lua formatter
-					-- "isort", -- python formatter
-					-- "black", -- python formatter
 					"ruff", -- python linter and formatter
 					"eslint_d", -- js linter
 				},

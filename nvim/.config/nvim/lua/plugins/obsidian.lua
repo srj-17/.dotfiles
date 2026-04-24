@@ -44,10 +44,14 @@ return {
 			},
 
 			attachments = {
-				img_folder = "_assets", -- This is the default
+				folder = "_assets", -- This is the default
 			},
 
 			legacy_commands = false,
+
+			ui = {
+				enable = false,
+			},
 		})
 
 		-- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.

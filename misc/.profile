@@ -43,6 +43,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 export PATH="$PATH:$HOME/texlive/2025/bin/x86_64-linux"
+export PATH="$PATH:$HOME/.local/share/gem/ruby/3.4.0/bin"
 export INFOPATH="$INFOPATH:$HOME/texlive/2025/bin/x86_64-linux"
 export MANPATH="$MANPATH:$HOME/texlive/2025/bin/x86_64-linux"
 
@@ -51,3 +52,7 @@ export GOPATH="$HOME/go"
 export BROWSER="firefox"
 export EDITOR="vi"
 export VISUAL="nvim"
+export PATH="/home/srj/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/home/srj/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
+export CLASSPATH="$CLASSPATH:/usr/share/tomcat10/lib/*:."

@@ -8,7 +8,7 @@ else
 
     # don't put these under quotes, the ~ must be expanded by bash-shell before execution
     DIRS=(
-        ~/repos/ranhoodlum/
+        ~/repos/ranhoodlum/*
         ~/repos/srj-17/
         ~/playground/
     )

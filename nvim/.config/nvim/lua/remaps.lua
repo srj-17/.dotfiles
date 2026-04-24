@@ -36,3 +36,12 @@ vim.keymap.set("n", "K", function()
 end)
 
 vim.keymap.set("n", "vs", "<cmd>vsplit<cr>", { desc = "Split vertically" })
+
+-- quickfixlist
+vim.keymap.set("n", "<leader>co", "<cmd>copen<cr>", { desc = "Open quickfixlist" })
+vim.keymap.set("n", "<leader>cn", "<cmd>copen<cr>", { desc = "quickfixlist next" })
+vim.keymap.set("n", "<leader>cp", "<cmd>copen<cr>", { desc = "quickfixlist prev" })
+
+-- make
+vim.keymap.set("n", "<leader>mc", "<cmd>make<cr>", { desc = "make / compile" })
+vim.keymap.set("n", "<leader>mr", ":!./%:r<cr>", { desc = "run compiled file" })

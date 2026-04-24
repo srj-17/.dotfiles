@@ -112,3 +112,10 @@ window#waybar {
     border-bottom: solid 1px @fgcolor;
 }
 
+/* if your is dead, don't animate the
+ * battery icon on 0%, it gets annoying
+ * fast */
+#battery.critical:not(.charging) {
+    color: @fgcolor;
+    animation: none;
+}
