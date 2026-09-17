@@ -1,0 +1,6 @@
+# to keep the tab completion using cd colored
+set colored-stats on
+
+# sets readline mode in every program that uses readline (psql, bash, etc.)
+# https://wiki.archlinux.org/title/Readline
+set editing-mode vi 
