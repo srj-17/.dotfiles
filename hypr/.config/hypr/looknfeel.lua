@@ -2,15 +2,15 @@
 
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#general
 hl.config({
-  general = {
-    -- No gaps between windows or borders.
-    gaps_in = 1,
-    gaps_out = 0,
-    border_size = 0,
+    general = {
+        -- No gaps between windows or borders.
+        gaps_in = 1,
+        gaps_out = 0,
+        border_size = 0,
 
-    -- Change to niri-like side-scrolling layout.
-    layout = "scrolling",
-  },
+        -- Change to niri-like side-scrolling layout.
+        -- layout = "scrolling",
+    },
 })
 
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#decoration
